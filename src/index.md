@@ -1,3 +1,0 @@
-# Boskanter Website
-
-Hallo zusammen

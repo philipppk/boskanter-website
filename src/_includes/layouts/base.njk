@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lamg="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	{% block css %}
+	{% endblock %}
+</head>
+<body>
+	{% include "partials/nav.njk" %}
+	<main>
+		{{ content | safe }}
+		{% block content %}{% endblock %}
+	</main>
+	{% include "partials/footer.njk" %}
+	{% block javascript %}
+	{% endblock %}
+</body>
+</html>

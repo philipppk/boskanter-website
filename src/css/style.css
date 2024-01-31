@@ -1,0 +1,41 @@
+header {
+    border-bottom:1px solid;
+    p {
+        font-style: italic;
+        text-align: center;
+        font-size: large;
+        letter-spacing: 2px;    
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+      
+    li {
+        float: left;
+        padding: 10px;
+    }
+}
+
+nav {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+      
+    li {
+        float: left;
+        padding: 10px;
+    }
+    p {
+        font-size: small;
+    }
+}
+
+#calendar {
+    text-align: center;
+}
