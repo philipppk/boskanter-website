@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{{ title }}</title>
+	<link rel="stylesheet" href="/css/style.css">
 	{% block css %}
 	{% endblock %}
 </head>
 <body>
-	{% include "partials/nav.njk" %}
+	{% include "partials/nav.html" %}
 	<main>
-		{{ content | safe }}
 		{% block content %}{% endblock %}
 	</main>
-	{% include "partials/footer.njk" %}
 	{% block javascript %}
 	{% endblock %}
+	{% include "partials/footer.html" %}
 </body>
 </html>

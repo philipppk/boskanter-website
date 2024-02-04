@@ -1,0 +1,13 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    {{ content | safe }}
+	{{ translations.read_more_about_what_we_do[locale] }}
+    <dl>
+        {% for h in highlights %}
+            <dt>{{ h.title[locale] }}</dt>
+            <dd>{{ h.description[locale] }}</dd>
+            <dd><a href="{{ locale }}/{{ h.link }}">{{ translations.read_more[locale] }}</a></dd>
+        {% endfor %}
+    </dl>
+{% endblock %}

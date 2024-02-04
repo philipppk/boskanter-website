@@ -1,47 +1,43 @@
-/*  
-In the following every element of the object sites will be linked in the navbar. Sites can be grouped into groups, so they are listed together. 
-The available groups can be defined in the object groups. If a site is not supposed to be in a group write 'group: null'.
-An entry 'pizza party' in the group 'activities' will link to the page '/language/activities/pizza_party'.
-An entry 'contact' without a group, will link to the page 'language/contact'.
-*/
+let nav = [
+    {title: {en: 'principles', fr: 'principes', nl: 'principes'}, link: 'principles', sub: [
+        {title: {en: 'permaculture', fr: 'permaculture', nl: 'permacultuur'}, link: 'principles#permaculture'},
+        {title: {en: 'transition towns', fr: 'villes en transition', nl: 'overgangssteden'}, link: 'principles#transition_towns'},
+        {title: {en: 'links', fr: 'links', nl: 'links'}, link: 'principles#links'}
+    ]},
+    {title: {en: 'volunteering', fr: 'voluntariat', nl: 'vrijwilligerswerk'}, link: 'volunteering', sub: [
+        {title: {en: 'ESC', fr: 'ESC', nl: 'ESC'}, link: 'volunteering#ESC'},
+        {title: {en: 'workaway', fr: 'workaway', nl: 'workaway'}, link: 'volunteering#workaway'},
+    ]},
+    {title: {en: 'blog', fr: 'blog', nl: 'blog'}, link: 'blog'},
+    {title: {en: 'events', fr: 'événements', nl: 'evenementen'}, link: 'blog'},
+    {title: {en: 'activities', fr: 'activités', nl: 'activiteiten'}, link: 'activities', sub: [
+        {title: {en: 'pizza parties', fr: 'pizza parties', nl: 'pizza parties'}, link: 'activities#pizza_parties'},
+    ]},
+];
 
-let groups = {
-    activities: {en: 'activities', fr: 'activités', nl: 'aktiviteiten'},
-    philosophy: {en: 'philosophy', fr: 'philosophie', nl: 'filosofie'}
+// do not edit after here
+
+function buildNav(pages, lang) {
+    let s = '';
+    let p;
+    for (p of pages) {
+        
+        let inner = '';
+        if (p.sub !== undefined) { 
+            inner += buildNav(p.sub, lang); 
+        }
+
+        if (p.link !== undefined) { 
+            s += `<li><a href="/${lang}/${p.link}">${p.title[lang]}</a>${inner}</li>`; 
+        }
+        else { 
+            s += `<li>${p.title[lang]} ${inner}</li>`; 
+        }
+    }
+    return `<ul>${s}</ul>`;
 }
 
-let sites = {
-     '': {en: 'Boskanter', fr: 'Boskanter', nl: 'Boskanter', group: null},
-     pizza_parties: {en: 'pizza parties', fr: 'pizza parties', nl: 'pizza parties', group: 'activities'},
-     repair_cafe: {en: 'repair café', fr: 'repair café', nl: 'repair café', group: 'activities'},
-     calendar: {en: 'calendar', fr: 'calendrier', nl: 'kalender', group: 'activities'},
-     permaculture: {en: 'permaculture', fr: 'permaculture', nl: 'permakultuur', group: 'philosophy'},
-     links: {en: 'links', fr: 'links', nl: 'links', group: 'philosophy'},
-     contact: {en: 'contact', fr: 'contact', nl: 'contact', group: null}
-};
+let navhtml = [];
+for (lang of ['en', 'fr', 'nl']) { navhtml[lang] = buildNav(nav, lang); }
 
-// DO NOT EDIT AFTER HERE
-
-let nav = {en: '', fr: '', nl: ''};
-
-for (l in nav) {
-     let groups = [];
-     for (s in sites) {
-          if (sites[s].group === null) {
-              groups[s] = '<li>' + '<a href="/' + l + '/' + s + '">' + sites[s][l] + '</a></li>';
-          }
-          else {
-              groups["+" + sites[s].group] = '<li>' + '<a href="/' + l + '/' + sites[s].group + '/' + s + '">' + sites[s][l] + '</a></li>';
-          }
-     }
-     for (g in groups) {
-          if (g[0] == '+') {
-              nav[l] += '<li>' + g.slice(1) + '<ul>' + groups[g] + '</ul></li>';
-          }
-          else {
-                 nav[l] += groups[g];
-          }
-     }
-     
-    module.exports = nav;
-}
+module.exports = navhtml;

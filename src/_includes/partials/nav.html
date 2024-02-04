@@ -1,6 +1,6 @@
 <nav>
-    {{ sites_linked_in_nav[locale] | safe }}
-    {{ translations.this_page_is_available_in[locale] }}
+	{{ sites_linked_in_nav[locale] | safe }}
+	{{ translations.this_page_is_available_in[locale] }}
     <ul>
 		{% for p in collections.all %}
 			{% if p.data.translationKey == translationKey %} 

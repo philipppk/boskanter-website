@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/article.html
 title: Boskanter
 translationKey: homepage
 ---
