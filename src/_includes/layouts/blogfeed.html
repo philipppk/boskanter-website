@@ -1,0 +1,67 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    {{ content | safe }}
+    <form id="langFilters">
+        Show me posts in:<br>
+        <input type="checkbox" id="en" name="english" value="en">
+        <label for="english">english</label>
+        <input type="checkbox" id="fr" name="french" value="fr">
+        <label for="french">french </label>
+        <input type="checkbox" id="nl" name="dutch" value="nl">
+        <label for="dutch">dutch</label><br>
+    </form>
+    <form id="subjectFilters">
+        about<br>
+        {% for s in  collections.blog | extractSubjects %}
+            <input type="checkbox" id="{{s}}" name="{{s}}" value="{{s}}">
+            <label for="{{s}}">{{s}}</label>
+        {% endfor %}<br>
+    </form>
+    <button onclick="applyFilters()">apply filters</button>
+    <dl id="posts">
+        {% for p in collections.blog | reverse %}
+            <dt>{{ p.data.title }}</dt>
+            <dd>{{ p.date.toLocaleDateString(p.locale, {year: 'numeric', month: '2-digit', day: '2-digit'}) }}</dd>
+            <dd>{% set comma = joiner(", ") %}{% for s in p.data.subject %}{{ comma() }}{{ s }}{% endfor %}</dd>
+            <dd>{{ p.data.locale }}</dd>
+            <dd><a href='{{ p.page.url }}'>read</a></dd>
+        {% endfor %}
+    </dl>
+{% endblock %}
+{% block javascript %}
+    <script>
+        let posts = [
+            {% for p in collections.blog | reverse %}
+                {
+                    title: '{{ p.data.title }}', 
+                    date: "{{ p.date.toLocaleDateString(p.locale, {year: 'numeric', month: '2-digit', day: '2-digit'}) }}",
+                    subject: [{% for s in p.data.subject %}'{{ s }}',{% endfor %}],
+                    locale: '{{ p.data.locale }}',
+                    link: '{{ p.page.url }}'
+                },
+            {% endfor %}
+        ];
+        function applyFilters() {
+            const lfform = new FormData(document.getElementById('langFilters'));
+            const sfform = new FormData(document.getElementById('subjectFilters'));
+            const langFilters = Array.from(lfform.entries()).map(([name, id]) => id);
+            const subjectFilters = Array.from(sfform.entries()).map(([name, id]) => id);
+            let s = "";
+            console.log(subjectFilters);
+            for (p of posts) {
+                if (langFilters.includes(p.locale) && p.subject.map((x) => subjectFilters.includes(x)).includes(true)) {
+                    s += `
+                        <dt>${p.title}</dt>
+                        <dd>${p.date}</dd>
+                        <dd>${p.subject.join(', ')}</dd>
+                        <dd>${p.locale}</dd>
+                        <dd><a href='${p.link}'>read</a></dd>            
+                    `; 
+                }
+            }
+            document.getElementById('posts').innerHTML = s;
+        }
+    </script>
+{% endblock %}
+
