@@ -10,7 +10,7 @@ let nav = [
     ]},
     {title: {en: 'blog', fr: 'blog', nl: 'blog'}, link: 'blog'},
     {title: {en: 'events', fr: 'événements', nl: 'evenementen'}, link: 'blog'},
-    {title: {en: 'activities', fr: 'activités', nl: 'activiteiten'}, link: 'activities', sub: [
+    {title: {en: 'activities', fr: 'activités', nl: 'activiteiten'}, link: 'activities_for_locals', sub: [
         {title: {en: 'pizza parties', fr: 'pizza parties', nl: 'pizza parties'}, link: 'activities#pizza_parties'},
     ]},
 ];
@@ -34,10 +34,10 @@ function buildNav(pages, lang) {
             s += `<li>${p.title[lang]} ${inner}</li>`; 
         }
     }
-    return `<ul>${s}</ul>`;
+    return '<ul>' + s + '</ul>'; 
 }
 
 let navhtml = [];
-for (lang of ['en', 'fr', 'nl']) { navhtml[lang] = buildNav(nav, lang); }
+for (lang of ['en', 'fr', 'nl']) { navhtml[lang] = buildNav(nav, lang).slice(4,-5); }
 
 module.exports = navhtml;

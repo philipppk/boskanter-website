@@ -1,13 +1,19 @@
 {% extends 'layouts/base.html' %}
 
+{% block css %}
+   	<link rel="stylesheet" href='/css/homepage.css'>
+{% endblock %}
+
 {% block content %}
     {{ content | safe }}
 	{{ translations.read_more_about_what_we_do[locale] }}
-    <dl>
+    <ul id="highlights">
         {% for h in highlights %}
-            <dt>{{ h.title[locale] }}</dt>
-            <dd>{{ h.description[locale] }}</dd>
-            <dd><a href="{{ locale }}/{{ h.link }}">{{ translations.read_more[locale] }}</a></dd>
+            <li class="highlightblock">
+                <h3>{{ h.title[locale] }}</h3>
+                <p>{{ h.description[locale] }}</p>
+                <p><a href="{{ locale }}/{{ h.link }}">{{ translations.read_more[locale] }}</a></p>
+            </li>
         {% endfor %}
-    </dl>
+    </ul>
 {% endblock %}

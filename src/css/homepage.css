@@ -1,0 +1,16 @@
+#highlights {
+    
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+
+}
+
+#about {
+    background-color: beige;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}

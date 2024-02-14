@@ -1,11 +1,18 @@
 <nav>
-	{{ sites_linked_in_nav[locale] | safe }}
-	{{ translations.this_page_is_available_in[locale] }}
-    <ul>
-		{% for p in collections.all %}
-			{% if p.data.translationKey == translationKey %} 
-				<li><a href="{{ p.page.url }}">{{ p.data.locale }}</a></li>
-			{% endif %}
-		{% endfor %}
-	</ul>
+	<div id="pages_nav">
+		<ul>
+			<li><a href='/{{ locale }}'>Boskanter</a></li>
+			{{ sites_linked_in_nav[locale] | safe }}
+		</ul>
+	</div>
+	<div id="languages_nav">
+		{{ translations.this_page_is_available_in[locale] }}
+		<ul>
+			{% for p in collections.all %}
+				{% if p.data.translationKey == translationKey %} 
+					<li><a href="{{ p.page.url }}">{{ p.data.locale }}</a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
 </nav>
