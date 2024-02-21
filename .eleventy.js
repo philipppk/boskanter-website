@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/pictures");
   eleventyConfig.addPassthroughCopy("./src/scripts");
   eleventyConfig.addPassthroughCopy("./src/fonts");
+  
   eleventyConfig.addFilter("extractSubjects", function(col) {
     let subjects = [];
     for (p of col) {
@@ -12,13 +13,47 @@ module.exports = function(eleventyConfig) {
     }
     return subjects;
   });
+  
+  eleventyConfig.addFilter("reformatCalendarEntries", function(entries) {
+    let events = [];
+    for (e of entries) {
+      date = e.date.split(".").map(parseInt);
+      events.push({ date : date[2] + ", " + (date[1]-1) + ", " + date[0], title: e.title, link: e.link });
+    }
+    return events;
+  });
+
+  eleventyConfig.addFilter("buildNavBar", function(pages, locale) {
+    let lis = pages.map((p) => `<li><a href='/${locale}/${p.link}'>${p.title[locale]}</a>`);
+    let types = pages.map((p) => p.type == "big");
+    types.push(false);
+    let s = "";
+    for (i=0; i<lis.length; i++) {
+    	s += lis[i] + ["<ul>", "</li>", "</ul></li>"][types[i+1]-types[i]+1];
+    }
+    return `<ul><li><a href='${locale}'>Boskanter</a></li>${s}</ul>`;
+  });
+
+  eleventyConfig.addFilter("buildLanguageSwitcher", function(all, translationKey, locale) {
+    if (translationKey === undefined) { return "<ul><li><a href=''>" + locale + "</a></li></ul>"; }
+    let s = "";
+    for (lang of ["en", "fr", "nl"]) {
+      for (p of all) {
+        if (p.data.translationKey == translationKey && p.data.locale == lang) {
+          s += `<li><a href='${p.page.url}'>${lang}</a></li>`;
+        }
+      }
+    }
+    return "<ul>" + s + "</ul>";
+  });
+
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dir: {
       input: 'src',
-      output: '_site'
+      output: '/var/www/boskanter'
     }
   };
 };

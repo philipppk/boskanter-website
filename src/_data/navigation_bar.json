@@ -1,0 +1,57 @@
+[
+    {
+        "type": "big",
+        "title": {"en": "principles", "fr": "principes", "nl": "principes"},
+        "link": "principles"
+    },
+    {
+        "type": "small",
+        "title": {"en": "permaculture", "fr": "permaculture", "nl": "permakultuur"},
+        "link": "principles#permaculture"
+    },
+    {
+        "type": "small",
+        "title": {"en": "transition towns",  "fr": "villes en transition",  "nl": "overgangssteden"},  
+        "link": "principles#transition_towns"
+    },
+    {
+        "type": "small",
+        "title": {"en": "links",  "fr": "links",  "nl": "links"},  
+        "link": "principles#links"
+    },
+    {
+        "type": "big",
+        "title": {"en": "volunteering",  "fr": "voluntariat",  "nl": "vrijwilligerswerk"},
+        "link": "volunteering"
+    },
+    {
+        "type": "small",
+        "title": {"en": "ESC",  "fr": "ESC",  "nl": "ESC"},  
+        "link": "volunteering#ESC"
+    },    
+    {
+        "type": "small",
+        "title": {"en": "workaway",  "fr": "workaway",  "nl": "workaway"}, 
+        "link": "volunteering#workaway"
+    },
+    {
+        "type": "big",
+        "title": {"en": "blog",  "fr": "blog",  "nl": "blog"},
+        "link": "blog"
+    },
+    {
+        "type": "big",
+        "title": {"en": "events",  "fr": "événements",  "nl": "evenementen"},  
+        "link": "events"
+    },
+    {
+        "type": "big",
+        "title": {"en": "activities",  "fr": "activités",  "nl": "activiteiten"},  
+        "link": "activities_for_locals"
+    },
+    {
+        "type": "small",
+        "title": {"en": "pizza  parties",  "fr": "pizza  parties",  "nl": "pizza  parties"},
+        "link": "activities#pizza_parties"
+    }
+]

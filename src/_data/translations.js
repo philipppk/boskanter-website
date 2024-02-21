@@ -1,5 +1,0 @@
-module.exports = {
-    this_page_is_available_in : {en: 'This page is available in', nl: 'Deze site is beschikbaar in', fr: 'Ce site est disponible en'},
-    read_more_about_what_we_do : {en: 'Read more about what we do:', fr: 'Lire par example:', nl: 'Lees meer over wat we doen:'},
-    read_more: {en: 'read more...', fr: 'lire plus...', nl: 'lees meer...'}
-};

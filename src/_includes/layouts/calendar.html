@@ -12,8 +12,8 @@
     <script type="text/javascript" src="/scripts/caleandar.js"></script>
     <script>
         caleandar(document.getElementById("calendar"), [
-            {% for e in events %}
-            {Date: new Date({{ e.date }}), Title: '{{ e[locale] }}' },
+            {% for e in calendar_entries | reformatCalendarEntries %}
+            {Date: new Date({{ e.date }}), Title: '{{ e.title[locale] }}' },
             {% endfor %}
         ], {
             Color: '#000',                //(string - color) font color of whole calendar.

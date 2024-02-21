@@ -8,12 +8,18 @@
 	{% endblock %}
 </head>
 <body>
-	{% include "partials/nav.html" %}
+	<nav>
+		<div id="pages_nav"> {{ navigation_bar | buildNavBar(locale) | safe }} </div>
+		<div id="languages_nav">
+			{{ translations.this_page_is_available_in[locale] }}	
+			{{ collections.all | buildLanguageSwitcher(translationKey, locale) | safe}}
+		</div>
+	</nav>
 	<main>
 		{% block content %}{% endblock %}
 	</main>
 	{% block javascript %}
 	{% endblock %}
-	{% include "partials/footer.html" %}
+	<footer><a href="">subscribe to our newsletter</a></footer>
 </body>
 </html>
