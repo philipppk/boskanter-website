@@ -22,7 +22,7 @@ Here content of the boskanter website can be editet. The content will be primari
 3. Now you can write markdown code. Read more about hot it works [here](https://www.markdownguide.org/basic-syntax/). You can always click preview to see if everything is rendered the way you want it.
 
 ### Example
-An example about a day where we made Sauerkraut could look like this
+An example post about a day where we made Sauerkraut could look like this
 ```
 ---
 title: Sauerkraut Samstag
@@ -33,6 +33,7 @@ tags:
   - fermentation
   - cabbage
 ---
+
 Today we made Sauerkraut with various cabbages from our garden.
 
 ## Cabbage selection
