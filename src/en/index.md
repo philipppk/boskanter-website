@@ -5,7 +5,7 @@ translationKey: homepage
 ---
 # Boskanter
 
-<div id='about'>
+<div class="box"> 
 
 ## Who we are
 

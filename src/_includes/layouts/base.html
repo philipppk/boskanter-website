@@ -2,7 +2,9 @@
 <html lamg="en">
 <head>
 	<meta charset="UTF-8">
-	<title>{{ title }}</title>
+	{% block title %}
+		<title>{{ title }}</title>
+	{% endblock %}
 	<link rel="stylesheet" href='/css/base.css'>
 	{% block css %}
 	{% endblock %}

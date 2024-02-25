@@ -1,5 +1,5 @@
 ---
-layout: layouts/blogfeed.html
+layout: layouts/blog.html
 title: blog
 translationKey: blog
 ---

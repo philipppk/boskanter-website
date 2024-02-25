@@ -28,6 +28,13 @@ nav {
     flex-direction: column;
 }
 
+.box {
+    background-color: beige;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
 #pages_nav {
 
     padding: 0px;

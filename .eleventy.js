@@ -31,7 +31,7 @@ module.exports = function(eleventyConfig) {
     for (i=0; i<lis.length; i++) {
     	s += lis[i] + ["<ul>", "</li>", "</ul></li>"][types[i+1]-types[i]+1];
     }
-    return `<ul><li><a href='${locale}'>Boskanter</a></li>${s}</ul>`;
+    return `<ul><li><a href='/${locale}'>Boskanter</a></li>${s}</ul>`;
   });
 
   eleventyConfig.addFilter("buildLanguageSwitcher", function(all, translationKey, locale) {
@@ -53,7 +53,7 @@ module.exports = function(eleventyConfig) {
     htmlTemplateEngine: 'njk',
     dir: {
       input: 'src',
-      output: '/var/www/boskanter'
+      output: '_site'
     }
   };
 };
