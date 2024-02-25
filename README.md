@@ -81,3 +81,5 @@ These are mostly the elements of JSON (there are also numbers and booleans, but 
 ### Further explanation of the files
 - `calendar_entries.json`: The date should be formated like `day-number.month-number.year-number`, for example "1.10.2024" is permissable.
 - `navigation_bar.json`:  the value associated to the type key, should be either "big" or "small". "big" means it will always be displayed in the navigation bar. "small" means it will only show, when the mouse hovers over the last element in the array with type "big".
+- `translations.json`: Here the format is perhaps not so clear. Every phrase that needs a translation for the website is a key in this object. The associated value is an object that contains the english, french and dutch translations of the phrase.
+- 
