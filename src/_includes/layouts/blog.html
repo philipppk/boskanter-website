@@ -1,0 +1,10 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <ul>
+    {% for category in categories %}
+        <li><a href="{{ category.key }}/">{{ category.title[locale] }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

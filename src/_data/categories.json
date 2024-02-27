@@ -1,0 +1,18 @@
+[
+    {
+        "key": "all",
+        "title": {"en": "All", "fr": "Tout", "nl": "Alle"}
+    },
+    {
+        "key": "gardening",
+        "title": {"en": "Gardening", "fr": "Jardin", "nl": "Tuinieren"} 
+    },
+    {
+        "key": "low-tech",
+        "title": {"en": "Low-Tech", "fr": "Low-Tech", "nl": "Low-Tech"}
+    },
+    {
+        "key": "animals",
+        "title": {"en": "Animals", "fr": "Animeaux", "nl": "Dieren"}
+    }
+]

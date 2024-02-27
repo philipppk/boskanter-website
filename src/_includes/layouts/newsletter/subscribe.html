@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    {{ content | safe }}
+    <input type="text" id="email" name="email"/>
+    <button type="button" onclick="submit()">submit</button>
+    <p id="success"></p>
+{% endblock %}
+
+{% block javascript %}
+    <script>
+        async function submit() {
+            let email = document.getElementById("email").value;
+            let res = await fetch("/api/newsletter/subscribe", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'text/plain'
+            },
+            body: email
+            });
+            text = await res.text();
+            alert(text);
+
+            document.getElementById("success").innerHTML = `An email has been sent to ${email}. Click authenticate email to finalize your subscription.`;
+        }
+    </script>
+{% endblock %}
