@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/pictures");
   eleventyConfig.addPassthroughCopy("./src/scripts");
   eleventyConfig.addPassthroughCopy("./src/fonts");
+  eleventyConfig.addPassthroughCopy("./src/build");
   
   eleventyConfig.addFilter("extractSubjects", function(col) {
     let subjects = [];
