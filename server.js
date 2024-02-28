@@ -12,7 +12,7 @@ app.post('/api/newsletter/subscribe', (req, res) => {
 
 app.post('/api/build', (req, res) => {
   if (req.body == "TestMausBrot") {
-    exec('echo "hello world" > hello_world.txt')
+    exec('git pull && eleventy')
     res.end('website is being rebuild')
   }
   else {
