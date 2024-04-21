@@ -4,7 +4,7 @@
     {{ content | safe }}
     <input type="text" id="email" name="email"/>
     <button type="button" onclick="submit()">submit</button>
-    <p id="success"></p>
+    <p id="info"></p>
 {% endblock %}
 
 {% block javascript %}
@@ -19,9 +19,8 @@
             body: email
             });
             text = await res.text();
-            alert(text);
 
-            document.getElementById("success").innerHTML = `An email has been sent to ${email}. Click authenticate email to finalize your subscription.`;
+            document.getElementById("info").innerHTML = text; 
         }
     </script>
 {% endblock %}

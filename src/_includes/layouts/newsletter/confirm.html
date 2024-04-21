@@ -1,0 +1,17 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    {{ content | safe }}
+{% endblock %}
+
+{% block javascript %}
+    <script>
+        fetch("/api/newsletter/confirm", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'text/plain'
+            },
+            body: window.location.search.slice(1)
+        });
+    </script>
+{% endblock %}
