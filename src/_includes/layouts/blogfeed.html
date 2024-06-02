@@ -4,44 +4,101 @@
     <title>{{ category.title[locale] }}</title>
 {% endblock %}
 
+{% block css %}
+    <style>
+        #posts {
+            padding: 20px;
+            th {
+                text-align: left;
+                text-transform: capitalize;
+            }
+            th, td {
+                padding-right: 10px;
+            }
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
     <h1>{{ category.title[locale] }}</h1>
-    {{ content | safe }}
-    <div class="box">
-    <p><form id="langFilters">
-        <input type="checkbox" id="en" name="english" value="en">
-        <label for="english">english</label>
-        <input type="checkbox" id="fr" name="french" value="fr">
-        <label for="french">french </label>
-        <input type="checkbox" id="nl" name="dutch" value="nl">
-        <label for="dutch">dutch</label>
-    </form></p>
-    <p><form id="subjectFilters">
-        {% for s in  collections.blog | extractSubjects %}
-            <input type="checkbox" id="{{s}}" name="{{s}}" value="{{s}}">
-            <label for="{{s}}">{{s}}</label>
+    <select onchange="changeCategory(this.value)">
+        {% for c in categories %}
+            <option value="{{ c.key }}" {% if c.key == category.key %}selected{% endif %}>{{ c.title[locale] }}</option>
         {% endfor %}
-    </form></p>
-    <button onclick="displayPosts()">apply filters</button>
-    </div>
-        {% for p in collections.blog | reverse %}
-            <dt>{{ p.data.title }}</dt>
-            <dd>{{ p.date.toLocaleDateString(p.locale, {year: 'numeric', month: '2-digit', day: '2-digit'}) }}</dd>
-            <dd>{% set comma = joiner(", ") %}{% for s in p.data.subject %}{{ comma() }}{{ s }}{% endfor %}</dd>
-            <dd>{{ p.data.locale }}</dd>
-            <dd><a href='{{ p.page.url }}'>read</a></dd>
+    </select>
+    <select onchange="changeLanguage(this.value)">
+        {% for l in [["all", translations.all_languages[locale]], ["en", translations.English[locale]], ["fr", translations.French[locale]], ["nl", translations.Dutch[locale]]] %}
+            <option value="{{ l[0] }}">{{ l[1] }}</option>
         {% endfor %}
-    </dl>
+    </select>
+    <input type="text" id="query" placeholder="{{ translations.search_for_keywords_or_tags[locale] }}">
+    <button onclick="search()">🔍</button>
+    <table id="posts"></table>
 {% endblock %}
 {% block javascript %}
     <script>
-        async function displayPosts() {
-            const forms = ['langFilters', 'subjectFilters'].map((f) => new FormData(document.getElementById(f)));
-            const filters = forms.map((f) => Array.from(f.entries()).map(([name, id]) => id).join(','));
-            console.log(filters);
-            const response = await fetch(`/postsapi?languages=${filters[0]}&subjects=${filters[1]}`);
-            const posts = await response.json();
-            console.log(posts);
+        let cat = "{{ category.key }}"
+        let language = "all"
+        let posts
+        let postsInitial
+
+        async function getPosts() {
+            postsInitial = await fetch("/api/blog/postsbycategory", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'text/plain'
+                },
+                body: cat
+            }).then((response) => response.json())
+            posts = postsInitial
+            displayPosts()
+        }
+
+        getPosts()
+
+        function displayPosts() {
+            let table = '<tr>{% for th in ["title", "tags", "language", "link"] %}<th>{{ translations[th][locale] }}</th>{% endfor %}</tr>'
+            for (p of posts) {
+                if (language == "all" || p.language == language) {
+                    table += "<tr>"
+                        + `<td>${(p.title)}</td>`
+                        + `<td>${p.tags ?? ""}</td>`
+                        + `<td>${ {
+                                en: "{{ translations.English[locale] }}",
+                                fr: "{{ translations.French[locale] }}",
+                                nl: "{{ translations.Dutch[locale] }}"
+                            }[p.language]}</td>`
+                        + `<td><a href='${p.id}'>${p.id}</a></td>`
+                        + "</tr>"
+                }
+            }
+            document.getElementById("posts").innerHTML = table
+        }
+
+        function changeCategory(c) {
+            //alert(`${ window.location.origin }/{{ locale }}/blog/${c}/`)
+            window.location.href = `${ window.location.origin }/{{ locale }}/blog/${c}/`
+        }
+
+        function changeLanguage(l) {
+            language = l
+            displayPosts()
+        }
+
+        async function search() {
+            let query = document.getElementById("query").value
+            if (query == "") {
+                posts = postsInitial
+            }
+            else {
+                let response = await fetch("/api/blog/search", {
+                    method: 'POST',
+                    body: `{"category": "${cat}", "query": "${query}"}`
+                })
+                posts = await response.json()
+            }
+            console.log(posts)
+            displayPosts()
         }
 
     </script>

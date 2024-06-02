@@ -1,9 +1,27 @@
+#top {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 20px;
+}
+
+
 #highlights {
     
     list-style: none;
     padding-left: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 5px;
+    grid-gap: 20px;
 
+    img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: small;
+    }
 }

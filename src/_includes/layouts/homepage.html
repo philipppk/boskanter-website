@@ -5,8 +5,14 @@
 {% endblock %}
 
 {% block content %}
-    {{ content | safe }}
-	{{ translations.read_more_about_what_we_do[locale] }}
+    <h1>Boskanter</h1>
+    <div id="top">    
+        {{ content | safe }}
+        <div id="tagcloud">
+            <p>Discover tags from our blog:</p>
+        </div>
+    </div>
+	<h2>{{ translations.read_more_about_what_we_do[locale] }}</h2>
     <ul id="highlights">
         {% for h in highlights %}
             <li class="highlightblock">
@@ -14,6 +20,12 @@
                 <p>{{ h.description[locale] }}</p>
                 <p><a href="{{ locale }}/{{ h.link }}">{{ translations.read_more[locale] }}</a></p>
             </li>
-        {% endfor %}
+            {% if h.image != "" %}
+                <li class="picture">
+                    <img src="/pictures/{{ h.image }}">
+                    <p class="subtitle">{{ h.imagesubtitle }}</p>
+                </li>
+            {% endif %}    
+       {% endfor %}
     </ul>
 {% endblock %}

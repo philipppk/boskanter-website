@@ -1,7 +1,7 @@
 [
     {
         "key": "all",
-        "title": {"en": "All", "fr": "Tout", "nl": "Alle"}
+        "title": {"en": "All categories", "fr": "Toutes les catégories", "nl": "Alle categorieën"}
     },
     {
         "key": "gardening",

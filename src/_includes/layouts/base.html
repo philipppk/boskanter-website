@@ -11,7 +11,7 @@
 </head>
 <body>
 	<nav>
-		<div id="pages_nav"> {{ navigation_bar | buildNavBar(locale) | safe }} </div>
+		<div id="pages_nav"> {{ navigation_bar | buildNavBar(categories, locale) | safe }} </div>
 		<div id="languages_nav">
 			{{ translations.this_page_is_available_in[locale] }}	
 			{{ collections.all | buildLanguageSwitcher(translationKey, locale) | safe}}
@@ -20,8 +20,44 @@
 	<main>
 		{% block content %}{% endblock %}
 	</main>
+	    <script>
+        async function submit() {
+            let email = document.getElementById("email").value;
+            let res = await fetch("/api/newsletter/subscribe", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'text/plain'
+            },
+            body: email
+            });
+            text = await res.text();
+
+            document.getElementById("info").innerHTML = text; 
+        }
+    </script>
 	{% block javascript %}
 	{% endblock %}
-	<footer><a href="">subscribe to our newsletter</a></footer>
+
+	<footer>
+		<ul>
+			<li>
+				<h4>newsletter</h4>
+				<p>Subscribe here to stay up to date with events at Boskanter:</p>
+				<input type="text" id="email" name="email" placeholder="your email adress"/>
+				<button type="button" onclick="submit()">submit</button>
+				<p id="info"></p>
+
+			</li>
+			<li>
+				<h4>Contact</h4>
+				<ul>
+					<li><strong>Address:</strong> Koningsweg 9660 Brakel, Belgium</li>
+					<li><strong>Email:</strong> info@boskanter.be</li>
+					<li><strong>Phone:</strong> 055/600617</li>
+					<li><strong>Our partners are:</strong> <a href="http://www.hetvoedselbos.be/" target="_blank" rel="noopener noreferrer">Het Voedselbos</a>, <a href="https://www.vormingplus-vlad.be/" target="_blank" rel="noopener noreferrer">Vormingplus Vlaamse Ardennen - Dender</a>, <a href="http://www.brakel.be/" target="_blank" rel="noopener noreferrer">Brakel municipality</a>, <a href="https://www.voedselteams.be/">voedselteams</a> and <a href="http://milieufrontomerwattez.be">MOW Brakel</a>.</p></li>
+				</ul>
+			</li>
+		</ul>
+	</footer>
 </body>
 </html>

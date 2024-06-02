@@ -3,12 +3,12 @@ const bodyParser = require('body-parser')
 const exec = require("child_process").exec
 const fs = require("fs/promises")
 const crypto = require("crypto")
+const blogsearch = require("./blogsearch.js")
 
 const app = express()
 const port = 3000
 
 app.use(bodyParser.text())
-
 
 async function scanCSV(filename, rowProcessor) {
   let file = await fs.open(filename, "r")
@@ -126,3 +126,22 @@ app.post('/api/build', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+
+// Blogposts nach Kategorie
+
+app.post('/api/blog/postsbycategory', (req, res) => {
+  res.setHeader('Content-Type', 'application/json')
+  res.end(JSON.stringify(blogsearch.posts[req.body]))
+})
+
+app.post('/api/blog/search', (req, res) => {
+  let r = JSON.parse(req.body)
+  res.setHeader('Content-Type', 'application/json')
+  res.end(JSON.stringify(blogsearch.category[r.category].search(r.query, {
+    boost: {title: 2, tags: 2},
+    prefix: true,
+    fuzzy: 0.2
+  })))
+  //res.end(JSON.stringify(blogsearch.category[req.category].search(req.query)))
+})

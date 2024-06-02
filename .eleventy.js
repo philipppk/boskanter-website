@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/scripts");
   eleventyConfig.addPassthroughCopy("./src/fonts");
   eleventyConfig.addPassthroughCopy("./src/build");
-  
+
   eleventyConfig.addFilter("extractSubjects", function(col) {
     let subjects = [];
     for (p of col) {
@@ -24,9 +24,21 @@ module.exports = function(eleventyConfig) {
     return events;
   });
 
-  eleventyConfig.addFilter("buildNavBar", function(pages, locale) {
+  eleventyConfig.addFilter("buildNavBar", function(pages, blogcats, locale) {
+    // first adding blogcats into pages
+    let entriesBlogCats = blogcats.map((c) => {
+      return {
+        type: "subordinated",
+        title: c.title,
+        link: `blog/${c.key}/`
+      }
+    })
+    let i = pages.findIndex((p) => p ==  "command: insert here all blog categories subordinated")
+    
+    pages = [pages.slice(0,i), entriesBlogCats, pages.slice(i+1, pages.length)].flat()
+    
     let lis = pages.map((p) => `<li><a href='/${locale}/${p.link}'>${p.title[locale]}</a>`);
-    let types = pages.map((p) => p.type == "big");
+    let types = pages.map((p) => p.type == "normal");
     types.push(false);
     let s = "";
     for (i=0; i<lis.length; i++) {

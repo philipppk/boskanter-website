@@ -3,8 +3,6 @@ layout: layouts/homepage.html
 title: Boskanter
 translationKey: homepage
 ---
-# Boskanter
-
 <div class="box"> 
 
 ## Who we are

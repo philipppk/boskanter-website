@@ -1,57 +1,53 @@
 [
     {
-        "type": "big",
+        "type": "normal",
         "title": {"en": "principles", "fr": "principes", "nl": "principes"},
         "link": "principles"
     },
     {
-        "type": "small",
+        "type": "subordinated",
         "title": {"en": "permaculture", "fr": "permaculture", "nl": "permakultuur"},
         "link": "principles#permaculture"
     },
     {
-        "type": "small",
+        "type": "subordinated",
         "title": {"en": "transition towns",  "fr": "villes en transition",  "nl": "overgangssteden"},  
         "link": "principles#transition_towns"
     },
     {
-        "type": "small",
+        "type": "subordinated",
         "title": {"en": "links",  "fr": "links",  "nl": "links"},  
         "link": "principles#links"
     },
     {
-        "type": "big",
+        "type": "normal",
         "title": {"en": "volunteering",  "fr": "voluntariat",  "nl": "vrijwilligerswerk"},
         "link": "volunteering"
     },
     {
-        "type": "small",
+        "type": "subordinated",
         "title": {"en": "ESC",  "fr": "ESC",  "nl": "ESC"},  
         "link": "volunteering#ESC"
     },    
     {
-        "type": "small",
+        "type": "subordinated",
         "title": {"en": "workaway",  "fr": "workaway",  "nl": "workaway"}, 
         "link": "volunteering#workaway"
     },
     {
-        "type": "big",
+        "type": "normal",
         "title": {"en": "blog",  "fr": "blog",  "nl": "blog"},
         "link": "blog"
     },
+    "command: insert here all blog categories subordinated", 
     {
-        "type": "big",
-        "title": {"en": "events",  "fr": "événements",  "nl": "evenementen"},  
+        "type": "normal",
+        "title": {"en": "calendar",  "fr": "calendrier",  "nl": "kalender"},  
         "link": "events"
     },
     {
-        "type": "big",
-        "title": {"en": "activities",  "fr": "activités",  "nl": "activiteiten"},  
-        "link": "activities_for_locals"
-    },
-    {
-        "type": "small",
-        "title": {"en": "pizza  parties",  "fr": "pizza  parties",  "nl": "pizza  parties"},
-        "link": "activities#pizza_parties"
+        "type": "normal",
+        "title": {"en": "Gallery", "fr": "Galerie", "nl": "Galerij"},
+        "link": "gallery"
     }
 ]

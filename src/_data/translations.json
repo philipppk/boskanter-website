@@ -1,5 +1,14 @@
 {
     "this_page_is_available_in": {"en": "This page is available in", "nl": "Deze site is beschikbaar in", "fr": "Ce site est disponible en"},
     "read_more_about_what_we_do": {"en": "Read more about what we do:", "fr": "Lire par example:", "nl": "Lees meer over wat we doen:"},
-    "read_more": {"en": "read more...", "fr": "lire plus...", "nl": "lees meer..."}
+    "read_more": {"en": "read more...", "fr": "lire plus...", "nl": "lees meer..."},
+    "all_languages": {"en": "All languages", "fr": "Toutes les langues", "nl": "Alle talen"},
+    "English": {"en": "English", "fr": "Anglais", "nl": "Engels"},
+    "French": {"en": "French", "fr": "Français", "nl": "Frans"},
+    "Dutch": {"en": "Dutch", "fr": "Néerlandais", "nl": "Nederlands"},
+    "search_for_keywords_or_tags": {"en": "search for keywords or tags", "fr": "Recherche par mots-clés ou balises", "nl": "Zoeken op trefwoorden of tags"},
+    "title": {"en": "title", "fr": "titre", "nl": "titel"},
+    "tags" : {"en": "tags", "fr": "tags", "nl": "tags"},
+    "language" :{"en": "language", "fr": "langue", "nl": "taal"},
+    "link" : {"en": "link", "fr": "link", "nl": "link"}
 }
