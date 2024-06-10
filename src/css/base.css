@@ -149,6 +149,14 @@ footer h4 {
     margin-bottom: 10px;
 }
 
+footer th {
+    text-align: right;
+}
+
+footer p {
+    text-align: center;
+}
+
 footer>ul {
     list-style: none;
     padding-left: 0;
