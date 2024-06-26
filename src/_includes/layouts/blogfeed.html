@@ -1,5 +1,7 @@
 {% extends 'layouts/base.html' %}
 
+{% set locale = category.locale %}
+
 {% block title %}
     <title>{{ category.title[locale] }}</title>
 {% endblock %}
@@ -22,44 +24,35 @@
 {% block content %}
     <h1>{{ category.title[locale] }}</h1>
     <select onchange="changeCategory(this.value)">
-        {% for c in categories %}
+        {% for c in categories.short %}
             <option value="{{ c.key }}" {% if c.key == category.key %}selected{% endif %}>{{ c.title[locale] }}</option>
         {% endfor %}
     </select>
     <select onchange="changeLanguage(this.value)">
-        {% for l in [["all", translations.all_languages[locale]], ["en", translations.English[locale]], ["fr", translations.French[locale]], ["nl", translations.Dutch[locale]]] %}
+        {% for l in [["", translations.all_languages[locale]], ["en", translations.English[locale]], ["fr", translations.French[locale]], ["nl", translations.Dutch[locale]]] %}
             <option value="{{ l[0] }}">{{ l[1] }}</option>
         {% endfor %}
     </select>
     <input type="text" id="query" placeholder="{{ translations.search_for_keywords_or_tags[locale] }}">
-    <button onclick="search()">🔍</button>
+    <button onclick="changeQuery(document.getElementById('query').value)">🔍</button>
     <table id="posts"></table>
 {% endblock %}
 {% block javascript %}
     <script>
+        let searchParams = new URLSearchParams(window.location.search)
+
         let cat = "{{ category.key }}"
-        let language = "all"
+        let language = searchParams.has("l") ? searchParams.get("l") : ""
+        let query = searchParams.has("q") ? searchParams.get("q") : ""
+        document.getElementById("query").value = query
+
         let posts
         let postsInitial
-
-        async function getPosts() {
-            postsInitial = await fetch("/api/blog/postsbycategory", {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'text/plain'
-                },
-                body: cat
-            }).then((response) => response.json())
-            posts = postsInitial
-            displayPosts()
-        }
-
-        getPosts()
 
         function displayPosts() {
             let table = '<tr>{% for th in ["title", "tags", "language", "link"] %}<th>{{ translations[th][locale] }}</th>{% endfor %}</tr>'
             for (p of posts) {
-                if (language == "all" || p.language == language) {
+                if (language == "" || p.language == language) {
                     table += "<tr>"
                         + `<td>${(p.title)}</td>`
                         + `<td>${p.tags ?? ""}</td>`
@@ -75,31 +68,55 @@
             document.getElementById("posts").innerHTML = table
         }
 
+        function insertUrlParam(key, value) {
+            if (history.pushState) {
+                searchParams = new URLSearchParams(window.location.search);
+                (value == "") ? searchParams.delete(key) : searchParams.set(key, value);
+                let paramstring = ((s) => (s != "") ? "?" + s : "")(searchParams.toString())
+                let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + paramstring;
+                window.history.pushState({path: newurl}, '', newurl);
+            }
+        }        
+
         function changeCategory(c) {
-            //alert(`${ window.location.origin }/{{ locale }}/blog/${c}/`)
             window.location.href = `${ window.location.origin }/{{ locale }}/blog/${c}/`
         }
 
         function changeLanguage(l) {
             language = l
+            insertUrlParam("l", l)
             displayPosts()
         }
 
-        async function search() {
-            let query = document.getElementById("query").value
+        function changeQuery(q) {
+            query = q
+            insertUrlParam("q", q)
+            getPosts()
+        }
+
+        async function getPosts() {
             if (query == "") {
+                if (postsInitial === undefined) {
+                    postsInitial = await fetch("/api/blog/postsbycategory", {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'text/plain'
+                        },
+                        body: cat
+                    }).then((response) => response.json())
+                }
                 posts = postsInitial
             }
             else {
-                let response = await fetch("/api/blog/search", {
+                posts = await fetch("/api/blog/search", {
                     method: 'POST',
                     body: `{"category": "${cat}", "query": "${query}"}`
-                })
-                posts = await response.json()
+                }).then((response) => response.json())
             }
-            console.log(posts)
             displayPosts()
         }
+
+        getPosts()
 
     </script>
 {% endblock %}

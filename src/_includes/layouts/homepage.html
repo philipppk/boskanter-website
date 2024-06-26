@@ -5,20 +5,18 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Boskanter</h1>
+    <h1>Boskanter</h1> 
     <div id="top">    
-        {{ content | safe }}
+        <div class="box">{{ homepage.yellowbox[locale] | safe}}</div>
         <div id="tagcloud">
-            <p>Discover tags from our blog:</p>
-            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                <circle r="100" cx="100" cy="100" fill="red"/>
-                <text x="100" y="100" fill="black">SVG</text>
-            </svg>
+            <h2>Our blog</h2>
+            {{ homepage.blogtags[locale] | safe }}
+            <p class="subtitle">Click on a tag, to see relevant blogposts</p>
         </div>
     </div>
 	<h2>{{ translations.read_more_about_what_we_do[locale] }}</h2>
     <ul id="highlights">
-        {% for h in highlights %}
+        {% for h in homepage.highlights %}
             <li class="highlightblock">
                 <h3>{{ h.title[locale] }}</h3>
                 <p>{{ h.description[locale] }}</p>

@@ -18,9 +18,18 @@
         object-fit: cover;
         border-radius: 5px;
     }
+}
 
-    .subtitle {
-        text-align: center;
-        font-size: small;
-    }
+.subtitle {
+    text-align: center;
+    font-size: small;
+}
+
+
+#tags {
+    margin: 10px;
+}
+
+.box {
+    height: 100%;
 }

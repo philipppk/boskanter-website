@@ -31,7 +31,8 @@ nav {
 .box {
     background-color: beige;
     border-radius: 15px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 20px;
 }
 

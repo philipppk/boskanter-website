@@ -1,7 +1,7 @@
 const MiniSearch = require('minisearch')
 const fs = require("fs")
 
-const categories = JSON.parse(fs.readFileSync("src/_data/categories.json")).map((c) => c.key)
+const categories = require('./src/_data/categories.js').short.map((c) => c.key)
 
 function scanPosts() {
     const posts = []

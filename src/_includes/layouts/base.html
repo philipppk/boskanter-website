@@ -11,10 +11,12 @@
 </head>
 <body>
 	<nav>
-		<div id="pages_nav"> {{ navigation_bar | buildNavBar(categories, locale) | safe }} </div>
+		<div id="pages_nav"> {{ navigation_bar | buildNavBar(categories.short, locale) | safe }} </div>
 		<div id="languages_nav">
 			{{ translations.this_page_is_available_in[locale] }}	
-			{{ collections.all | buildLanguageSwitcher(translationKey, locale) | safe}}
+			{% for l in site.languages %}
+				<a href="/{{ l }}/{{ page.url | removeLocale }}">{{ l }}</a>
+			{% endfor %}
 		</div>
 	</nav>
 	<main>

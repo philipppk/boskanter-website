@@ -39,11 +39,13 @@
         "title": {"en": "blog",  "fr": "blog",  "nl": "blog"},
         "link": "blog"
     },
+
     "command: insert here all blog categories subordinated", 
+    
     {
         "type": "normal",
         "title": {"en": "calendar",  "fr": "calendrier",  "nl": "kalender"},  
-        "link": "events"
+        "link": "calendar"
     },
     {
         "type": "normal",

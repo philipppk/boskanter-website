@@ -47,17 +47,8 @@ module.exports = function(eleventyConfig) {
     return `<ul><li><a href='/${locale}'>Boskanter</a></li>${s}</ul>`;
   });
 
-  eleventyConfig.addFilter("buildLanguageSwitcher", function(all, translationKey, locale) {
-    if (translationKey === undefined) { return "<ul><li><a href=''>" + locale + "</a></li></ul>"; }
-    let s = "";
-    for (lang of ["en", "fr", "nl"]) {
-      for (p of all) {
-        if (p.data.translationKey == translationKey && p.data.locale == lang) {
-          s += `<li><a href='${p.page.url}'>${lang}</a></li>`;
-        }
-      }
-    }
-    return "<ul>" + s + "</ul>";
+  eleventyConfig.addFilter("removeLocale", function(url) {
+    return url.slice(4)
   });
 
   return {
