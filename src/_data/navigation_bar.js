@@ -23,18 +23,23 @@ let nav = [
     },
     {
         type: "normal",
-        title: {en: "volunteering",  fr: "voluntariat",  nl: "vrijwilligerswerk"},
+        title: {en: "practical",  fr: "practical",  nl: "praktisch"},
         link: "volunteering"
     },
     {
         type: "subordinated",
-        title: {en: "ESC",  fr: "ESC",  nl: "ESC"},  
+        title: {en: "ESC volunteering",  fr: "ESC",  nl: "ESC"},  
         link: "volunteering#ESC"
     },    
     {
         type: "subordinated",
-        title: {en: "workaway",  fr: "workaway",  nl: "workaway"}, 
+        title: {en: "workaway volunteering",  fr: "workaway",  nl: "workaway"}, 
         link: "volunteering#workaway"
+    },
+    {
+        type: "subordinated",
+        title: {en: "directions",  fr: "workaway",  nl: "workaway"}, 
+        link: "contact"
     },
     {
         type: "normal",
