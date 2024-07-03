@@ -125,6 +125,7 @@ function execCallback(error, stdout, stderr) {
 app.post('/api/build', (req, res) => {
   if (req.body == "TestMausBrot") {
     exec('git pull', execCallback)
+    console.log("~\n~\n~\nTEST\n~\n~\n~")
     exec('eleventy', execCallback)
     res.end('website is being rebuild')
   }
