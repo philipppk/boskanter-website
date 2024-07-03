@@ -115,11 +115,12 @@ app.post('/api/newsletter/unsubscribe', (req, res) => {
 
 app.post('/api/build', (req, res) => {
   if (req.body == "TestMausBrot") {
-    exec('git pull && eleventy');
-    res.end('website is being rebuild');
+    exec('git pull')
+    exec('eleventy')
+    res.end('website is being rebuild')
   }
   else {
-    res.end("The password was not correct");
+    res.end("The password was not correct")
   }
 });
 
