@@ -113,10 +113,19 @@ app.post('/api/newsletter/unsubscribe', (req, res) => {
 
 // build
 
+function execCallback(error, stdout, stderr) {
+  if (error) {
+    console.error(`exec error: ${error}`);
+    return;
+  }
+  console.log(`stdout: ${stdout}`);
+  console.error(`stderr: ${stderr}`);
+} 
+
 app.post('/api/build', (req, res) => {
   if (req.body == "TestMausBrot") {
-    exec('git pull')
-    exec('eleventy')
+    exec('git pull', execCallback)
+    exec('eleventy', execCallback)
     res.end('website is being rebuild')
   }
   else {
