@@ -11,7 +11,7 @@
 </head>
 <body>
 	<nav>
-		<div id="pages_nav"> {{ navigation_bar | buildNavBar(categories.short, locale) | safe }} </div>
+		<div id="pages_nav"> {{ navigation_bar[locale] | safe }} </div>
 		<div id="languages_nav">
 			{{ translations.this_page_is_available_in[locale] }}	
 			{% for l in site.languages %}

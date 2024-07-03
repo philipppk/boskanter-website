@@ -1,7 +1,7 @@
 const MiniSearch = require('minisearch')
 const fs = require("fs")
 
-const categories = require('./src/_data/categories.js').short.map((c) => c.key)
+const categories = require('./src/_data/blog/categories.js').short.map((c) => c.key)
 
 function scanPosts() {
     const posts = []
