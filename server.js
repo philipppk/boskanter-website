@@ -115,29 +115,22 @@ app.post('/api/newsletter/unsubscribe', (req, res) => {
 
 function execCallback(error, stdout, stderr) {
   if (error) {
-    console.error(`exec error: ${error}`);
-    return;
+    console.error(`exec error: ${error}`)
+    return
   }
-  console.log(`stdout: ${stdout}`);
-  console.error(`stderr: ${stderr}`);
+  console.log(`stdout: ${stdout}`)
+  console.error(`stderr: ${stderr}`)
 } 
 
 app.post('/api/build', (req, res) => {
   if (req.body == "TestMausBrot") {
-    exec('git pull', execCallback)
-    console.log("~\n~\n~\nTEST\n~\n~\n~")
-    exec('eleventy', execCallback)
+    exec('git pull; eleventy', execCallback)
     res.end('website is being rebuild')
   }
   else {
     res.end("The password was not correct")
   }
 });
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
-
 
 // Blogposts nach Kategorie
 
@@ -156,3 +149,5 @@ app.post('/api/blog/search', (req, res) => {
   })))
   //res.end(JSON.stringify(blogsearch.category[req.category].search(req.query)))
 })
+
+app.listen(port, () => {console.log(`server running on port ${port}`)})
