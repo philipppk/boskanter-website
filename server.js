@@ -113,19 +113,15 @@ app.post('/api/newsletter/unsubscribe', (req, res) => {
 
 // build
 
-function execCallback(error, stdout, stderr) {
-  if (error) {
-    console.error(`exec error: ${error}`)
-    return
-  }
-  console.log(`stdout: ${stdout}`)
-  console.error(`stderr: ${stderr}`)
-} 
-
 app.post('/api/build', (req, res) => {
   if (req.body == "TestMausBrot") {
-    exec('git pull; eleventy', execCallback)
-    res.end('website is being rebuild')
+    exec('git pull; eleventy', (error, stdout, stderr) => {
+      if (error) {
+        res.end(`exec error: ${error}`)
+        return
+      }
+      res.end(`stdout: ${stdout}\nstderr: ${stderr}`)
+    })
   }
   else {
     res.end("The password was not correct")
