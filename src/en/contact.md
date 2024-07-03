@@ -1,5 +1,6 @@
 ---
 title: contact
+layout: layouts/article.html
 ---
 # Directions
 We appreciate your efforts to use public transport or ride the bike.  
