@@ -113,14 +113,18 @@ app.post('/api/newsletter/unsubscribe', (req, res) => {
 
 // build
 
+function newlineToBr(std) {
+  return std.split("").map((c) => (c == "\n") ? "<br>" : c).join("")
+}
+
 app.post('/api/build', (req, res) => {
   if (req.body == "TestMausBrot") {
     exec('git pull; eleventy', (error, stdout, stderr) => {
       if (error) {
-        res.end(`exec error: ${error}`)
+        res.end(`<h2>error</h2>${newlineToBr(error.toString())}`)
         return
       }
-      res.end(`stdout: ${stdout}\nstderr: ${stderr}`)
+      res.end(`<h2>stdout</h2>${newlineToBr(stdout)}<h2>stderr</h2>${newlineToBr(stderr)}`)
     })
   }
   else {

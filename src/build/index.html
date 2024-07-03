@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>build</title>
+    <style>
+        body {
+            max-width: 1000px;
+            margin: auto;
+            padding: 10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #samp {
+            font-family: monospace;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
-    <input type="password" id="pw" placeholder="type password to rebuild website"/>
-    <button type="button" onclick="submit()">submit</button>
-    <p id="success"></p>
+    <h1>The Website Atelier</h1>
+    <p id="input"><input type="password" id="pw" placeholder="type password to rebuild website"/>
+    <button type="button" onclick="submit()">submit</button></p>
+    <div id="success"></div>
 
     <script>
         async function submit() {
@@ -22,7 +36,7 @@
             body: pw
             });
             text = await res.text();
-            document.getElementById("success").innerHTML = text
+            document.getElementById("success").innerHTML = `<div id="samp">${text}</div>`
         }
     </script>
 </body>
