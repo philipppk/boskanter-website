@@ -2,27 +2,6 @@
   font-family: "Handlee";
   src: url('/fonts/handlee-regular.ttf');
 }
-
-@font-face {
-  font-family: "Coolvetica";
-  src: url('/fonts/coolvetica/coolvetica rg.otf');
-}
-
-@font-face {
-  font-family: "Geo Sans";
-  src: url('/fonts/geo_sans_light/GeosansLight.ttf');
-}
-
-@font-face {
-  font-family: "Linux Libertine";
-  src: url('/fonts/linux_libertine/LinLibertine_aS.ttf');
-}
-
-@font-face {
-  font-family: "Memogram";
-  src: url('/fonts/memogram/Memogram.otf');
-}
-
 @font-face {
   font-family: "Louis George Cafe";
   src: url('/fonts/louis_george_cafe/Louis George Cafe.ttf');
@@ -43,6 +22,7 @@
   font-weight: bold;
   font-style: italic;
 }
+
 h1, h2, h3, h4, h5, h6, #pages_nav {
     font-family: Handlee;
     text-transform: uppercase;
