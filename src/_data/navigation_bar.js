@@ -68,11 +68,11 @@ let nav = [
 const blogcats = require('./blog/categories.js').short
 const gallerycats = require('./gallery/categories.js').short
     
-let entries = [blogcats, gallerycats].map((cats) => cats.map((c) => {
+let entries = [["blog", blogcats], ["gallery", gallerycats]].map((cats) => cats[1].map((c) => {
     return {
         type: "subordinated",
         title: c.title,
-        link: `blog/${c.key}/`
+        link: `${cats[0]}/${c.key}/`
     }
 }))
 let i = nav.findIndex((p) => p ==  "insert blog categories here")

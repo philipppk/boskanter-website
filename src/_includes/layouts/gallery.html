@@ -51,20 +51,12 @@
         let picturesInitial
 
         function displaypictures() {
-            let table = '<tr>{% for th in ["title", "tags", "language", "link"] %}<th>{{ translations[th][locale] }}</th>{% endfor %}</tr>'
+            let table = '<tr><th>key</th><th>Description</th></tr>'
             for (p of pictures) {
-                if (language == "" || p.language == language) {
-                    table += "<tr>"
-                        + `<td>${(p.title)}</td>`
-                        + `<td>${p.tags ?? ""}</td>`
-                        + `<td>${ {
-                                en: "{{ translations.English[locale] }}",
-                                fr: "{{ translations.French[locale] }}",
-                                nl: "{{ translations.Dutch[locale] }}"
-                            }[p.language]}</td>`
-                        + `<td><a href='${p.id}'>${p.id}</a></td>`
-                        + "</tr>"
-                }
+                table += "<tr>"
+                    + `<td>${p.id}</td>`
+                    + `<td>${p["{{locale}}"]}</td>`
+                    + "</tr>"
             }
             document.getElementById("pictures").innerHTML = table
         }
@@ -114,6 +106,7 @@
                     body: `{"category": "${cat}", "query": "${query}"}`
                 }).then((response) => response.json())
             }
+            console.log(pictures)
             displaypictures()
         }
 

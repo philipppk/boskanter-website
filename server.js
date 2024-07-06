@@ -4,6 +4,7 @@ const exec = require("child_process").exec
 const fs = require("fs/promises")
 const crypto = require("crypto")
 const blogsearch = require("./blogsearch.js")
+const gallerysearch = require("./gallerysearch.js")
 
 const app = express()
 const port = 3000
@@ -149,5 +150,23 @@ app.post('/api/blog/search', (req, res) => {
   })))
   //res.end(JSON.stringify(blogsearch.category[req.category].search(req.query)))
 })
+
+// Gallerypictures nach Kategorie
+
+app.post('/api/gallery/picturesbycategory', (req, res) => {
+  res.setHeader('Content-Type', 'application/json')
+  res.end(JSON.stringify(gallerysearch.pictures[req.body]))
+})
+
+app.post('/api/gallery/search', (req, res) => {
+  let r = JSON.parse(req.body)
+  res.setHeader('Content-Type', 'application/json')
+  res.end(JSON.stringify(gallerysearch.category[r.category].search(r.query, {
+    prefix: true,
+    fuzzy: 0.2
+  })))
+  //res.end(JSON.stringify(blogsearch.category[req.category].search(req.query)))
+})
+
 
 app.listen(port, () => {console.log(`server running on port ${port}`)})

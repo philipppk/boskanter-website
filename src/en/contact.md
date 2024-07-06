@@ -36,3 +36,5 @@ As long as they are working on the ‘Ronsesestraat’, you need busstop ‘Here
 
 ## GPS
 Aim for the crossroads between Pullem and Koningsweg instead of ‘Koningsweg 1’. Because Koningsweg consists of two parts with a forest in between and the GPS can send you to the wrong end.
+
+![The way from Herenhof](/pictures/herenhof.jpg)

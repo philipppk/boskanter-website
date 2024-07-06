@@ -5,5 +5,5 @@ pagination:
     data: gallery.categories.long
     size: 1
     alias: category
-permalink: "{{ category.locale }}/blog/{{ category.key }}/index.html" 
+permalink: "{{ category.locale }}/gallery/{{ category.key }}/index.html" 
 ---

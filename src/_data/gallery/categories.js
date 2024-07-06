@@ -2,6 +2,10 @@
 
 const categories = [
     {
+        key: "all",
+        title: {en: "All categories", fr: "Toutes les catégories", nl: "Alle categorieën"}
+    },
+    {
         key: "something",
         title: {en: "something", fr: "Quelquechose", nl: "iets"}
     }
