@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "Handlee";
-  src: url('/fonts/handlee-regular.ttf');
+    font-family: "Handlee";
+    src: url('/fonts/handlee-regular.ttf');
 }
 @font-face {
-  font-family: "Louis George Cafe";
-  src: url('/fonts/louis_george_cafe/Louis George Cafe.ttf');
+    font-family: "Louis George Cafe";
+    src: url('/fonts/louis_george_cafe/Louis George Cafe.ttf');
 }
 @font-face {
-  font-family: "Louis George Cafe";
-  src: url('/fonts/louis_george_cafe/Louis George Cafe Bold.ttf');
-  font-weight: bold;
+    font-family: "Louis George Cafe";
+    src: url('/fonts/louis_george_cafe/Louis George Cafe Bold.ttf');
+    font-weight: bold;
 }
 @font-face {
-  font-family: "Louis George Cafe";
-  src: url('/fonts/louis_george_cafe/Louis George Cafe Italic.ttf');
-  font-style: italic;
+    font-family: "Louis George Cafe";
+    src: url('/fonts/louis_george_cafe/Louis George Cafe Italic.ttf');
+    font-style: italic;
 }
 @font-face {
-  font-family: "Louis George Cafe";
-  src: url('/fonts/louis_george_cafe/Louis George Cafe Bold Italic.ttf');
-  font-weight: bold;
-  font-style: italic;
+    font-family: "Louis George Cafe";
+    src: url('/fonts/louis_george_cafe/Louis George Cafe Bold Italic.ttf');
+    font-weight: bold;
+    font-style: italic;
 }
 
 h1, h2, h3, h4, h5, h6, #pages_nav {
@@ -34,12 +34,16 @@ main, #languages_nav {
     padding: 10px;
 }
 
+label:after {
+    content: " "
+}
+
 img {
     max-width: 100%;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 body {
@@ -61,16 +65,16 @@ nav {
 }
 
 #pages_nav {
-
+    
     padding: 0px;
-
+    
     ul {
         background: none;
         list-style: none;
         margin: 0;
         padding-left: 0;
     }
-
+    
     li {
         color: #000000;
         display: block;
@@ -83,17 +87,17 @@ nav {
     li a {
         color: #000000;
     }
-
+    
     li:hover,
     li:focus-within {
         background-color: aliceblue;
         cursor: pointer;
     }
-
+    
     li:focus-within a {
-       outline: none;
+        outline: none;
     }
-
+    
     ul li ul {
         list-style-type: none;
         visibility: hidden;
@@ -104,7 +108,7 @@ nav {
         left: 0;
         display: none;
     }
-
+    
     ul li:hover > ul,
     ul li:focus-within > ul,
     ul li ul:hover,
@@ -113,7 +117,7 @@ nav {
         opacity: 1;
         display: block
     }
-
+    
     ul li ul li {
         clear: both;
         width: 100%;
@@ -125,33 +129,33 @@ nav {
 }
 
 #languages_nav {
-
+    
     padding: 5px;
-
+    
     ul {
         display: inline;
         list-style: none;
     }
-
+    
     ul li {
         display: inline;
     }
-
+    
     ul li + li:before {
         content: ", ";
     }
 }
 
 body {
-  display: flex;
-  min-height: 100vh;
-  margin: 0 auto;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
 }
- 
+
 main {
-  min-height: 5em;
-  flex: 1;
+    min-height: 5em;
+    flex: 1;
 }
 
 footer {
@@ -165,7 +169,7 @@ footer {
     }
     strong {
         font-weight: normal;
-
+        
     }
 }
 

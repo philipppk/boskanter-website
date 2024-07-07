@@ -7,35 +7,28 @@
 {% endblock %}
 
 {% block css %}
-    <style>
-        #pictures {
-            padding: 20px;
-            th {
-                text-align: left;
-                text-transform: capitalize;
-            }
-            th, td {
-                padding-right: 10px;
-            }
-        }
-    </style>
+   	<link rel="stylesheet" href='/css/gallery.css'>
 {% endblock %}
 
 {% block content %}
     <h1>{{ category.title[locale] }}</h1>
-    <select onchange="changeCategory(this.value)">
-        {% for c in gallery.categories.short %}
-            <option value="{{ c.key }}" {% if c.key == category.key %}selected{% endif %}>{{ c.title[locale] }}</option>
-        {% endfor %}
-    </select>
-    <select onchange="changeLanguage(this.value)">
-        {% for l in [["", translations.all_languages[locale]], ["en", translations.English[locale]], ["fr", translations.French[locale]], ["nl", translations.Dutch[locale]]] %}
-            <option value="{{ l[0] }}">{{ l[1] }}</option>
-        {% endfor %}
-    </select>
-    <input type="text" id="query" placeholder="{{ translations.search_for_keywords_or_tags[locale] }}">
-    <button onclick="changeQuery(document.getElementById('query').value)">🔍</button>
-    <table id="pictures"></table>
+    <table id="filter">
+        <tr>
+            <td><label for="category">Category:</label></td>
+            <td><select onchange="changeCategory(this.value)">
+            {% for c in gallery.categories.short %}
+                <option value="{{ c.key }}" {% if c.key == category.key %}selected{% endif %}>{{ c.title[locale] }}</option>
+            {% endfor %}
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="query">{{ translations.search_for_keywords_or_tags[locale] }}:</label></td>
+            <td><input name="query" type="text" id="query">
+                <button onclick="changeQuery(document.getElementById('query').value)">🔍</button>
+            </td>
+        </tr>
+    </table>
+    <ul id="pictures"></ul>
 {% endblock %}
 
 {% block javascript %}
@@ -43,7 +36,6 @@
         let searchParams = new URLSearchParams(window.location.search)
 
         let cat = "{{ category.key }}"
-        let language = searchParams.has("l") ? searchParams.get("l") : ""
         let query = searchParams.has("q") ? searchParams.get("q") : ""
         document.getElementById("query").value = query
 
@@ -51,14 +43,15 @@
         let picturesInitial
 
         function displaypictures() {
-            let table = '<tr><th>key</th><th>Description</th></tr>'
+            let list = ""
             for (p of pictures) {
-                table += "<tr>"
-                    + `<td>${p.id}</td>`
-                    + `<td>${p["{{locale}}"]}</td>`
-                    + "</tr>"
+                list += "<li>"
+                    + `<img src="/picturepreviews/${p.id}"><br>`
+                    + `${p["{{locale}}"]}<br>`
+                    + `<a href="/pictures/${p.id}">{{ translations.see_uncompressed_version[locale] }}</a>`
+                    + "</li>"
             }
-            document.getElementById("pictures").innerHTML = table
+            document.getElementById("pictures").innerHTML = list
         }
 
         function insertUrlParam(key, value) {
@@ -73,12 +66,6 @@
 
         function changeCategory(c) {
             window.location.href = `${ window.location.origin }/{{ locale }}/gallery/${c}/`
-        }
-
-        function changeLanguage(l) {
-            language = l
-            insertUrlParam("l", l)
-            displaypictures()
         }
 
         function changeQuery(q) {

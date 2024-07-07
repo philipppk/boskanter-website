@@ -7,6 +7,7 @@ const picturesbycategory = []
 picturesbycategory["all"] = JSON.parse(fs.readFileSync('./src/_data/gallery/pictures.json')).map((p) => ({
     id: p.key,
     date: p.date,
+    category: p.category,
     en: p.description.en,
     fr: p.description.fr,
     nl: p.description.nl

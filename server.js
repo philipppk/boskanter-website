@@ -120,7 +120,7 @@ function newlineToBr(std) {
 
 app.post('/api/build', (req, res) => {
   if (req.body == "TestMausBrot") {
-    exec('git pull; eleventy', (error, stdout, stderr) => {
+    exec('git pull; eleventy; pm2 reload server', (error, stdout, stderr) => {
       if (error) {
         res.end(`<h2>error</h2>${newlineToBr(error.toString())}`)
         return
