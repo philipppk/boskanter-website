@@ -12,5 +12,6 @@
     "tags" : {"en": "tags", "fr": "tags", "nl": "tags"},
     "language" :{"en": "language", "fr": "langue", "nl": "taal"},
     "link" : {"en": "link", "fr": "link", "nl": "link"},
-    "calendar": {"en": "calendar",  "fr": "calendrier",  "nl": "kalender"}
+    "calendar": {"en": "calendar",  "fr": "calendrier",  "nl": "kalender"},
+    "category": {"en": "category", "fr": "catégorie", "nl": "categorie"}
 }

@@ -23,7 +23,7 @@
             let description = []
             for (e of entries) {
                 if (e.date.toString() == date.toString()) {
-                    description.push(`<h2>${ e.title }</h2>${e.description}`)
+                    description.push(`<h3>${ e.title }</h3>${e.description}`)
                 }
             }
             document.getElementById("description").innerHTML = description.join("<br>")

@@ -1,0 +1,9 @@
+#filters{
+    tr > td:first-child {
+        padding-right: 0.5em;
+        text-align: left;
+    }
+    #search td {
+        padding-top: 1em;
+    }
+}

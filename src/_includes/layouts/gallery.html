@@ -8,21 +8,22 @@
 
 {% block css %}
    	<link rel="stylesheet" href='/css/gallery.css'>
+    <link rel="stylesheet" href="/css/filters.css">
 {% endblock %}
 
 {% block content %}
     <h1>{{ category.title[locale] }}</h1>
-    <table id="filter">
+    <table id="filters">
         <tr>
-            <td><label for="category">Category:</label></td>
+            <td><label for="category">{{ translations.category[locale] | capitalize }}</label></td>
             <td><select onchange="changeCategory(this.value)">
             {% for c in gallery.categories.short %}
                 <option value="{{ c.key }}" {% if c.key == category.key %}selected{% endif %}>{{ c.title[locale] }}</option>
             {% endfor %}
             </select></td>
         </tr>
-        <tr>
-            <td><label for="query">{{ translations.search_for_keywords_or_tags[locale] }}:</label></td>
+        <tr id="search">
+            <td><label for="query">{{ translations.search_for_keywords_or_tags[locale] }}</label></td>
             <td><input name="query" type="text" id="query">
                 <button onclick="changeQuery(document.getElementById('query').value)">🔍</button>
             </td>
