@@ -1,6 +1,6 @@
 {
     "this_page_is_available_in": {"en": "This page is available in", "nl": "Deze site is beschikbaar in", "fr": "Ce site est disponible en"},
-    "read_more_about_what_we_do": {"en": "Read more about what we do:", "fr": "Lire par example:", "nl": "Lees meer over wat we doen:"},
+    "what_we_do": {"en": "What We Do", "fr": "Ce que nous faisons", "nl": "Wat we doen"},
     "read_more": {"en": "read more...", "fr": "lire plus...", "nl": "lees meer..."},
     "see_uncompressed_version": {"en": "see uncompressed version", "fr": "see uncompressed version", "nl": "see uncompressed version"},
     "all_languages": {"en": "All languages", "fr": "Toutes les langues", "nl": "Alle talen"},
@@ -13,5 +13,12 @@
     "language" :{"en": "language", "fr": "langue", "nl": "taal"},
     "link" : {"en": "link", "fr": "link", "nl": "link"},
     "calendar": {"en": "calendar",  "fr": "calendrier",  "nl": "kalender"},
-    "category": {"en": "category", "fr": "catégorie", "nl": "categorie"}
+    "category": {"en": "category", "fr": "catégorie", "nl": "categorie"},
+    "subscribe_here_to": {"en": "Subscribe here to stay up to date with events at Boskanter", "fr": "Abonnez-vous ici pour rester au courant des événements chez Boskanter", "nl": "Schrijf je hier in om op de hoogte te blijven van evenementen bij Boskanter"},
+    "your_email_adress": {"en": "Your email adress", "fr":  "Votre adresse email", "nl": "Uw email adres"},
+    "contact": {"en": "Contact", "fr": "Contact", "nl": "Contact"},
+    "adress": {"en": "Adress", "fr":  "Adresse", "nl": "Adres"},
+    "email": {"en": "Email", "fr":  "Email", "nl": "Email"},
+    "phone": {"en": "Phone", "fr": "Téléphone", "nl": "Telefoon"},
+    "our_partners_are": {"en": "Our partners are", "fr": "Nos partenaires sont", "nl": "Onze partners zijn"}
 }

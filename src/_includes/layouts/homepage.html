@@ -9,12 +9,12 @@
     <div id="top">    
         <div class="box">{{ homepage.yellowbox[locale] | safe}}</div>
         <div id="tagcloud">
-            <h2>Our blog</h2>
+            <h2>Our Blog</h2>
+            Discover our blog by clicking on a tag:   
             {{ homepage.blogtags[locale] | safe }}
-            <p class="subtitle">Click on a tag, to see relevant blogposts</p>
         </div>
     </div>
-	<h2>{{ translations.read_more_about_what_we_do[locale] }}</h2>
+	<h2>{{ translations.what_we_do[locale] }}</h2>
     <ul id="highlights">
         {% for h in homepage.highlights %}
             <li class="highlightblock">

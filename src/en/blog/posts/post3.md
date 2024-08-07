@@ -1,5 +1,6 @@
 ---
 title: blog 3
+icon: cabbage.svg
 ---
 ## Hallo zusammen
 

@@ -1,9 +1,10 @@
 {% extends 'layouts/base.html' %}
+{% set locale = data.locale %}
 
 {% block content %}
     <h1>{{ title }}</h1>
     <ul>
-    {% for category in categories %}
+    {% for category in data.categories %}
         <li><a href="{{ category.key }}/">{{ category.title[locale] }}</a></li>
     {% endfor %}
     </ul>

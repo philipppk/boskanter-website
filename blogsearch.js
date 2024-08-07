@@ -1,22 +1,32 @@
 const MiniSearch = require('minisearch')
 const fs = require("fs")
+const execSync = require("child_process").execSync
 
 const categories = require('./src/_data/blog/categories.js').short.map((c) => c.key)
+
+function fileCreationDate(path) {
+    return  ("" + execSync(`git log --follow --format=%ad --date=format:'%d.%m.%Y' ${path} | tail -1`)).slice(0,-1)
+}
+
+console.log(fileCreationDate("src/en/contact.md"))
 
 function scanPosts() {
     const posts = []
     for (locale of ['en', 'fr', 'nl']) {
         for (file of fs.readdirSync(`src/${locale}/blog/posts`)) {
             if (file == "posts.json") {continue}
-            let h = fs.readFileSync(`src/${locale}/blog/posts/${file}`, { encoding: 'utf8' }).split('---\n')
-            let attributes = new Map(h[1].split('\n').map((l) => l.split(': ')))
+            const path = `src/${locale}/blog/posts/${file}`
+            let [, metadata, content] = fs.readFileSync(path, { encoding: 'utf8' }).split('---\n')
+            metadata = new Map(metadata.split('\n').map((l) => l.split(': ')))
             posts.push({
-                title: attributes.get("title"),
-                tags: attributes.get("blogtags"),
-                category: attributes.get("category"),
+                title: metadata.get("title"),
+                icon: metadata.get("icon"),
+                tags: metadata.get("blogtags"),
+                category: metadata.get("category"),
+                date: metadata.has("date") ? metadata.get("date") : fileCreationDate(path),
                 id: `/${locale}/blog/posts/${file.slice(0,-3)}/`,
                 language: locale,
-                content: h[2],
+                content: content,
             })
         }
     }
@@ -29,7 +39,7 @@ for (c of categories) {
     postsbycategory[c] = []
     categorysearch[c] = new MiniSearch({
         fields: ['title', 'content', 'tags'], // fields to index for full-text search
-        storeFields: ['title', 'id', 'category', 'tags', 'language'] // fields to return with search results
+        storeFields: ['title', 'id', 'icon', 'date', 'category', 'tags', 'language'] // fields to return with search results
     })
 }
 
@@ -45,8 +55,11 @@ for (c of categories) {
     categorysearch[c].addAll(postsbycategory[c])
 }
 
-for (p of postsbycategory) {
-    delete p.content
+for (c of categories) {
+    for (p of postsbycategory[c]) {
+        console.log(p)
+        delete p.content
+    }
 }
 
 module.exports = {category: categorysearch, posts: postsbycategory}

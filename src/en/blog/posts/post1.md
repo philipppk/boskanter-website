@@ -1,6 +1,6 @@
 ---
 title: post 1
-translationKey: post1
+icon: plant.svg
 tags: blogpost
 category: low-tech
 blogtags: animals, gardening

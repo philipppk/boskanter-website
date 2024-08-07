@@ -8,18 +8,7 @@
 
 {% block css %}
     <link rel="stylesheet" href="/css/filters.css">
-    <style>
-        #posts {
-            padding: 20px;
-            th {
-                text-align: left;
-                text-transform: capitalize;
-            }
-            th, td {
-                padding-right: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/css/blogfeed.css">
 {% endblock %}
 
 {% block content %}
@@ -47,7 +36,7 @@
             <button onclick="changeQuery(document.getElementById('query').value)">🔍</button></td>
         </tr>
     </table>
-    <table id="posts"></table>
+    <ul id="posts"></ul>
 {% endblock %}
 
 {% block javascript %}
@@ -63,22 +52,25 @@
         let postsInitial
 
         function displayPosts() {
-            let table = '<tr>{% for th in ["title", "tags", "language", "link"] %}<th>{{ translations[th][locale] }}</th>{% endfor %}</tr>'
+            let list = ""
             for (p of posts) {
+                console.log(p)
                 if (language == "" || p.language == language) {
-                    table += "<tr>"
-                        + `<td>${(p.title)}</td>`
-                        + `<td>${p.tags ?? ""}</td>`
-                        + `<td>${ {
+                    list += "<li>"
+                        + `<img src="/icons/${p.icon}"/><br>`
+                        + p.title + "<br>"
+                        + (p.tags ? p.tags + "<br>" : "")
+                        + `${ {
                                 en: "{{ translations.English[locale] }}",
                                 fr: "{{ translations.French[locale] }}",
                                 nl: "{{ translations.Dutch[locale] }}"
-                            }[p.language]}</td>`
-                        + `<td><a href='${p.id}'>${p.id}</a></td>`
-                        + "</tr>"
+                            }[p.language]}<br>`
+                        + p.date + "<br>"
+                        + `<a href='${p.id}'>${p.id}</a><br>`
+                        + "</li>"
                 }
             }
-            document.getElementById("posts").innerHTML = table
+            document.getElementById("posts").innerHTML = list
         }
 
         function insertUrlParam(key, value) {

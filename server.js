@@ -148,7 +148,6 @@ app.post('/api/blog/search', (req, res) => {
     prefix: true,
     fuzzy: 0.2
   })))
-  //res.end(JSON.stringify(blogsearch.category[req.category].search(req.query)))
 })
 
 // Gallerypictures nach Kategorie
@@ -165,7 +164,6 @@ app.post('/api/gallery/search', (req, res) => {
     prefix: true,
     fuzzy: 0.2
   })))
-  //res.end(JSON.stringify(blogsearch.category[req.category].search(req.query)))
 })
 
 

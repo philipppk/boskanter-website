@@ -11,12 +11,24 @@
 </head>
 <body>
 	<nav>
-		<div id="pages_nav"> {{ navigation_bar[locale] | safe }} </div>
+		<div id="pages_nav"> 
+			<input type="checkbox" id="hamburg">
+			<label for="hamburg" class="hamburg">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</label>
+			{{ navigation_bar[locale] | safe }} 
+		</div>
 		<div id="languages_nav">
-			{{ translations.this_page_is_available_in[locale] }}	
-			{% for l in site.languages %}
-				<a href="/{{ l }}/{{ page.url | removeLocale }}">{{ l }}</a>
-			{% endfor %}
+			<ul>
+				<li>{{ locale }}</li>
+				{% for l in site.languages %}
+					{% if l != locale %}
+						<li><a href="/{{ l }}/{{ page.url | removeLocale }}">{{ l }}</a></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
 		</div>
 	</nav>
 	<main>
@@ -44,22 +56,22 @@
 		<ul>
 			<li>
 				<h4>Newsletter</h4>
-				<p>Subscribe here to stay up to date with events at Boskanter:</p>
+				<p>{{ translations.subscribe_here_to[locale] }}:</p>
 				<p>
-					<label for="email">Your Email adress:</label>
+					<label for="email">{{ translations.your_email_adress[locale] }}:</label>
 					<input type="text" id="email" name="email"/>
-					<button type="button" onclick="submit()">submit</button>
+					<button type="button" onclick="submit()">{{ translations.submit[locale] }}</button>
 				</p>
 				<p id="info"></p>
 
 			</li>
 			<li>
-				<h4>Contact</h4>
+				<h4>{{ translations.contact[locale] }}</h4>
 				<table>
-					<tr><th>Address</th><td>Koningsweg 9660 Brakel, Belgium</td></tr>
-					<tr><th>Email</th><td>info@boskanter.be</td></tr>
-					<tr><th>Phone</th><td>055/600617</td></tr>
-					<tr><th>Our partners are</th><td><a href="http://www.hetvoedselbos.be/" target="_blank" rel="noopener noreferrer">Het Voedselbos</a>, <a href="https://www.vormingplus-vlad.be/" target="_blank" rel="noopener noreferrer">Vormingplus Vlaamse Ardennen - Dender</a>, <a href="http://www.brakel.be/" target="_blank" rel="noopener noreferrer">Brakel municipality</a>, <a href="https://www.voedselteams.be/">voedselteams</a> and <a href="http://milieufrontomerwattez.be">MOW Brakel</a></td></tr>
+					<tr><th>{{ translations.address[locale] }}</th><td>Koningsweg 9660 Brakel, Belgium</td></tr>
+					<tr><th>{{ translations.email[locale] }}</th><td>info@boskanter.be</td></tr>
+					<tr><th>{{ translations.phone[locale] }}</th><td>055/600617</td></tr>
+					<tr><th>{{ translations.our_partners_are[locale] }}</th><td><a href="http://www.hetvoedselbos.be/" target="_blank" rel="noopener noreferrer">Het Voedselbos</a>, <a href="https://www.vormingplus-vlad.be/" target="_blank" rel="noopener noreferrer">Vormingplus Vlaamse Ardennen - Dender</a>, <a href="http://www.brakel.be/" target="_blank" rel="noopener noreferrer">Brakel municipality</a>, <a href="https://www.voedselteams.be/">voedselteams</a> and <a href="http://milieufrontomerwattez.be">MOW Brakel</a></td></tr>
 				</table>
 			</li>
 		</ul>
