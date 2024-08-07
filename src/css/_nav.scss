@@ -1,55 +1,6 @@
-@font-face {
-    font-family: "Handlee";
-    src: url('/fonts/handlee-regular.ttf');
-}
-@font-face {
-    font-family: "Louis George Cafe";
-    src: url('/fonts/louis_george_cafe/Louis George Cafe.ttf');
-}
-@font-face {
-    font-family: "Louis George Cafe";
-    src: url('/fonts/louis_george_cafe/Louis George Cafe Bold.ttf');
-    font-weight: bold;
-}
-@font-face {
-    font-family: "Louis George Cafe";
-    src: url('/fonts/louis_george_cafe/Louis George Cafe Italic.ttf');
-    font-style: italic;
-}
-@font-face {
-    font-family: "Louis George Cafe";
-    src: url('/fonts/louis_george_cafe/Louis George Cafe Bold Italic.ttf');
-    font-weight: bold;
-    font-style: italic;
-}
+@use "_colors" as *;
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Handlee;
-    text-transform: uppercase;
-}
-
-main {
-    max-width: 1000px;
-    margin: auto;
-    padding: 1em;
-}
-
-label:after {
-    content: " "
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    margin: 0px;
-    font-family: "Louis George Cafe";
-}
+$break_for_screenwidth: 900px;
 
 nav {
     display: flex;
@@ -57,15 +8,7 @@ nav {
     align-items: center;
 }
 
-.box {
-    background-color: beige;
-    border-radius: 1em;
-    padding: 0.5em 1em 2em 1em;
-    margin: 0em;
-}
-
-
-@media (min-width: 800px) and (hover: hover){
+@media (min-width: $break_for_screenwidth) and (hover: hover){
     #pages_nav, #languages_nav {
         margin: 0em;
     }
@@ -73,10 +16,10 @@ nav {
         height: min-content;
         font-family: Handlee;
         text-transform: uppercase;
+        padding: 0px;
         #hamburg, .hamburg {
             display: none;
         }
-        padding: 0px;
         ul {
             background: none;
             list-style: none;
@@ -130,7 +73,20 @@ nav {
         }
     }
 }
-@media (max-width: 800px), (hover: none) {
+
+$hamburg_margin: 0.5em;
+$hamburg_border_line_distance_vertical: 1em;
+$hamburg_border_line_distance_horizontal: 0.5em;
+$hamburg_line_height: 0.1em;
+$hamburg_line_distance_inbetween: 0.5em;   
+
+$hamburg_size: 2 * ($hamburg_border_line_distance_vertical + $hamburg_line_distance_inbetween);
+
+@function hamburg_line_top($n) {
+    @return $hamburg_margin + $hamburg_border_line_distance_vertical + ($n - 1) * $hamburg_line_distance_inbetween - 0.5 * $hamburg_line_height;
+}
+
+@media (max-width: $break_for_screenwidth), (hover: none) {
     nav {
         position: -webkit-sticky; /* Safari */
         position: sticky;
@@ -145,24 +101,24 @@ nav {
             text-decoration: none;
         }
         label.hamburg { 
-            margin: 1em;
+            margin: $hamburg_margin;
             display: block;
-            background: aliceblue; width: 3em; height: 3em; 
+            background: aliceblue; width: $hamburg_size; height: $hamburg_size; 
             border-radius: 0.5em; 
         }
         input#hamburg {display:none}
         .line { 
             position: absolute;
-            left: 1.5em;
-            height: 0.1em; width: 2em; 
+            left: $hamburg_margin + $hamburg_border_line_distance_horizontal;
+            height: 0.1em; width: $hamburg_size - 2 * $hamburg_border_line_distance_horizontal; 
             background: black; border-radius: 2px;
             display: block; 
             transition: 0.5s; 
             transform-origin: center; 
         }
-        .line:nth-child(1) { top: 1.9em; }
-        .line:nth-child(2) { top: 2.4em; }
-        .line:nth-child(3) { top: 2.9em; }
+        @each $n in 1, 2, 3 {
+            .line:nth-child(#{$n}) { top: hamburg_line_top($n) }
+        }
         #hamburg:checked + label.hamburg {
             background-color: rgb(255, 240, 245);
         }
@@ -186,7 +142,7 @@ nav {
         }
     }    
     #pages_nav>ul { 
-        height: calc(100vh - 5em); 
+        height: calc(100vh - #{2 * $hamburg_margin + $hamburg_size}); 
         max-height:0; 
         overflow: hidden; 
         transition: all 0.5s;
@@ -214,56 +170,17 @@ nav {
             border: 1px solid black;
             border-radius: 0.2em;
             display: inline-block;
-            padding: 0em 0.5em 0em 0.5em;
+            padding: 0;
         }
         li:first-child {
             background: aliceblue;
+            padding: 0em 0.5em 0em 0.5em;
+        }
+        li>* {
+            display: block;
+            padding: 0em 0.5em 0em 0.5em;
+            top: 0;
+            left: 0;
         }
     }
-}
-
-
-body {
-    display: flex;
-    min-height: 100vh;
-    margin: 0 auto;
-    flex-direction: column;
-}
-
-main {
-    min-height: 5em;
-    flex: 1;
-}
-
-footer {
-    margin-top: 50px; 
-    margin-bottom: 50px;
-    ul {
-        list-style: none;
-        padding-left: 0px;
-        max-width: 1000px;
-        margin: auto;
-    }
-    strong {
-        font-weight: normal;
-        
-    }
-    h4 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    th {
-        text-align: right;
-    }
-    p {
-        text-align: center;
-    }
-}
-
-footer>ul {
-    list-style: none;
-    padding-left: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 20px;
 }
