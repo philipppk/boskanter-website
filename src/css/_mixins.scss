@@ -1,0 +1,16 @@
+@mixin nparts($n, $part_width: 20em, $grid_gap: 1.5em) {
+    
+    display: grid;
+    
+    $width_necessary: $part_width * $n + $grid_gap * ($n - 1);
+    
+    @media (min-width: #{$width_necessary}) {
+        grid-template-columns: repeat(#{$n}, 1fr);
+        grid-gap: $grid_gap;
+    }
+    
+    @media (max-width: #{$width_necessary}) {
+        grid-template-columns: 1fr;    
+        grid-gap: 0.33333333 * $grid_gap;
+    }
+}

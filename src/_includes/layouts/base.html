@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lamg="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	{% block title %}
 		<title>{{ title }}</title>
 	{% endblock %}
@@ -53,28 +53,25 @@
 	{% endblock %}
 
 	<footer>
-		<ul>
-			<li>
-				<h4>Newsletter</h4>
-				<p>{{ translations.subscribe_here_to[locale] }}:</p>
-				<p>
-					<label for="email">{{ translations.your_email_adress[locale] }}:</label>
-					<input type="text" id="email" name="email"/>
-					<button type="button" onclick="submit()">{{ translations.submit[locale] }}</button>
-				</p>
-				<p id="info"></p>
-
-			</li>
-			<li>
-				<h4>{{ translations.contact[locale] }}</h4>
-				<table>
-					<tr><th>{{ translations.address[locale] }}</th><td>Koningsweg 9660 Brakel, Belgium</td></tr>
-					<tr><th>{{ translations.email[locale] }}</th><td>info@boskanter.be</td></tr>
-					<tr><th>{{ translations.phone[locale] }}</th><td>055/600617</td></tr>
-					<tr><th>{{ translations.our_partners_are[locale] }}</th><td><a href="http://www.hetvoedselbos.be/" target="_blank" rel="noopener noreferrer">Het Voedselbos</a>, <a href="https://www.vormingplus-vlad.be/" target="_blank" rel="noopener noreferrer">Vormingplus Vlaamse Ardennen - Dender</a>, <a href="http://www.brakel.be/" target="_blank" rel="noopener noreferrer">Brakel municipality</a>, <a href="https://www.voedselteams.be/">voedselteams</a> and <a href="http://milieufrontomerwattez.be">MOW Brakel</a></td></tr>
-				</table>
-			</li>
-		</ul>
+		<div id="newsletter">
+			<h4>Newsletter</h4>
+			<p>{{ translations.subscribe_here_to[locale] }}:</p>
+			<p>
+				<label for="email">{{ translations.your_email_adress[locale] }}:</label>
+				<input type="text" id="email" name="email"/>
+				<button type="button" onclick="submit()">{{ translations.submit[locale] }}</button>
+			</p>
+			<p id="info"></p>
+		</div>
+		<div id="contact">
+			<h4>{{ translations.contact[locale] }}</h4>
+			<table>
+				<tr><th>{{ translations.address[locale] }}</th><td>Koningsweg 9660 Brakel, Belgium</td></tr>
+				<tr><th>{{ translations.email[locale] }}</th><td>info@boskanter.be</td></tr>
+				<tr><th>{{ translations.phone[locale] }}</th><td>055/600617</td></tr>
+				<tr><th>{{ translations.our_partners_are[locale] }}</th><td><a href="http://www.hetvoedselbos.be/" target="_blank" rel="noopener noreferrer">Het Voedselbos</a>, <a href="https://www.vormingplus-vlad.be/" target="_blank" rel="noopener noreferrer">Vormingplus Vlaamse Ardennen - Dender</a>, <a href="http://www.brakel.be/" target="_blank" rel="noopener noreferrer">Brakel municipality</a>, <a href="https://www.voedselteams.be/">voedselteams</a> and <a href="http://milieufrontomerwattez.be">MOW Brakel</a></td></tr>
+			</table>
+		</div>
 	</footer>
 </body>
 </html>

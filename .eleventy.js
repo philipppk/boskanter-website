@@ -1,9 +1,41 @@
 const categories = require("./src/_data/gallery/categories")
+const sass = require("sass");
+const path = require("path")
 
 module.exports = function(eleventyConfig) {
-  for (folder of ["css", "pictures", "scripts", "fonts", "build", "icons"]) {
+  for (folder of ["pictures", "scripts", "fonts", "build", "icons"]) {
     eleventyConfig.addPassthroughCopy(`./src/${folder}`)
   }
+
+    // Recognize Sass as a "template languages"
+  eleventyConfig.addTemplateFormats("scss");
+
+  // Compile Sass
+  eleventyConfig.addExtension("scss", {
+    outputFileExtension: "css",
+    compile: async function (inputContent, inputPath) {
+      // Skip files like _fileName.scss
+      let parsed = path.parse(inputPath);
+      if (parsed.name.startsWith("_")) {
+        return;
+      }
+
+      // Run file content through Sass
+      let result = sass.compileString(inputContent, {
+        loadPaths: [parsed.dir || "."],
+        sourceMap: false, // or true, your choice!
+      });
+
+      // Allow included files from @use or @import to
+      // trigger rebuilds when using --incremental
+      this.addDependencies(inputPath, result.loadedUrls);
+
+      return async () => {
+        return result.css;
+      };
+    },
+  });
+  
 
   eleventyConfig.addFilter("extractSubjects", function(col) {
     let subjects = []

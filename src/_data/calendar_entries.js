@@ -43,4 +43,4 @@ function getDaysArray(e) {
 
 entries.sort((a, b) => parseDate(a.start) < parseDate(b.start))
 
-module.exports = entries.map(getDaysArray).flat()
+module.exports = {short: entries, long: entries.map(getDaysArray).flat()}

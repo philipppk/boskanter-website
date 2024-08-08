@@ -1,16 +1,14 @@
-@media (min-width: 40em) {
-    #top {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1.5em;
-        margin-bottom: 1em;
-    }
-    #top>* {
-        padding-top: 0.5em;
-    }
+@use "_mixins" as *;
+
+#top {
+    margin-bottom: 1em;
+    @include nparts(2);
+}
+#top>* {
+    padding-top: 0.5em;
 }
 
-@media (max-width: 40em) {
+@media (max-width: 41.5em) {
     .box {
         border-radius: 0em;
         margin-left: -1em;
@@ -40,7 +38,7 @@
 
 
 #tags {
-    margin: 1em 0em 0em 0em;
+    margin: 0.5em 0em 0em 0em;
     padding: 1em;
     background-color: aliceblue;
     border-radius: 0.5em;

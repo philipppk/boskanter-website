@@ -20,5 +20,6 @@
     "adress": {"en": "Adress", "fr":  "Adresse", "nl": "Adres"},
     "email": {"en": "Email", "fr":  "Email", "nl": "Email"},
     "phone": {"en": "Phone", "fr": "Téléphone", "nl": "Telefoon"},
-    "our_partners_are": {"en": "Our partners are", "fr": "Nos partenaires sont", "nl": "Onze partners zijn"}
+    "our_partners_are": {"en": "Our partners are", "fr": "Nos partenaires sont", "nl": "Onze partners zijn"},
+    "submit": {"en": "submit", "fr": "envoyer", "nl": "opslaan"}
 }
