@@ -6,15 +6,30 @@
 
 {% block content %}
     <h1>{{ translations.calendar[locale] }}</h1>
-    <div id="calendar"></div>
-    <div id="description"></div>
+    <form>
+        <input type="radio" id="calendar" name="fav_language" value="calendar">
+        <label for="calendar">Calendar view</label><br>
+        <input type="radio" id="list" name="fav_language" value="list">
+        <label for="list">List view</label><br>
+    </form>
+    <div>
+        <div id="calendar"></div>
+        <div id="description"></div>
+    </div>
+    <div>
+        <ul>
+            {% for e in calendar_entries.short %}
+            <li></li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
 
 {% block javascript %}
     <script type="text/javascript" src="/scripts/caleandar.js"></script>
     <script>
         const entries = [
-            {% for e in calendar_entries %}
+            {% for e in calendar_entries.long %}
                 {date: new Date("{{ e.date }}"), title: "{{ e.title[locale] }}", description: "{{ e.description[locale] }}"},
             {% endfor %}
         ]
