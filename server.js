@@ -30,13 +30,13 @@ async function scanCSV(filename, rowProcessor) {
 
 // Jemand gibt auf der Website seine Email Adresse an
 
-async function addToABTS(email) {
+async function addToABTS(email, token) {
   abts = await scanCSV("about_to_subscribe.csv", (output, row) => {
     if (Date.now()-parseInt(row[2]) <= 1800000) {  
       output.text += "\n" + row.join(",")
     }
   })
-  abts.text += `\n${email},${crypto.randomBytes(20).toString("hex")},${Date.now()}`
+  abts.text += `\n${email},${token},${Date.now()}`
   await fs.writeFile("about_to_subscribe.csv", abts.text)
 }
 
@@ -45,8 +45,10 @@ app.post('/api/newsletter/subscribe', (req, res) => {
     res.end(`${req.body} is not a valid email adress.`)
     return
   }
-  addToABTS(req.body)
-  res.end(`An email has been sent to ${req.body}. Click onfirm email to finalize your subscription.`)
+  const token = crypto.randomBytes(20).toString("hex") 
+  addToABTS(req.body, token)
+  newsletter.confirmationMail(req.body, token)
+  res.end(`An email has been sent to ${req.body}. Click confirm email to finalize your subscription.`)
 })
 
 
