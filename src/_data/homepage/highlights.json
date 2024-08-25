@@ -26,10 +26,10 @@
         "image": "",
 		"imagesubtitle": "",
 		"description": { 
-            "en": "To make our website more sustainable we refrained from using pictures for decorations, and the ones we use are heavily compressed. In this blog post the website developer wrote about what thoughts went into making this website more sustainable.",
+            "en": "To make our website more sustainable we refrained from using pictures for decorations, and the ones we use are heavily compressed. this blog post explains what thoughts went into making this website more sustainable.",
             "fr": "",
             "nl": ""
         },
-        "link": "blog"
+        "link": "en/blog/posts/a_sustainable_website/"
     } 
 ]

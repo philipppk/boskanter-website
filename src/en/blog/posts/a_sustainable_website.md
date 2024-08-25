@@ -27,7 +27,7 @@ Therefore it makes a lot of sense to try to have our website be more text-based.
 
 The article ["Why We need a Speed Limit for the Internet"](https://solar.lowtechmagazine.com/2015/10/why-we-need-a-speed-limit-for-the-internet/) by low-tech magazine makes the point that paradoxically the energy consumption of the internet has increased, even though the efficiency of its infra structure improved immensely. One among other reasons is that more data heavy media is transfered over the internet: For example we are now able to make a video call instead of being limited to writing each other emails. 
 
-I love that the internet is able to connect people all over the world. This, however is also possible without using all of the resources we are using right now: Information can be conveyed very efficiently by a text and maybe a few compressed pictures wittout 4K resolution. we try to put this into practice with this website.
+It is amazing how the internet is able to connect people all over the world. This, however is also possible in a way that uses less resources: Information can be conveyed very efficiently by a text and maybe a few compressed pictures without 4K resolution. That is what we want to put into practice with this website.
 
 ### Redundant Computations
 
