@@ -1,0 +1,23 @@
+@use "_mixins" as *;
+
+@include content_width(40em);
+
+.header {
+    display: inline-flex;
+    margin-bottom: 1em;
+    width: 100%;
+    img {
+        max-width: 5em;
+        max-height: 5em;
+        margin-top: auto;
+        margin-left: auto;
+    }
+    div {
+        margin-right: 1em;
+    }
+    .subtitle {
+        margin-bottom: 0px;
+        font-size: small;
+        color: grey;
+    }
+}

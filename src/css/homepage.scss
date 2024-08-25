@@ -1,5 +1,7 @@
 @use "_mixins" as *;
 
+@include content_width(60em);
+
 #top {
     margin-bottom: 1em;
     @include nparts(2);

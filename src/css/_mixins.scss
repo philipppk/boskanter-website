@@ -14,3 +14,9 @@
         grid-gap: 0.33333333 * $grid_gap;
     }
 }
+
+@mixin content_width($width) {
+    main, footer {
+        max-width: $width;
+    }
+}

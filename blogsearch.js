@@ -23,6 +23,8 @@ function scanPosts() {
                 icon: metadata.get("icon"),
                 tags: metadata.get("blogtags"),
                 category: metadata.get("category"),
+                author: metadata.get("author"),
+                authorcountry: metadata.get("authorcountry"),
                 date: metadata.has("date") ? metadata.get("date") : fileCreationDate(path),
                 id: `/${locale}/blog/posts/${file.slice(0,-3)}/`,
                 language: locale,

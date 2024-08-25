@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/blogpost.css">
+{% endblock %}
+
+{% block content %}
+    <div class="header">
+        <div>
+            <h1>{{ title }}</h1>
+            <p class="subtitle">Written by {{ author }} from {{ authorcountry }}</p>
+        </div>
+    <img src="/icons/{{ icon }}"/>
+    </div>
+    {{ content | safe }}
+{% endblock %}
