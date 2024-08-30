@@ -8,8 +8,6 @@ function fileCreationDate(path) {
     return  ("" + execSync(`git log --follow --format=%ad --date=format:'%d.%m.%Y' ${path} | tail -1`)).slice(0,-1)
 }
 
-console.log(fileCreationDate("src/en/contact.md"))
-
 function scanPosts() {
     const posts = []
     for (locale of ['en', 'fr', 'nl']) {
@@ -59,7 +57,6 @@ for (c of categories) {
 
 for (c of categories) {
     for (p of postsbycategory[c]) {
-        console.log(p)
         delete p.content
     }
 }

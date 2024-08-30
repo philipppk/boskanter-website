@@ -3,8 +3,10 @@ const bodyParser = require('body-parser')
 const exec = require("child_process").exec
 const fs = require("fs/promises")
 const crypto = require("crypto")
+const dotenv = require("dotenv").config()
 const blogsearch = require("./blogsearch.js")
 const gallerysearch = require("./gallerysearch.js")
+const newsletter = require("./newsletter.js")
 
 const app = express()
 const port = 3000
@@ -121,7 +123,7 @@ function newlineToBr(std) {
 }
 
 app.post('/api/build', (req, res) => {
-  if (req.body == "TestMausBrot") {
+  if (req.body == process.env.ADMIN_PASSWORD) {
     exec('git pull; eleventy; pm2 reload server', (error, stdout, stderr) => {
       if (error) {
         res.end(`<h2>error</h2>${newlineToBr(error.toString())}`)
@@ -134,6 +136,22 @@ app.post('/api/build', (req, res) => {
     res.end("The password was not correct")
   }
 });
+
+
+// sendnewsletter
+
+app.post("/api/sendnewsletter", async (req, res) => {
+  const reqParsed = JSON.parse(req.body)
+  if (reqParsed.password == process.env.ADMIN_PASSWORD) {
+    recipients = (reqParsed.recipients == "everybody" ? (await scanCSV("mailinglist.csv", (row, output) => { output += "," + row[1] })).slice(1) : reqParsed.recipients)
+      .split(/[ ,]+/)
+    newsletter.send(recipients, reqParsed.content)
+    res.end("success")
+  }
+  else {
+    res.end("wrong password")
+  }
+})
 
 // Blogposts nach Kategorie
 

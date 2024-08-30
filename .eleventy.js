@@ -3,7 +3,7 @@ const sass = require("sass");
 const path = require("path")
 
 module.exports = function(eleventyConfig) {
-  for (folder of ["pictures", "scripts", "fonts", "build", "icons"]) {
+  for (folder of ["pictures", "scripts", "fonts", "build", "sendnewsletter", "icons"]) {
     eleventyConfig.addPassthroughCopy(`./src/${folder}`)
   }
 
