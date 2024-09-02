@@ -18,5 +18,6 @@
 @mixin content_width($width) {
     main, footer {
         max-width: $width;
+        width: 100%;
     }
 }

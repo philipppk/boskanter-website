@@ -11,6 +11,7 @@
     <div>
         <div id="writing">
             <h2>Write Markdown here</h2>
+            <p><label for="title">Title of your newsletter: </label><input type="text" id="title" name="title"></p>
             <p><textarea id="markdown"></textarea></p>
             
             <h2>Upload Files here</h2>
@@ -29,7 +30,7 @@
             <h2>Preview</h2>
             <p><button onclick="render()">Update the Preview</button></p>
             <div id="preview"><main id="inject"></main><footer>
-                <p style='color: #29cf60'>Dont want to receive these anymore? <br><a style='color: ##29cf60'>Click here to unsubscribe.</a></p>
+                <p style='color: #29cf60'>Dont want to receive these anymore? <br><a style='color: #fff3d2; text-decoration: underline;'>Click here to unsubscribe.</a></p>
                 <p>Koningsweg 1, 9660 Brakel, België - info@boskanter.be - 055/600617</p>
             </footer></div>
             <h2>Send the newsletter here</h2>
@@ -66,6 +67,8 @@
     <script>
         const mdparser = markdownit({html: true})
         
+        let title = document.getElementById("title").value
+        let md = document.getElementById("markdown").value
         let html = ""
         
         const files = []
@@ -101,9 +104,10 @@
         }
 
         function render() {
-            let md = document.getElementById("markdown").value
-            html = mdparser.render(md)
-            let htmlPreview = html
+            title = document.getElementById("title").value
+            md = document.getElementById("markdown").value
+            html =  mdparser.render(md)
+            let htmlPreview = `<h1>${title}</h1>\n` + html
 
             for (f of files.picture) {
                 filename = f.file.name.replaceAll(/[\.]/g, '\\.')
@@ -123,7 +127,7 @@
                 headers: {
                     'Content-Type': 'text/plain'
                 },
-                body: JSON.stringify({password: pw, recipients: recipients, content: html})
+                body: JSON.stringify({password: pw, recipients: recipients, title: title, text: md, html: html})
                 })
             text = await res.text();
             document.getElementById("info").innerHTML = `<div id="samp">${text}</div>`

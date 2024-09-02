@@ -21,5 +21,16 @@
     "email": {"en": "Email", "fr":  "Email", "nl": "Email"},
     "phone": {"en": "Phone", "fr": "Téléphone", "nl": "Telefoon"},
     "our_partners_are": {"en": "Our partners are", "fr": "Nos partenaires sont", "nl": "Onze partners zijn"},
-    "submit": {"en": "submit", "fr": "envoyer", "nl": "opslaan"}
+    "submit": {"en": "submit", "fr": "envoyer", "nl": "opslaan"},
+    "are_you_sure_you_want_to_unsubscribe_from_the_newsletter": {
+        "en": "Are you sure you want to unsubscribe from the newsletter?",
+        "fr": "Êtes-vous sûr de vouloir vous désabonner de la newsletter",
+        "nl": "Weet je zeker dat je je wilt afmelden voor de nieuwsbrief?"
+    },
+    "yes_unsubscribe_me": {"en": "Yes, unsubscribe me.", "fr": "Oui, signez-moi", "nl": "Ja, meld mij af."},
+    "you_successfuly_unsubscribed_from_the_newsletter": {
+        "en": "You successfuly unsubcribed from the newsletter.",
+        "fr": "Vous vous êtes désabonné de la newsletter.",
+        "nl": "U heeft zich met succes afgemeld voor de nieuwsbrief."
+    }
 }

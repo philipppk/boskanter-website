@@ -22,6 +22,17 @@
         "link": "activities#pizza_parties"
     },
     { 
+        "title": { "en": "Don't want to miss an event?", "fr": "", "nl": ""},
+        "image": "",
+		"imagesubtitle": "",
+		"description": { 
+            "en": "Consider subscribing to our newsletter. We send newsletters about once every two months and it is our primary way of inviting people to events at Boskanter. Follow the link below to the subscription page.",
+            "fr": "",
+            "nl": ""
+        },
+        "link": "newsletter/subscribe/"
+    } ,
+    { 
         "title": { "en": "Where are all the photos?", "fr": "", "nl": ""},
         "image": "",
 		"imagesubtitle": "",

@@ -15,7 +15,7 @@ app.use(bodyParser.text())
 
 async function scanCSV(filename, rowProcessor) {
   let file = await fs.open(filename, "r")
-  let output = {text: "", info: null}
+  let output = {text: "", info: null, arr: []}
   let head = true
   for await (line of file.readLines()) {
     if (head) {
@@ -97,9 +97,10 @@ app.post('/api/newsletter/confirm', async (req, res) => {
 
 async function removeURLFromML(url) {
   ml = await scanCSV("mailinglist.csv", (output, row) => {
-    console.log("test")
+    console.log(row[1], url)
     if (row[1] == url) {
       output.info = "URL gefunden"
+      console.log("URL gefunden")
     } 
     else {
       output.text += `\n${row.join(",")}`
@@ -143,9 +144,10 @@ app.post('/api/build', (req, res) => {
 app.post("/api/sendnewsletter", async (req, res) => {
   const reqParsed = JSON.parse(req.body)
   if (reqParsed.password == process.env.ADMIN_PASSWORD) {
-    recipients = (reqParsed.recipients == "everybody" ? (await scanCSV("mailinglist.csv", (row, output) => { output += "," + row[1] })).slice(1) : reqParsed.recipients)
-      .split(/[ ,]+/)
-    newsletter.send(recipients, reqParsed.content)
+    recipients = (reqParsed.recipients == "everybody" 
+      ? (await scanCSV("mailinglist.csv", (output, row) => { output.arr.push([row[0],row[1]]) })).arr 
+      : reqParsed.recipients.split(/[, ]+/).map((r) => [r, ""]))
+    newsletter.send(recipients, reqParsed.text, reqParsed.html, reqParsed.title)
     res.end("success")
   }
   else {
