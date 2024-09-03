@@ -111,7 +111,6 @@
 
             for (f of files.picture) {
                 filename = f.file.name.replaceAll(/[\.]/g, '\\.')
-                console.log(filename)
                 htmlPreview = htmlPreview.replaceAll(new RegExp(`<img src="[^"]*boskanter\.earth\/pictures\/${filename}\.+>`, "gi"), `<img src="${f.url}"/>`)
             }
 
@@ -129,8 +128,28 @@
                 },
                 body: JSON.stringify({password: pw, recipients: recipients, title: title, text: md, html: html})
                 })
-            text = await res.text();
+            text = await res.text()
             document.getElementById("info").innerHTML = `<div id="samp">${text}</div>`
+        }
+
+        async function uploadPictures() {
+            let data = new FormData()
+            for (f in files.pictures) {
+                data.append('picture', f.file)
+            }
+            data.append("password", document.getElementById("password").value)
+            console.log(data)
+        
+            let res = await fetch("/api/upload", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                },
+                body: data
+                })
+            text = await res.text()
+            document.getElementById("info").innerHTML = `<div id="samp">${text}</div>`
+
         }
 
         render()

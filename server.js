@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const exec = require("child_process").exec
 const fs = require("fs/promises")
 const crypto = require("crypto")
+const multer = require('multer')
 const dotenv = require("dotenv").config()
 const blogsearch = require("./blogsearch.js")
 const gallerysearch = require("./gallerysearch.js")
@@ -10,8 +11,10 @@ const newsletter = require("./newsletter.js")
 
 const app = express()
 const port = 3000
+const upload = multer({ dest: "src/pictures" })
 
 app.use(bodyParser.text())
+app.use(express.urlencoded({ extended: false }))
 
 async function scanCSV(filename, rowProcessor) {
   let file = await fs.open(filename, "r")
@@ -154,6 +157,24 @@ app.post("/api/sendnewsletter", async (req, res) => {
     res.end("wrong password")
   }
 })
+
+
+// upload files
+
+app.post("/api/upload", async (req, res) => {
+  console.log(req)
+  if (req.body.password == process.env.ADMIN_PASSWORD) {
+    res.redirect("/protected/upload")
+  }
+  else {
+    res.end("wrong password")
+  }
+})
+
+app.post("/protected/upload", upload.array("pictures"), (req, res) => {
+  res.end("success")
+})
+
 
 // Blogposts nach Kategorie
 
