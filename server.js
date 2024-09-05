@@ -125,7 +125,7 @@ function newlineToBr(std) {
 
 app.post('/api/build', (req, res) => {
   if (req.body == process.env.ADMIN_PASSWORD) {
-    exec('git pull; eleventy; pm2 reload server', (error, stdout, stderr) => {
+    exec('git pull; eleventy', (error, stdout, stderr) => {
       if (error) {
         res.end(`<h2>error</h2>${newlineToBr(error.toString())}`)
         return
@@ -136,7 +136,25 @@ app.post('/api/build', (req, res) => {
   else {
     res.end("The password was not correct")
   }
-});
+})
+
+
+// picturepreview
+
+app.post('/api/picturepreviews', (req, res) => {
+  if (req.body == process.env.ADMIN_PASSWORD) {
+    exec('node picturepreviews.js', (error, stdout, stderr) => {
+      if (error) {
+        res.end(`<h2>error</h2>${newlineToBr(error.toString())}`)
+        return
+      }
+      res.end(`<h2>stdout</h2>${newlineToBr(stdout)}<h2>stderr</h2>${newlineToBr(stderr)}`)
+    })
+  }
+  else {
+    res.end("The password was not correct")
+  }
+})
 
 
 // sendnewsletter

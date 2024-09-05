@@ -21,12 +21,14 @@
 </head>
 <body>
     <h1>The Website Atelier</h1>
-    <p id="input"><input type="password" id="pw" placeholder="type password to rebuild website"/>
-    <button type="button" onclick="submit()">submit</button></p>
-    <div id="success"></div>
+    <p id="input"><label for="pw">Password to enable actions: </label><input type="password" id="pw" name="pw"/>
+    <button type="button" onclick="rebuild()">rebuild website</button>
+    <button type="button" onclick="picturepreviews()">compress gallery previews</button>
+    </p>
+    <div id="info"></div>
 
     <script>
-        async function submit() {
+         async function rebuild() {
             let pw = document.getElementById("pw").value;
             let res = await fetch("/api/build", {
             method: 'POST',
@@ -36,7 +38,20 @@
             body: pw
             });
             text = await res.text();
-            document.getElementById("success").innerHTML = `<div id="samp">${text}</div>`
+            document.getElementById("info").innerHTML = `<div id="samp">${text}</div>`
+        }
+ 
+	    async function picturepreviews() {
+            let pw = document.getElementById("pw").value;
+            let res = await fetch("/api/picturepreviews", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'text/plain'
+            },
+            body: pw
+            });
+            text = await res.text();
+            document.getElementById("info").innerHTML = `<div id="samp">${text}</div>`
         }
     </script>
 </body>
