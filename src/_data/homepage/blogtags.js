@@ -15,11 +15,13 @@ for (locale of ['en', 'fr', 'nl']) {
     }
 }
 
+/* // For Testing
+
 const sentence = "Das Das Das Das ist ein Satz mit ein paar Wörtern was ein ein ein ein ein ein für ein schöner Satz den ich jetz noch viel länger machen werde weil ich ihn so unglaublich toll finde"
 tags = sentence.split(" ").reduce((acc, curr) => {
 	curr in acc ? acc[curr] += 1 : acc[curr] = 1
 	return acc
-}, {})
+}, {})*/
 
 for (t in tags) {
 	let scale = Math.pow(tags[t], 0.5)

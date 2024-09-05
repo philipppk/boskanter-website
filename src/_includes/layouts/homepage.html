@@ -19,7 +19,7 @@
         {% for h in homepage.highlights %}
             <li class="highlightblock">
                 <h3>{{ h.title[locale] }}</h3>
-                <p>{{ h.description[locale] }}</p>
+                <p>{{ h.description[locale] | safe }}</p>
                 <p>
                     <a href="/{% if r/^(en|fr|nl)\//.test(h.link) %}{{ h.link }}{% else %}{{ locale }}/{{ h.link }}{% endif %}">
                         {{ translations.read_more[locale] }}

@@ -15,9 +15,9 @@
     }
 }
 
-@mixin content_width($width) {
+@mixin content_width($width, $padding: 1em) {
     main, footer {
         max-width: $width;
-        width: 100%;
+        width: calc(100% - #{2 * $padding})
     }
 }

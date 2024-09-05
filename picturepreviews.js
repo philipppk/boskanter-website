@@ -8,7 +8,7 @@ if (! fs.existsSync('./_site/picturepreviews')) {
 }
 
 
-const sizeDesired = 50000
+const sizeDesired = 20000
 
 async function makePreview(key) {
     let image = sharp(`./src/pictures/${key}`)
@@ -23,8 +23,8 @@ async function makePreview(key) {
     image = image.resize(width, height)
     
     switch (metadata.format) {
-        case "jpeg": image = image.jpeg({ quality: 10 });
-        case "png":image = image.png({ quality: 10 });
+        case "jpeg": image = image.jpeg({ quality: 1 });
+        case "png":image = image.png({ quality: 1 });
     }
     
     image.toFile(`./_site/picturepreviews/${key}`)

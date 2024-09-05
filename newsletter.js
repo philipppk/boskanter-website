@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer")
 const dotenv = require("dotenv").config()
-const juice = require("juice")
+const fs = require("fs")
 
 const transporter = nodemailer.createTransport({
     host: "smtp.telenet.be",
@@ -37,7 +37,7 @@ let rules = {
     "img, table": { before: "</td></tr><tr><td style='padding: 0em 1em 0em 1em; text-align: center'>", after: "</td></tr><tr><td>"}
 }
 
-async function sendNewsletter(recipients, text, html, title) {
+async function sendNewsletter(recipients, text, html, title, attachments) {
     let beginning = '<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #fff3d2">'
         + '<td style="padding: 20px 1em 0em 1em">' + applyStylesInline(`<h1>${title}</h1>`, styles) + "</td>"
         + "<tr><td style='padding: 0em 1em 0em 1em'>" + wrapHtmlTags(applyStylesInline(html, styles), rules) + "</td></tr>"
@@ -48,15 +48,17 @@ async function sendNewsletter(recipients, text, html, title) {
             + "</footer></td></tr>"
         + "</table>"
 
-    console.log(recipients)
     for (r of recipients) {
         let middle = `${process.env.DOMAIN}/en/newsletter/unsubscribe/?${r[1]}`
-        await transporter.sendMail({
+        transporter.sendMail({
             from: '"Boskanter VZW" <boskanter@telenet.be>',
             to: r[0],
             subject: title,
             text: text + `\n\nTired of receiving these? Unsubscribe here: ${middle}`,
-            html: beginning + middle + end
+            html: beginning + middle + end,
+            attachments: attachments
+                .filter((a) => fs.existsSync(`mail_attachements/${a}`))
+                .map((a) => ({ path: `mail_attachements/${a}` }))
         })
     }
 }

@@ -1,28 +1,44 @@
-#filter {
-    margin: auto;
+@use "_mixins" as *;
+@use "_colors" as *;
+
+@include content_width(60em);
+
+#filters {
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 #pictures {
-    
-    background: none;
     list-style: none;
-    margin: 0;
     padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    grid-gap: 1em;
     
     img {
         width: 100%;
-        height: 10em;
-        object-fit: contain;
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
     }
     
     li {
-        width: 25%;
-        color: #000000;
-        display: block;
-        float: left;
-        padding: 1rem;
         position: relative;
-        text-decoration: none;
+        text-align: center;
     }
     
+    .meta {
+        font-size: small;
+        color: grey;
+    }
+    
+    .linksurface {
+        position:absolute; 
+        width:100%;
+        height:100%;
+        top:0;
+        left: 0;
+        
+        z-index: 1;
+    }
 }

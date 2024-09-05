@@ -9,23 +9,21 @@
 <body>
     <h1>The Newsletter Atellier</h1>
     <div>
-        <div id="writing">
+        <div id="wrapper-left">
             <h2>Write Markdown here</h2>
             <p><label for="title">Title of your newsletter: </label><input type="text" id="title" name="title"></p>
             <p><textarea id="markdown"></textarea></p>
-            
-            <h2>Upload Files here</h2>
-            <table>
-                <tr>
-                    <td>These files will later be uploaded under <code>/pictures</code> so you can use them in the article by <code>![alt text]("https://www.boskanter.earth/pictures/filename.jpg")</code>. The preview will already display them before you uploaded them.</td>
-                    <td><table id="pictures"></table></td>
-                </tr>
-                <tr>
-                    <td>These files will be sent as attachements.</td>
-                    <td><table id="attachements"></table></td>
-                </tr>
-            </table>
-        </div>
+        
+            <h2>Add attachments</h2>
+            <p>To add an attached file to the newsletter, upload it to <code>/mail_attachments</code> on Github, and enter the filename below. 
+            If you want multiple attachments, seperate their filenames by commas.</p>
+            <p><label for="attachments">Name the files you want to attache: </label><input type="text" id="attachments" name="attachments" placeholder="invitation.pdf, directions.png"/></p>
+
+            <h2>Add pictures</h2>
+            <p>If you want to add a picture to this newsletter, upload it on Github to <code>/src/pictures</code>, rebuild the website (<a href="/build">/build</a>),
+            and add the picture by typing</p>
+            <p><code>![text you want to have displayed if image cant be loaded, typically a description](https://pictures/filename.png)</code></p>
+       </div>
         <div id="wrapper-right">
             <h2>Preview</h2>
             <p><button onclick="render()">Update the Preview</button></p>
@@ -43,23 +41,17 @@
                     <label for="sendto-other">Select adresses (seperate by comma):
                                 <input type="email" id="specificAdress" placeholder="ine@boskanter.be, philipp@proton.me">
                     </label>
-                </td></tr><tr></tr>
+                </td></tr>
+                <tr></tr>
                 <tr><td colspan="2">
                     <label for="password">Type in password to conclude: </label>
                     <input type="password" name="password" access="false" id="password">
-                </td></tr><tr></tr>
+                </td></tr>
+                <tr></tr>
                 <tr><td colspan="2">
                     <button onclick="send()">Send to selected recipients</button>
                 </td></tr>
-                <tr><td>
-                    <button name="uploadPictures" onclick="uploadPictures()">Upload pictures</button>
-                </td><td>
-                    <label for="uploadPictures">
-                        (If you have already done so for sending a test email, then you dont need to do it again, when you send the final email. This has to be clicked only once.)
-                    </label>
-                </td></tr>
-                <tr><td colspan="2" id="info">
-                </td></tr>
+                <tr><td colspan="2" id="info"></td></tr>
             </table>
         </div>
     </div>
@@ -71,85 +63,26 @@
         let md = document.getElementById("markdown").value
         let html = ""
         
-        const files = []
-        const displayFiles = []
-        const addFile = []
-        const removeFile = []
-
-        for (let filetype of ["picture", "attachement"]) {
-            
-            files[filetype] = []
-            
-            displayFiles[filetype] = function() {
-                let table = `<tr><th><input type="file" id="${filetype}"></th><th><button onclick="addFile.${filetype}()">add ${filetype}</button></th></tr>`
-                for (i in files[filetype]) {
-                    table += `<tr><td>${files[filetype][i].file.name}</td><td><button onclick="removeFile.${filetype}(${i})">remove</button></td></tr>`
-                }
-                document.getElementById(filetype + "s").innerHTML = table
-            }
-
-            addFile[filetype] = function() {
-                files[filetype].push(...Array.from(document.getElementById(filetype).files).map(
-                    (f) => ({file: f, url: URL.createObjectURL(f)})
-                ))
-                displayFiles[filetype]()
-            }
-
-            removeFile[filetype] = function(i) {
-                files[filetype] = [files[filetype].slice(0,i), files[filetype].slice(i+1)].flat(1)
-                displayFiles[filetype]()
-            }
-
-            displayFiles[filetype]()
-        }
-
         function render() {
             title = document.getElementById("title").value
             md = document.getElementById("markdown").value
             html =  mdparser.render(md)
-            let htmlPreview = `<h1>${title}</h1>\n` + html
-
-            for (f of files.picture) {
-                filename = f.file.name.replaceAll(/[\.]/g, '\\.')
-                htmlPreview = htmlPreview.replaceAll(new RegExp(`<img src="[^"]*boskanter\.earth\/pictures\/${filename}\.+>`, "gi"), `<img src="${f.url}"/>`)
-            }
-
-            document.getElementById("inject").innerHTML = htmlPreview 
+            document.getElementById("inject").innerHTML = `<h1>${title}</h1>\n` + html
         }
 
         async function send() {
             let pw = document.getElementById("password").value;
             let recipients = document.getElementById("sendtoeverybody").checked ? "everybody" : document.getElementById("specificAdress").value
-            console.log(JSON.stringify({password: pw, recipients: recipients, content: html}))
+            let attachments = document.getElementById("attachments").value
             let res = await fetch("/api/sendnewsletter", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'text/plain'
                 },
-                body: JSON.stringify({password: pw, recipients: recipients, title: title, text: md, html: html})
+                body: JSON.stringify({password: pw, recipients: recipients, title: title, text: md, html: html, attachments: attachments})
                 })
             text = await res.text()
             document.getElementById("info").innerHTML = `<div id="samp">${text}</div>`
-        }
-
-        async function uploadPictures() {
-            let data = new FormData()
-            for (f in files.pictures) {
-                data.append('picture', f.file)
-            }
-            data.append("password", document.getElementById("password").value)
-            console.log(data)
-        
-            let res = await fetch("/api/upload", {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'multipart/form-data'
-                },
-                body: data
-                })
-            text = await res.text()
-            document.getElementById("info").innerHTML = `<div id="samp">${text}</div>`
-
         }
 
         render()

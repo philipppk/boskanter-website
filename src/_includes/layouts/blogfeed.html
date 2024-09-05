@@ -56,17 +56,16 @@
             for (p of posts) {
                 console.log(p)
                 if (language == "" || p.language == language) {
-                    list += "<li>"
-                        + `<img src="/icons/${p.icon}"/><br>`
-                        + p.title + "<br>"
-                        + (p.tags ? p.tags + "<br>" : "")
-                        + `${ {
+                    list += `<li>`
+                        + `<img src="/icons/${p.icon ? p.icon : "default.svg"}"/><br>`
+                        + `<span class="title">${p.title}</span><br>`
+                        + `<span class="meta">${ {
                                 en: "{{ translations.English[locale] }}",
                                 fr: "{{ translations.French[locale] }}",
                                 nl: "{{ translations.Dutch[locale] }}"
-                            }[p.language]}<br>`
-                        + p.date + "<br>"
-                        + `<a href='${p.id}'>${p.id}</a><br>`
+                            }[p.language]} | `
+                        + `${p.date}</span></br>`
+                        + `<a href='${p.id}'><span class="linksurface"></span></a><br>`
                         + "</li>"
                 }
             }

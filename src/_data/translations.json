@@ -32,5 +32,9 @@
         "en": "You successfuly unsubcribed from the newsletter.",
         "fr": "Vous vous êtes désabonné de la newsletter.",
         "nl": "U heeft zich met succes afgemeld voor de nieuwsbrief."
+    },
+    "visit": {"en": "Visit",  "fr": "Rendez-vous sur",  "nl": "Bezoek"},
+    "this_page": {"en": "this page",  "fr": "cette page",  "nl": "deze pagina"},
+    "to_subscribe_to_our_newsletter": {"en": "to subscribe to the newsletter.",  "fr": "pour vous abonner à la newsletter.",  "nl": "om je te abonneren op de nieuwsbrief."
     }
 }

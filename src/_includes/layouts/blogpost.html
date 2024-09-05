@@ -10,7 +10,7 @@
             <h1>{{ title }}</h1>
             <p class="subtitle">Written by {{ author }} from {{ authorcountry }}</p>
         </div>
-    <img src="/icons/{{ icon }}"/>
+    {% if icon %}<img src="/icons/{{ icon }}"/>{% endif %}
     </div>
     {{ content | safe }}
 {% endblock %}
