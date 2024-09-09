@@ -21,3 +21,12 @@
         color: grey;
     }
 }
+
+main table {
+    border-collapse: collapse;
+    margin: auto;
+    td, th {
+        border: 1px solid gray;
+        padding: 0.5em;
+    }
+}

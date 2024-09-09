@@ -17,8 +17,7 @@ var Calendar = function(model, options, date){
     EventClick: '',
     EventTargetWholeDay: false,
     DisabledDays: [],
-    ModelChange: model,
-    Language: "en",
+    ModelChange: model
   };
   // Overwriting default values
   for(var key in options){
@@ -54,11 +53,7 @@ function createCalendar(calendar, element, adjuster){
       typeof calendar.Options[key] != 'function' && typeof calendar.Options[key] != 'object' && calendar.Options[key]?element.className += " " + key + "-" + calendar.Options[key]:0;
     }
   }
-  var months = {
-    en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-    fr: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-    nl: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"]
-  }[calendar.Options.Language];
+  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   function AddSidebar(){
     var sidebar = document.createElement('div');
@@ -157,14 +152,10 @@ function createCalendar(calendar, element, adjuster){
       else{mainSection.appendChild(datetime);}
   }
 
-  function AddLabels(language){
+  function AddLabels(){
     var labels = document.createElement('ul');
     labels.className = 'cld-labels';
-    var labelsList = {
-      en: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      fr: ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
-      nl: ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"]
-    }[language];
+    var labelsList = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     for(var i = 0; i < labelsList.length; i++){
       var label = document.createElement('li');
       label.className += "cld-label";
@@ -298,7 +289,7 @@ function createCalendar(calendar, element, adjuster){
   if(calendar.Options.DateTimeShow){
     AddDateTime();
   }
-  AddLabels(calendar.Options.Language);
+  AddLabels();
   AddDays();
 }
 

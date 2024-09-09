@@ -1,35 +1,22 @@
 {% extends 'layouts/base.html' %}
 
 {% block css %}
+    <link rel="stylesheet" href="/css/calendar.css">
     <link rel="stylesheet" href="/css/theme3.css">
 {% endblock %}
 
 {% block content %}
     <h1>{{ translations.calendar[locale] }}</h1>
-    <form>
-        <input type="radio" id="calendar" name="fav_language" value="calendar">
-        <label for="calendar">Calendar view</label><br>
-        <input type="radio" id="list" name="fav_language" value="list">
-        <label for="list">List view</label><br>
-    </form>
-    <div>
-        <div id="calendar"></div>
-        <div id="description"></div>
-    </div>
-    <div>
-        <ul>
-            {% for e in calendar_entries.short %}
-            <li></li>
-            {% endfor %}
-        </ul>
-    </div>
+    <p><em>{{ translations.click_on_an_entry_to_display_more_information[locale] }}</em></p>
+    <div id="calendar"></div>
+    <div id="description"></div>
 {% endblock %}
 
 {% block javascript %}
     <script type="text/javascript" src="/scripts/caleandar.js"></script>
     <script>
         const entries = [
-            {% for e in calendar_entries.long %}
+            {% for e in calendar_entries %}
                 {date: new Date("{{ e.date }}"), title: "{{ e.title[locale] }}", description: "{{ e.description[locale] }}"},
             {% endfor %}
         ]
@@ -38,7 +25,7 @@
             let description = []
             for (e of entries) {
                 if (e.date.toString() == date.toString()) {
-                    description.push(`<h3>${ e.title }</h3>${e.description}`)
+                    description.push(`<h2>${ e.title }</h2>${e.description}`)
                 }
             }
             document.getElementById("description").innerHTML = description.join("<br>")
@@ -56,10 +43,9 @@
             DateTimeFormat: 'mmm, yyyy',  //(string - dateformat) format previously mentioned date is shown in.
             DatetimeLocation: '',         //(string - element) where to display previously mentioned date, if not in default position.
             EventClick: '',               //(function) a function that should instantiate on the click of any event. parameters passed in via data link attribute.
-            EventTargetWholeDay: true,    //(bool) clicking on the whole date will trigger event action, as opposed to just clicking on the title.
+            EventTargetWholeDay: true,   //(bool) clicking on the whole date will trigger event action, as opposed to just clicking on the title.
             DisabledDays: [],             //(array of numbers) days of the week to be slightly transparent. ie: [1,6] to fade Sunday and Saturday.
-            ModelChange: [],              //(array of objects) new data object to pass into calendar (serving suggestion: passing through only the currently selected month's events if working with large dataset.
-            Language: "{{ locale }}"
+            ModelChange: []               //(array of objects) new data object to pass into calendar (serving suggestion: passing through only the currently selected month's events if working with large dataset.
         });
     </script>
 {% endblock %}
