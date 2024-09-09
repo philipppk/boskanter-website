@@ -8,7 +8,7 @@
     <div class="header">
         <div>
             <h1>{{ title }}</h1>
-            <p class="subtitle">Written by {{ author }} from {{ authorcountry }}</p>
+            {% if author %}<p class="subtitle">Written by {{ author }} {% if authorcountry %} from {{ authorcountry }} {% endif %}</p>{% endif %}
         </div>
     {% if icon %}<img src="/icons/{{ icon }}"/>{% endif %}
     </div>
