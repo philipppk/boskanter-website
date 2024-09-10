@@ -6,7 +6,7 @@ First of all, to do anything on the website, you have to make a GitHub Account a
 
 - Writing a blogpost
 - Writing an article page
-- Adding a picture
+- Adding a picture: For general use, to be displayed in the gallery or to be used as an icon
 - Editing specific pages:
 	+ Homepage
 	+ Calendar
@@ -14,6 +14,7 @@ First of all, to do anything on the website, you have to make a GitHub Account a
 	+ Blogfeed
 - Editing the navigation bar
 - Writing markdown
+
 
 ## Writing a Blogpost
 1. Decide which language you want to write in: The website supports english (en), french (fr) and dutch (nl). 
@@ -77,3 +78,46 @@ layout: layouts/article.html
 ---
 ```
 3. After the block with metadata, you can write your post in markdown. Markdown is a specific code to write formatted text in a regular text file. See more in the chapter [writing markdown](#writing_markdwown).
+
+
+## Adding a picture: For general use, to be displayed in the gallery or to be used as an icon
+
+### For general use
+Upload the picture in `/src/pictures` and rebuild the website. The picture will then be available at `www.boskanter.earth/pictures/filname.jpg`. You can then add it to your pages by writing `![write image description here](www.boskanter.earth/pictures/filname.jpg)`.
+
+### To be displayed in the gallery
+To put a pciture in the gallery, you (1) add it just as a regular picture and then (2) tell the website that this picture belongs in the gallery. To do that
+1. Do everything described in the previous section.
+2. Open `/src/_data_gallery/pictures.json`. You will see, that the file has the general structure of a comma seperated lists of blocks wrapped in curly brackets. The list itself is in turn wrapped in square brackets. To add the picture to the gallery, add a new block with curly brackets (dont forget to add a new comma after the previous one). It should look like this:
+```
+    {
+        "key": "pizzafeestje.jpg",
+        "date": "10.1.2024",
+        "category": "something",
+        "description": {"en": "pizza party", "fr": "pizza", "nl": "pizzafeestje"}
+    }
+```
+
+Here you can also ommit the lines "date" and "category". It is very important that you respect the JSON syntax (otherwise an error will pe produced): Remember to put a comma after each line but the last one and wrap any word or sentence in quotation marks. The order of entries is not important. In the respective lines after ": " you have to give:
+
+- The name of your file as you uploaded it to `pictures`
+- Optionally a date
+- Optionally a categorykey (The available categorykeys are written down and can be edited in `/src/_data/gallery/categories.js`)
+- A description object, with descriptions in english, french and dutch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
