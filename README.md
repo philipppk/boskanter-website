@@ -138,7 +138,46 @@ Between the brackets you can write your desired words with a number (in the defa
 
 #### yellowbox.json
 
-This one is responsible for filling the yellow box with content. I saw it as space for a little introduction, but of course anything can go in there. In the file there is an object with the attributes `"en"`, `"fr"` and `"nl"`. After the colon, write, enclosed by qoutes, the content in the specified language. You can also write HTML (but no markdown), to add a heading (`<h1>...</h1>`)
+This one is responsible for filling the yellow box with content. I saw it as space for a little introduction, but of course anything can go in there. In the file there is an object with the attributes `"en"`, `"fr"` and `"nl"`. After the colon, write, enclosed by qoutes, the content in the specified language. You can also write HTML (but no markdown), to add a heading (`<h1>...</h1>`) or bold text (`<strong>...</strong>`) for example. A viable fileentry could be for example:
+
+```
+{
+	"en": "<h1>Hello</h1>Welcome to our website",
+	"fr": "<h1>Salut</h1>Bienvenue sur notre site",
+	"nl": "<h1>Hallo</h1>Welkomen op onze website"
+}
+```
+
+#### highlights.json
+
+Here you specifiy which highlights will be shown on the website: A highlight is a little heading, a description, optionally a picture with a caption and a link to any page you want to highlight. You will see, that the file has the general structure of a comma seperated lists of blocks wrapped in curly brackets. The list itself is in turn wrapped in square brackets. Each block in the list corresponds to a highlight. It should look like this:
+
+```
+{ 
+	"title": { "en": "forest", "fr": "fôret", "nl": "bos"},
+	"image": "forest.jpg",
+	"imagesubtitle": { "en": "A forest", "fr": "une fôret", "nl": "een bos" },
+	"description": { 
+		"en": "<em>A lot of trees</em></p><p>Thats a forest.</p>",
+		"fr": "<em>Beacoup d'arbres</em>C'est un fôret.",
+		"nl": "<em>Veel bomen</em><p>Dat is een bos.</p>"
+	},
+	"link": "en/blog/posts/what_is_a_forest/"
+}
+```
+
+Here you can also ommit the lines "image" and "imagesubtitle" (to make the wesbite faster and safe energy it is even better if you do). It is very important that you respect the JSON syntax (otherwise an error will pe produced): Remember to put a comma after each line but the last one and wrap any word or sentence in quotation marks. The order of entries is not important. In the respective lines after ": " you have to give:
+
+- a title in english, french and dutch
+- Optionally an image via the name of a file that is uploaded to `/src/pictures`
+- Optionally an imagesubtitle in english, french and dutch
+- A description in english, french and dutch
+- A link to a page on the website - Here the behaviour is that if the link does not start with `en`, `fr` or `nl`, for example `path/to/page/`, the link leads to `www.boskanter.earth/en/path/to/page/, `www.boskanter.earth/fr/path/to/page` or `www.boskanter.earth/nl/path/to/page` depending on which language they are viewing the homepage. If the link starts with `en`, `fr` or `nl`, for example `en/path/to/page", the link always leads to "www.boskanter.earth/en/path/to/page".
+
+
+
+
+
 
 
 
