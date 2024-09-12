@@ -29,7 +29,7 @@
             {% if h.image %}
                 <li class="picture">
                     <img src="/pictures/{{ h.image }}">
-                    {% if h.imagesubtitle %}<p class="subtitle">{{ h.imagesubtitle }}</p>{% endif %}
+                    {% if h.imagesubtitle %}<p class="subtitle">{{ h.imagesubtitle[locale] }}</p>{% endif %}
                 </li>
             {% endif %}    
        {% endfor %}
