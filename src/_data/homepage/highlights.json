@@ -1,19 +1,15 @@
 [
     { 
         "title": { "en": "pizza party", "fr": "pizza party", "nl": "pizza party"},
-        "image": "",
-		"imagesubtitle": "Our typical flemish oven in action. We also use this oven to bake pizza.",
 		"description": { 
-            "en": "Occasionally we organize pizza parties at Boskanter, where our masonry oven takes on the role of pizza oven and Boskanter turns into a pizzeria for the evening. An occasion for locals to meet and learn about Boskanter and our way of life while enjoying delicious pizza.",
-            "fr": "",
+        	"en": "Occasionally we organize pizza parties at Boskanter, where our masonry oven takes on the role of pizza oven and Boskanter turns into a pizzeria for the evening. An occasion for locals to meet and learn about Boskanter and our way of life while enjoying delicious pizza.",
+        	"fr": "",
             "nl": ""
         },
         "link": "activities#pizza_parties"
     },
     { 
         "title": { "en": "bread baking", "fr": "pain", "nl": "brood bakken"},
-        "image": "",
-		"imagesubtitle": "",
 		"description": { 
             "en": "We reguarly bake sourdough bread, with local and organic grain. This covers all of the bread consumption of the people living here, and sometimes we also sell it.",
             "fr": "",
@@ -23,8 +19,6 @@
     },
     { 
         "title": { "en": "Don't want to miss an event?", "fr": "", "nl": ""},
-        "image": "",
-		"imagesubtitle": "",
 		"description": { 
             "en": "<em>Consider subscribing to our newsletter.</em></p><p>We send newsletters about once every two months and it is our primary way of inviting people to events at Boskanter. Follow the link below to the subscription page.",
             "fr": "",
@@ -34,8 +28,6 @@
     } ,
     { 
         "title": { "en": "Where are all the photos?", "fr": "", "nl": ""},
-        "image": "",
-		"imagesubtitle": "",
 		"description": { 
             "en": "<em>A more sustainable Website</em></p><p>This blog post explains what thoughts went into making this website more sustainable.",
             "fr": "",
