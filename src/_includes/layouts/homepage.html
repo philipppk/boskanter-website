@@ -26,10 +26,10 @@
                     </a>
                 </p>
             </li>
-            {% if h.image != "" %}
+            {% if h.image %}
                 <li class="picture">
                     <img src="/pictures/{{ h.image }}">
-                    <p class="subtitle">{{ h.imagesubtitle }}</p>
+                    {% if h.imagesubtitle %}<p class="subtitle">{{ h.imagesubtitle }}</p>{% endif %}
                 </li>
             {% endif %}    
        {% endfor %}
