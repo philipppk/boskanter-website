@@ -172,7 +172,7 @@ Here you can also ommit the lines "image" and "imagesubtitle" (to make the wesbi
 - Optionally an image via the name of a file that is uploaded to `/src/pictures`
 - Optionally an imagesubtitle in english, french and dutch
 - A description in english, french and dutch
-- A link to a page on the website - Here the behaviour is that if the link does not start with `en`, `fr` or `nl`, for example `path/to/page/`, the link leads to `www.boskanter.earth/en/path/to/page/, `www.boskanter.earth/fr/path/to/page` or `www.boskanter.earth/nl/path/to/page` depending on which language they are viewing the homepage. If the link starts with `en`, `fr` or `nl`, for example `en/path/to/page", the link always leads to "www.boskanter.earth/en/path/to/page".
+- A link to a page on the website - Here the behaviour is that if the link does not start with `en`, `fr` or `nl`, for example `path/to/page/`, the link leads to `www.boskanter.earth/en/path/to/page/`, `www.boskanter.earth/fr/path/to/page` or `www.boskanter.earth/nl/path/to/page` depending on which language they are viewing the homepage. If the link starts with `en`, `fr` or `nl`, for example `en/path/to/page`, the link always leads to `www.boskanter.earth/en/path/to/page`.
 
 
 
