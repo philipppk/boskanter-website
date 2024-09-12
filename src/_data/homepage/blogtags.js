@@ -1,6 +1,8 @@
 const fs = require("fs")
 const { sin, cos, sqrt, max, min } = require('mathjs')
 
+const numberOfTags = 30
+
 let tags = []
 for (locale of ['en', 'fr', 'nl']) {
     for (file of fs.readdirSync(`src/${locale}/blog/posts`)) {
@@ -15,13 +17,9 @@ for (locale of ['en', 'fr', 'nl']) {
     }
 }
 
-/* // For Testing
+// edit after here
 
-const sentence = "Das Das Das Das ist ein Satz mit ein paar Wörtern was ein ein ein ein ein ein für ein schöner Satz den ich jetz noch viel länger machen werde weil ich ihn so unglaublich toll finde"
-tags = sentence.split(" ").reduce((acc, curr) => {
-	curr in acc ? acc[curr] += 1 : acc[curr] = 1
-	return acc
-}, {})*/
+// edit before here
 
 for (t in tags) {
 	let scale = Math.pow(tags[t], 0.5)
