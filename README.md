@@ -106,13 +106,39 @@ Here you can also ommit the lines "date" and "category". It is very important th
 - A description object, with descriptions in english, french and dutch
 
 
+## Editing specific pages
+
+### The Homepage
+The content of the homepage feeds itself from three files in `/src/_data/homepage`: `blogtags.js`, `yellowbox.json` and `highlights.json`.
+
+#### blogtags.js
+
+`blogtags.js`is responsible for generating the word cloud with tags from the blog. The default behavior is, that the 30 tags that appear the most are used for the wordcloud (you can modify this number by changing the line `const numberOfTags = 30` to a different number). If you want to control yourself what appears in the wordcloud and with which size, write the following between the two lines `\\ edit after here`, `\\ edit before here`:
+
+```
+// edit after here
+
+tags = {
+	"a tag": 10,
+ 	"another tag": 20,
+  	"yet another tag": 10,
+	"add": 1,
+ 	"as": 4,
+  	"many": 5,
+   	"as": 10,
+	"you": 100,
+ 	"like": 200
+}
+
+// edit before here
+```
+
+Between the brackets you can write your desired words with a number (in the default behaviour this number is the number of appearances as a tag). In the wordcloud the area of each letter of the word will be proportional to this number. If you want the default beavior just make sure that the lines between the two are empty. Also pay attention to the correct syntax: Write a comma after each line between the brackets but the last one.
 
 
+#### yellowbox.json
 
-
-
-
-
+This one is responsible for filling the yellow box with content. I saw it as space for a little introduction, but of course anything can go in there. In the file there is an object with the attributes `"en"`, `"fr"` and `"nl"`. After the colon, write, enclosed by qoutes, the content in the specified language. You can also write HTML (but no markdown), to add a heading (`<h1>...</h1>`)
 
 
 
