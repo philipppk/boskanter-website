@@ -1,10 +1,15 @@
 {% extends 'layouts/base.html' %}
 
+{% block css %}
+    <link rel="stylesheet" href="/css/newsletter.css">
+{% endblock %}
+
 {% block content %}
-    {{ content | safe }}
+    <p>{{ translations.enter_your_email_adress_to_subscribe_to_the_newsletter[locale] }}</p>
     <input type="text" id="email" name="email"/>
     <button type="button" onclick="submit()">submit</button>
     <p id="info"></p>
+    <p><img src="/icons/mail.svg"/></p>
 {% endblock %}
 
 {% block javascript %}

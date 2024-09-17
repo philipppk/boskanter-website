@@ -1,7 +1,12 @@
 {% extends 'layouts/base.html' %}
 
+{% block css %}
+    <link rel="stylesheet" href="/css/newsletter.css">
+{% endblock %}
+
 {% block content %}
-    {{ content | safe }}
+    <p>{{ translations.you_successfully_subscribed_to_the_newsletter[locale] }}</p>
+    <p><img src="/icons/mail.svg"/></p>
 {% endblock %}
 
 {% block javascript %}

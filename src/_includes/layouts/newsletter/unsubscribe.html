@@ -1,13 +1,14 @@
 {% extends 'layouts/base.html' %}
 
 {% block css %}
-    <link rel="stylesheet" href="/css/article.css">
+    <link rel="stylesheet" href="/css/newsletter.css">
 {% endblock %}
 
 {% block content %}
     <p>{{ translations.are_you_sure_you_want_to_unsubscribe_from_the_newsletter[locale] }}</p>
     <p><button onclick="unsubscribe()">{{ translations.yes_unsubscribe_me[locale] }}</button></p>
     <p id="display"></p>
+    <p><img src="/icons/mail.svg"/></p>
 
 {% endblock %}
 

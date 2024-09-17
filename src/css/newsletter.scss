@@ -1,0 +1,19 @@
+@use "_mixins" as *;
+
+@include content_width(50em);
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 10em;
+    max-width: 100%;
+}
+
+main table {
+    border-collapse: collapse;
+    td, th {
+        border: 1px solid gray;
+        padding: 0.5em;
+    }
+}

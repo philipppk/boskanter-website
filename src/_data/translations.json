@@ -22,6 +22,16 @@
     "phone": {"en": "Phone", "fr": "Téléphone", "nl": "Telefoon"},
     "our_partners_are": {"en": "Our partners are", "fr": "Nos partenaires sont", "nl": "Onze partners zijn"},
     "submit": {"en": "submit", "fr": "envoyer", "nl": "opslaan"},
+    "you_successfully_subscribed_to_the_newsletter": {
+        "en": "You successfuly subcribed to the newsletter.",
+        "fr": "Vous vous êtes inscrit avec succès à la newsletter.",
+        "nl": "Je hebt je succesvol geabonneerd op de nieuwsbrief."
+    },
+    "enter_your_email_adress_to_subscribe_to_the_newsletter": {
+        "en": "Enter your email adress to subscribe to the newsletter.",
+        "fr": "Entrez votre adresse e-mail pour vous abonner à la newsletter.",
+        "nl": "Vul uw e-mailadres in om u te abonneren op de nieuwsbrief."
+    },
     "are_you_sure_you_want_to_unsubscribe_from_the_newsletter": {
         "en": "Are you sure you want to unsubscribe from the newsletter?",
         "fr": "Êtes-vous sûr de vouloir vous désabonner de la newsletter",

@@ -13,8 +13,6 @@
     },
     {
         "key": "oven.jpg",
-        "date": "10.1.2024",
-        "category": "something",
         "description": {"en": "oven", "fr": "oven", "nl": "oven"}
     }
 ]
