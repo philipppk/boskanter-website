@@ -174,6 +174,33 @@ Here you can also ommit the lines "image" and "imagesubtitle" (to make the wesbi
 - A description in english, french and dutch
 - A link to a page on the website - Here the behaviour is that if the link does not start with `en`, `fr` or `nl`, for example `path/to/page/`, the link leads to `www.boskanter.earth/en/path/to/page/`, `www.boskanter.earth/fr/path/to/page` or `www.boskanter.earth/nl/path/to/page` depending on which language they are viewing the homepage. If the link starts with `en`, `fr` or `nl`, for example `en/path/to/page`, the link always leads to `www.boskanter.earth/en/path/to/page`.
 
+### The Calendar
+To edit the entries in the calendar, open `/src/_data/calendar_entries.js`. In the beginning of the file you will find the array `entries` that contains all the entries. An entry is a block wrapped by two curly brackets. The whole array could look like this:
+
+```
+const entries = [
+    {
+        start: "23.7.2024",
+        end: "23.7.2024", 
+        title: {en: "Pizza Party", nl: "Pizza Party", fr: "Pizza Party"}, 
+        description: {en: "We will bake Pizza in our oven. Click <a href='/en/pizza_party'>here</a> for details.", nl: " ... ", fr: " ... "}
+    },
+    {
+        start: "8.7.2024",
+        end: "28.7.2024",
+        title: {en: "Workcamp", fr: "Workcamp", nl: "Workcamp"},
+        description: {en: "We will invite 10 people from all over Europe to work with us", nl: " ... ", fr: " ... "}
+    } 
+]
+```
+In an entry you have to provide
+- a start and end date (written as (D)D.(M)M.YYYY, day and month can be one or two letters)
+- a title in english, french and dutch
+- a description in english, french and dutch. Here you can also write HTML to link to other pages (<a href='/path/to/your/page'>linkname</a>) or to write things bold, italic, etc... The description will be displayed when the entry is clicked in the calendar.
+
+Remember to put commas and quotationmarks as in the example. Otherwise the server will not be able to rebuild the website.
+
+### The Gallery
 
 
 
