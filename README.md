@@ -11,7 +11,6 @@ First of all, to do anything on the website, you have to make a GitHub Account a
 	+ Homepage
 	+ Calendar
 	+ Gallery
-	+ Blogfeed
 - Editing the navigation bar
 - Writing markdown
 
@@ -201,6 +200,35 @@ In an entry you have to provide
 Remember to put commas and quotationmarks as in the example. Otherwise the server will not be able to rebuild the website.
 
 ### The Gallery
+Read how to add a picture to the gallery in the section "Adding Pictures".
+
+
+## Editing the navigation bar
+The navigation bar is rendered into html as a nested list (with nesting depth not more than one). For example currently the html understands it as
+
+- Boskanter
+- Principles
+	+ Permaculture
+	+ Transition Towns
+	+ Links
+- Practical
+	+ ESC Volunteering
+	+ Workaway Volunteering
+	+ Directions
+- Blog
+	+ All Categories
+	+ Category 1
+	+ Category 2 ...
+- Caledar
+- Gallery
+	+ All Categories
+	+ Category 1
+	+ Category 2 ...
+
+The second level items will be rendered dropping down from the first level items they belong to. This list is rendered from the contents of `/src/_data/navigation_bar.js`. The entries are written down at the beginning of the file in the array `nav`.
+
+
+
 
 
 
