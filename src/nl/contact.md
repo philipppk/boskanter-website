@@ -1,4 +1,3 @@
-@ -0,0 +1,40 @@
 ---
 title: wegwijzer
 layout: layouts/article.html
