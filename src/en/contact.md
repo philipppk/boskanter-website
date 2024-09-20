@@ -32,9 +32,8 @@ It’s easiest to reach us by bus from the train stations of Ronse and Zottegem.
 
 You  can find the timetables for these busses [on the website of De Lijn](https://www.delijn.be/en/). You have to press a button on the bus, to ask the driver to stop. Check for the stop on your route planner, or ask the bus driver beforehand to warn you. 
 Tickets can be bought on-line, even just before you get on the bus. The cheaper option is a ticket for ten rides that you can buy either on-line or in the trainstation or newspaper shops. We can take over remaining rides on the paper ticket if you would not use all of them. 
-As long as they are working on the ‘Ronsesestraat’, you need busstop ‘Herenhof’ to reach Boskanter. After that, it will be the stop ‘Landuitweg’.On the image below you see the stop ‘Herenhof’ and the dotted golden line you can follow to find Boskanter.
+On the map below, tou can follow the dotted blue line to get from the circle (busstop) to the arrow (Boskanter). You should count 10 minutes. Watch out: part of the road is a small dirt track. Very beautifull, but not made for trailers.
+![The way from Herenhof](/pictures/landuitweg.jpg)
 
-## GPS
+# GPS
 Aim for the crossroads between Pullem and Koningsweg instead of ‘Koningsweg 1’. Because Koningsweg consists of two parts with a forest in between and the GPS can send you to the wrong end.
-
-![The way from Herenhof](/pictures/herenhof.jpg)
