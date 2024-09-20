@@ -16,6 +16,7 @@ Je kan ons per bus (zie volgende hoofdstuk) bereiken vanuit de treinstations van
 
 # Per bus
 Met de bus geraak je er het makkelijkste vanaf de treinstations van Ronse of Zottegem. Vanaf deze treinstations vertrekt min of meer elk uur de bus nr 20 en bussen nr. 207 en 208. Sinds het einde van de werken op de Ronsesesteenweg, eind augustus 2024, is Landuitweg nog het enige busstation vlakbij Boskanter.
+Op het kaartje hieronder zie je in blauwe stippeltjes hoe je van het cirkeltje (bushalte) naar het pijltje (Boskanter) stapt. Reken hiervoor op een tiental minuutjes.
 ![De weg vanaf Landuitweg](/pictures/landuitweg.jpg)
 
 # GPS
