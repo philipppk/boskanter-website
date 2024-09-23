@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const exec = require("child_process").exec
+const {readFileSync} = require("fs")
 const fs = require("fs/promises")
 const crypto = require("crypto")
 const dotenv = require("dotenv").config()
@@ -84,7 +85,7 @@ async function addToML(email) {
 app.post('/api/newsletter/confirm', async (req, res) => {
   let email = await getEmailFromABTS(req.body)
   if (email === null) {
-    res.end("You confirmation URL has expired, subscribe again to get a new confirmation URL")
+    res.end("Your confirmation URL has expired, subscribe again to get a new confirmation URL")
   }
   else {
     await addToML(email)
@@ -169,6 +170,40 @@ app.post("/api/sendnewsletter", async (req, res) => {
       ? []
       : reqParsed.attachments.split(/ *, */))
     newsletter.send(recipients, reqParsed.text, reqParsed.html, reqParsed.title, attachments)
+    res.end("success")
+  }
+  else {
+    res.end("wrong password")
+  }
+})
+
+
+// get mailinglist
+
+app.post("/api/getmailinglist", async (req, res) => {
+  const password = req.body  
+  if (password == process.env.ADMIN_PASSWORD) {
+    res.end(readFileSync("mailinglist.csv"))
+  }
+  else {
+    res.end("wrong password")
+  }
+})
+
+
+// update mailinglist
+
+app.post("/api/updatemailinglist", async (req, res) => {
+  const reqParsed = JSON.parse(req.body)
+  if (reqParsed.password == process.env.ADMIN_PASSWORD) {
+    for (change of reqParsed.changes.map((c) => c.split(" "))) {
+      if (change[0] == "remove") {
+        await removeURLFromML(change[1])
+      }
+      if (change[0] == "add") {
+        await addToML(change[1])
+      }
+    }
     res.end("success")
   }
   else {

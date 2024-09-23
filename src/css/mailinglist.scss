@@ -1,0 +1,25 @@
+@use "_mixins" as *;
+@use "_fonts" as *;
+
+body {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em 5em 5em 5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    >h1 {
+        text-align: center;
+    }
+}
+
+.new {
+    color: green;
+}
+
+.old {
+    color: red;
+    text-decoration: line-through;
+    td:nth-child(2) {
+        display: none;
+    }
+}
