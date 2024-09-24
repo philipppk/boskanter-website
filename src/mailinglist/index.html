@@ -35,7 +35,7 @@
                 return
             }
             changes = []
-            const subscribers = text.split("\n").slice(1,-1).map((l) => l.split(","))
+            const subscribers = text.split("\n").slice(1).map((l) => l.split(","))
             let table = "<tr><th>mail</th><th>action</th>"
                 + "<tr><td><input type='text' id='newmails'/></td><td><button onclick='add()'>add</button></td></tr>"
                 + subscribers.map((s) => `<tr id="${s[1]}"><td>${s[0]}</td><td><button onclick="remove('${s[1]}')">remove</button></td></tr>`).join("\n")
@@ -81,6 +81,7 @@
                 alert("wrong password")
                 return
             }
+            getMailinglist()
         }
 
 
