@@ -227,7 +227,7 @@ The navigation bar is rendered into html as a nested list (with nesting depth no
 
 The second level items will be rendered dropping down from the first level items they belong to. This list is rendered from the contents of `/src/_data/navigation_bar.js`. The entries are written down at the beginning of the file in the array `nav`. The array nav includes regular entries and instructions. 
 
-The instructions specify how nav is processed afterwards, at the moment they only specify where the blog- and gallerycategories should be added. You are welcome to change the position of these instructions or delete them, but I discourage any editor to try making new ones, because you would need to modify the code below.
+The instructions specify how nav is processed afterwards, at the moment there are the instructions `"insert blog categories here"` and `"insert gallery categories here"`. They specify where the blog- and gallerycategories should be added. You are welcome to change the position of these instructions or delete them, but I discourage any editor from trying to make new ones, because you would need to modify the code below.
 
 What nav now describes is each entry of the nested list in the order they appear. In each entry it is specified wether it appears as a first level or second level element. An entry looks like this
 
