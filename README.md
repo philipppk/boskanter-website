@@ -8,7 +8,7 @@ First of all, to do anything on the website, you have to make a GitHub Account a
 - [Writing an article page](#writing-an-article-page)
 - [Adding a picture: For general use, to be displayed in the gallery or to be used as an icon](#adding-a-picture-for-general-use-to-be-displayed-in-the-gallery-or-to-be-used-as-an-icon)
 - [Editing specific pages](#editing-specific-pages)
-	+ [Homepage](#adding-a-picture-for-general-use-to-be-displayed-in-the-gallery-or-to-be-used-as-an-icon)
+	+ [Homepage](#the-homepage)
 	+ [Calendar](#the-calendar)
 	+ [Gallery](#the-gallery)
 - [Editing the navigation bar](#editing-the-navigation-bar)
