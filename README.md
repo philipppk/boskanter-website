@@ -4,14 +4,14 @@ First of all, to do anything on the website, you have to make a GitHub Account a
 
 ## Table of Contents
 
-- Writing a blogpost
-- Writing an article page
-- Adding a picture: For general use, to be displayed in the gallery or to be used as an icon
-- Editing specific pages:
-	+ Homepage
-	+ Calendar
-	+ Gallery
-- Editing the navigation bar
+- [Writing a blogpost](#writing-a-blogpost)
+- [Writing an article page](#writing-an-article-page)
+- [Adding a picture: For general use, to be displayed in the gallery or to be used as an icon](#adding-a-picture-for-general-use-to-be-displayed-in-the-gallery-or-to-be-used-as-an-icon)
+- [Editing specific pages](#editing-specific-pages)
+	+ [Homepage](#adding-a-picture-for-general-use-to-be-displayed-in-the-gallery-or-to-be-used-as-an-icon)
+	+ [Calendar](#the-calendar)
+	+ [Gallery](#the-gallery)
+- [Editing the navigation bar](#editing-the-navigation-bar)
 - Writing markdown
 
 
