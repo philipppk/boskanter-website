@@ -12,9 +12,9 @@
     <button onclick="getMailinglist()">Get mailinglist</button>
     <button onclick="updateMailinglist()">update mailinglist</button><br>
     <button onclick="undo()">undo last action</button>
-    <table id="ml">
-        <tr><th>mail</th><th>action</th></tr>
-    </table>
+        <p>Enter the correct password and click "get mailinglist" to access the mailinglist.</p>
+    <table id="ml"></table>
+    <p><em>Hint: You can add multiple addresses by separating them by any number (excluding 0) of commas, spaces or linebreaks.</em></p>
 
     <script>
 
@@ -37,13 +37,13 @@
             changes = []
             const subscribers = text.split("\n").slice(1).map((l) => l.split(","))
             let table = "<tr><th>mail</th><th>action</th>"
-                + "<tr><td><input type='text' id='newmails'/></td><td><button onclick='add()'>add</button></td></tr>"
+                + "<tr><td><textarea id='newmails' placeholder='ex@mple.one, ex@mple.two, ex@mple.three'></textarea></td><td><button onclick='add()'>add</button></td></tr>"
                 + subscribers.map((s) => `<tr id="${s[1]}"><td>${s[0]}</td><td><button onclick="remove('${s[1]}')">remove</button></td></tr>`).join("\n")
             document.getElementById("ml").innerHTML = table
         }
 
         function add() {
-            const newmails = document.getElementById("newmails").value.split(/,+ */)
+            const newmails = document.getElementById("newmails").value.split(/[,\n ]+/)
             newmails.map((m) => changes.push(`add ${m}`)) 
             document.getElementById("ml").innerHTML += newmails.map((m) => `<tr class="new"><td>${m}</td></tr>`).join("")
         }
