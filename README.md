@@ -225,10 +225,31 @@ The navigation bar is rendered into html as a nested list (with nesting depth no
 	+ Category 1
 	+ Category 2 ...
 
-The second level items will be rendered dropping down from the first level items they belong to. This list is rendered from the contents of `/src/_data/navigation_bar.js`. The entries are written down at the beginning of the file in the array `nav`.
+The second level items will be rendered dropping down from the first level items they belong to. This list is rendered from the contents of `/src/_data/navigation_bar.js`. The entries are written down at the beginning of the file in the array `nav`. The array nav includes regular entries and instructions. 
 
+The instructions specify how nav is processed afterwards, at the moment they only specify where the blog- and gallerycategories should be added. You are welcome to change the position of these instructions or delete them, but I discourage any editor to try making new ones, because you would need to modify the code below.
 
+What nav now describes is each entry of the nested list in the order they appear. In each entry it is specified wether it appears as a first level or second level element. An entry looks like this
 
+```
+{
+    type: "normal",
+    title: {en: "principles", fr: "principes", nl: "principes"},
+    link: "principles"
+}
+```
+in the case of a first level element, and like this
+```
+{
+    type: "subordinated",
+    title: {en: "permaculture", fr: "permaculture", nl: "permakultuur"},
+	link: "principles#permaculture"
+}
+```
+in the case of a second level element. Here
+- type describes the level and can be either "normal" (level 1) or "subordinated" (level 2)
+- title is an object that describes what is displayed in each language
+- link is a page of the website (available in each language). If the link is `path/to/page`, then the entry will link to `www.boskanter.earth/en/path/to/page`, `www.boskanter.earth/fr/path/to/page`, `www.boskanter.earth/nl/path/to/page`. Depending which language the visitor has selected at the moment. If you want to link to a specific language, for example dutch, then include it in the link by writing for example `nl/path/to/page`. When link starts with `en/`, `fr/` or `nl/`, it will always link to the specified language, no matter of the language the visitor selected.
 
 
 
