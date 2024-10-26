@@ -3,7 +3,7 @@
 let nav = [
     {
         type: "normal",
-        title: {en: "principles", fr: "principes", nl: "principes"},
+        title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
         link: "principles"
     },
     {
@@ -13,7 +13,7 @@ let nav = [
     },
     {
         type: "subordinated",
-        title: {en: "transition towns",  fr: "villes en transition",  nl: "overgangssteden"},  
+        title: {en: "transition towns",  fr: "villes en transition",  nl: "stransition towns"},  
         link: "principles#transition_towns"
     },
     {
