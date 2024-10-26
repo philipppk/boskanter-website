@@ -5,7 +5,7 @@ layout: layouts/article.html
 
 # Een kleine geschiedenis van Boskanter
 
-Er was eens [transition towns](nl/transition_towns). 
+Er was eens [transition towns](nl/transition towns). 
 
 # De naam Boskanter
 
