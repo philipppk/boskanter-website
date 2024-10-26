@@ -38,28 +38,116 @@ of
 
 niet
 
+inleiding  
+nu  
+moeten  
+we 
+dus  
+ver  
+genoeg 
+
+zitten
+
+om t
+
+te z
+
+zien
+
+of 
+
+de 
+
+link
+
+naar
+
+een
+
+volgende
+
+hoofdtuk
+
+leidt
+
+of  
+
+niet
+
 
 # Permacultuur
-inleiding
-nu
-moeten
+inleiding  
+nu  
+moeten  
 we 
-dus 
-ver 
-genoeg
+dus  
+ver  
+genoeg 
+
 zitten
+
 om t
+
 te z
+
 zien
+
 of 
+
 de 
+
 link
+
 naar
+
 een
-volgendeµ
+
+volgende
+
 hoofdtuk
+
 leidt
-of 
+
+of  
+
 niet
+
+inleiding  
+nu  
+moeten  
+we 
+dus  
+ver  
+genoeg 
+
+zitten
+
+om t
+
+te z
+
+zien
+
+of 
+
+de 
+
+link
+
+naar
+
+een
+
+volgende
+
+hoofdtuk
+
+leidt
+
+of  
+
+niet
+
+
 
 # Transition towns
