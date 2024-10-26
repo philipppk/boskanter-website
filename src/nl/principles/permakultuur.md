@@ -1,6 +1,6 @@
 ---
 title: Permakultuur
-laytour: layouts/article.html
+layout: layouts/article.html
 ---
 
 # inleiding
