@@ -2,27 +2,42 @@
 title: Wie we zijn
 layout: layouts/article.html
 ---
-inleiding
-nu
-moeten
+inleiding  
+nu  
+moeten  
 we 
-dus 
-ver 
-genoeg
+dus  
+ver  
+genoeg 
+
 zitten
+
 om t
+
 te z
+
 zien
+
 of 
+
 de 
+
 link
+
 naar
+
 een
-volgendeµ
+
+volgende
+
 hoofdtuk
+
 leidt
-of 
+
+of  
+
 niet
+
 
 # Permacultuur
 inleiding
