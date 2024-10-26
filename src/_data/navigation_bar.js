@@ -4,22 +4,22 @@ let nav = [
     {
         type: "normal",
         title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
-        link: "principles"
+        link: "principles/principles"
     },
     {
         type: "subordinated",
         title: {en: "permaculture", fr: "permaculture", nl: "permakultuur"},
-        link: "permakultuur"
+        link: "principles/permakultuur"
     },
     {
         type: "subordinated",
         title: {en: "transition towns",  fr: "villes en transition",  nl: "stransition towns"},  
-        link: "principles#transition_towns"
+        link: "principles/transition_towns"
     },
     {
         type: "subordinated",
         title: {en: "links",  fr: "links",  nl: "links"},  
-        link: "principles#links"
+        link: "principles/links"
     },
     {
         type: "normal",
