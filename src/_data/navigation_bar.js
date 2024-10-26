@@ -9,7 +9,7 @@ let nav = [
     {
         type: "subordinated",
         title: {en: "permaculture", fr: "permaculture", nl: "permakultuur"},
-        link: "principles#permakultuur"
+        link: "permakultuur"
     },
     {
         type: "subordinated",
