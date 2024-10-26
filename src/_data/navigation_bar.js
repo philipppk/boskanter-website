@@ -4,7 +4,7 @@ let nav = [
     {
         type: "normal",
         title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
-        link: "principles/principles"
+        link: "principles"
     },
     {
         type: "subordinated",
