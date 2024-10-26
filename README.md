@@ -243,13 +243,18 @@ in the case of a first level element, and like this
 {
     type: "subordinated",
     title: {en: "permaculture", fr: "permaculture", nl: "permakultuur"},
-	link: "principles#permaculture"
+	link: "permaculture"
 }
 ```
 in the case of a second level element. Here
 - type describes the level and can be either "normal" (level 1) or "subordinated" (level 2)
 - title is an object that describes what is displayed in each language
 - link is a page of the website (available in each language). If the link is `path/to/page`, then the entry will link to `www.boskanter.earth/en/path/to/page`, `www.boskanter.earth/fr/path/to/page`, `www.boskanter.earth/nl/path/to/page`. Depending which language the visitor has selected at the moment. If you want to link to a specific language, for example dutch, then include it in the link by writing for example `nl/path/to/page`. When link starts with `en/`, `fr/` or `nl/`, it will always link to the specified language, no matter of the language the visitor selected.
+- the page referred to can be directly under `en` etc, or it can be in a dubfolder; linking to a heading in a file doesn't work
+
+### navigating between articles
+
+- to link to a file in the same folder or subfolder, just give in the name of the file, without folders
 
 
 
