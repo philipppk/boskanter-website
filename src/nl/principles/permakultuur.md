@@ -1,5 +1,5 @@
 ---
-title: "Permakultuur"
+title: Permakultuur
 laytour: layouts/article.html
 ---
 
