@@ -24,13 +24,33 @@ let nav = [
     {
         type: "normal",
         title: {en: "practical",  fr: "practical",  nl: "praktisch"},
-        link: "volunteering"
+        link: "praktisch"
     },
     {
         type: "subordinated",
-        title: {en: "ESC volunteering",  fr: "ESC",  nl: "ESC"},  
-        link: "volunteering#ESC"
+        title: {en: "local volunteer",  fr: "volontair local",  nl: "plaatselijke vrijwilliger"},  
+        link: "vrijwilliger"
     },    
+    {
+        type: "subordinated",
+        title: {en: "activities",  fr: "activités",  nl: "activiteiten"}, 
+        link: "activiteiten"
+    },
+        {
+        type: "subordinated",
+        title: {en: "cp-housing",  fr: "habitat commun",  nl: "samenwonen"}, 
+        link: "cohousen"
+    },
+    {
+        type: "subordinated",
+        title: {en: "your activity here",  fr: "votre activité ici",  nl: "jouw activiteit hier"}, 
+        link: "infrastructuur"
+    },
+    {
+        type: "subordinated",
+        title: {en: "directions",  fr: "workaway",  nl: "workaway"}, 
+        link: "contact"
+    },
     {
         type: "subordinated",
         title: {en: "workaway volunteering",  fr: "workaway",  nl: "workaway"}, 
