@@ -29,22 +29,22 @@ let nav = [
     {
         type: "subordinated",
         title: {en: "local volunteer",  fr: "volontair local",  nl: "plaatselijke vrijwilliger"},  
-        link: "vrijwilliger"
+        link: "praktisch/vrijwilliger"
     },    
     {
         type: "subordinated",
         title: {en: "activities",  fr: "activités",  nl: "activiteiten"}, 
-        link: "activiteiten"
+        link: "praktisch/activiteiten"
     },
         {
         type: "subordinated",
         title: {en: "cp-housing",  fr: "habitat commun",  nl: "samenwonen"}, 
-        link: "cohousen"
+        link: "praktisch/cohousen"
     },
     {
         type: "subordinated",
         title: {en: "your activity here",  fr: "votre activité ici",  nl: "jouw activiteit hier"}, 
-        link: "infrastructuur"
+        link: "praktisch/infrastructuur"
     },
     {
         type: "subordinated",
