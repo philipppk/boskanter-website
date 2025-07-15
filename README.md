@@ -17,7 +17,7 @@ First of all, to do anything on the website, you have to make a GitHub Account a
 
 ## Writing a Blogpost
 1. Decide which language you want to write in: The website supports english (en), french (fr) and dutch (nl). 
-2. Create a new file in `/src/en/blog/posts` if you want to write in english. If you want to write in french or dutch exchange `en` with `fr` or `nl`. Your filename should end with `.md`. I will showcase how everything works by showing exerpts fromthe blogpost `/src/en/blog/posts/a_sustainable_website.md`
+2. Create a new file in `/src/en/blog/posts` if you want to write in english. If you want to write in french or dutch exchange `en` with `fr` or `nl`. Your filename should end with `.md`. I will showcase how everything works by showing exerpts from the blogpost `/src/en/blog/posts/a_sustainable_website.md`
 
 3. In the first lines of the file, provide the posts metadata. It should look like this:
 
