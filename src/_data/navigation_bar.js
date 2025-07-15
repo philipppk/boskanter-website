@@ -33,7 +33,7 @@ let nav = [
     },
     {
         type: "subordinated",
-        title: {en: "practical",  fr: "practical",  nl: "praktisch"},
+        title: {en: "What can Boskanter mean for you?",  fr: "Quoi peut Boskanter signifier pour toi?",  nl: "Wat kan Boskanter voor jou betekenen?"},
         link: "praktisch"
     },
     {
