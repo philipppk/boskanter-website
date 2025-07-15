@@ -2,15 +2,15 @@
 
 const entries = [
     {
-        start: "23.7.2024",
-        end: "23.7.2024", 
+        start: "8.8.2025",
+        end: "8.8.2025", 
         title: {en: "Pizza Party", nl: "Pizza Party", fr: "Pizza Party"}, 
-        description: {en: "", nl: "", fr: ""}
+        description: {en: "Click <a href='/en/pizza_party'>here</a> for details.", nl: " meer info: ... ", fr: " ... "}
     },
     {
-        start: "8.7.2024",
-        end: "28.7.2024",
-        title: {en: "Workcamp", fr: "Workcamp", nl: "Workcamp"},
+        start: "18.8.2025",
+        end: "23.8.2025",
+        title: {en: "camping week", fr: "semaine de camping", nl: "kampeerweek"},
         description: {en: "", nl: "", fr: ""}
     } 
 ]
