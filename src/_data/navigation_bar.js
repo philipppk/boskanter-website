@@ -8,6 +8,11 @@ let nav = [
     },
     {
         type: "subordinated",
+        title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
+        link: "principles"
+    },
+    {
+        type: "subordinated",
         title: {en: "permaculture", fr: "permaculture", nl: "permakultuur"},
         link: "principles/permakultuur"
     },
@@ -28,6 +33,11 @@ let nav = [
     },
     {
         type: "subordinated",
+        title: {en: "practical",  fr: "practical",  nl: "praktisch"},
+        link: "praktisch"
+    },
+    {
+        type: "subordinated",
         title: {en: "local volunteer",  fr: "volontair local",  nl: "plaatselijke vrijwilliger"},  
         link: "praktisch/vrijwilliger"
     },    
@@ -36,19 +46,19 @@ let nav = [
         title: {en: "activities",  fr: "activités",  nl: "activiteiten"}, 
         link: "praktisch/activiteiten"
     },
-        {
+    {
         type: "subordinated",
-        title: {en: "cp-housing",  fr: "habitat commun",  nl: "samenwonen"}, 
+        title: {en: "co-housing",  fr: "habitat commun",  nl: "samenwonen"}, 
         link: "praktisch/cohousen"
     },
     {
         type: "subordinated",
-        title: {en: "your activity here",  fr: "votre activité ici",  nl: "jouw activiteit hier"}, 
+        title: {en: "your activity in Boskanter",  fr: "votre activité à Boskanter",  nl: "jouw activiteit op Boskanter"}, 
         link: "praktisch/infrastructuur"
     },
     {
         type: "subordinated",
-        title: {en: "directions",  fr: "workaway",  nl: "workaway"}, 
+        title: {en: "the way to Boskanter",  fr: "la route vers Boskanter",  nl: "de weg naar Boskanter"}, 
         link: "contact"
     },
     {
@@ -58,8 +68,8 @@ let nav = [
     },
     {
         type: "subordinated",
-        title: {en: "directions",  fr: "workaway",  nl: "workaway"}, 
-        link: "contact"
+        title: {en: "ESC - European Solidarity Corps",  fr: "ESC - European Solidarity Corps",  nl: "ESC - European Solidarity Corps"}, 
+        link: "ESC"
     },
     {
         type: "normal",
