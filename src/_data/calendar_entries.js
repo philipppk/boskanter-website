@@ -4,13 +4,13 @@ const entries = [
     {
         start: "23.7.2025",
         end: "23.7.2025", 
-        title: {en: "crafts afternoon: spinning wool", nl: "ambachten namiddag: wol spinnen", fr: "après-midi artisanat: filer la laine"}, 
+        title: {en: "crafts 14.00-16.00 flint", nl: "ambachten 14.00-16.00 vuursteen", fr: "artisanat 14.00-16.00 silex"}, 
         description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
     },
     {
-        start: "28.8.2025",
-        end: "28.8.2025", 
-        title: {en: "momo - 19.30-21.00", nl: "momo - 19.30-21.00", fr: "momo - 19.30-21.00"}, 
+        start: "28.7.2025",
+        end: "28.7.2025", 
+        title: {en: "momo 19.30-21.00", nl: "momo - 19.30-21.00", fr: "momo - 19.30-21.00"}, 
         description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
     },
     {
