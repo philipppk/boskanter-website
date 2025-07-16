@@ -17,7 +17,7 @@
     <script>
         const entries = [
             {% for e in calendar_entries %}
-                {date: new Date("{{ e.date }}"), title: "{{ e.title[locale] }}", description: "{{ e.description[locale] }}"},
+                {date: new Date("{{ e.date }}"), title: "{{ e.title[locale] }}", description: "{{ e.description[locale] | safe }}"},
             {% endfor %}
         ]
 
