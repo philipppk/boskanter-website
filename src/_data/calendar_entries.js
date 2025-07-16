@@ -2,17 +2,53 @@
 
 const entries = [
     {
+        start: "23.7.2025",
+        end: "23.7.2025", 
+        title: {en: "crafts afternoon: spinning wool", nl: "ambachten namiddag: wol spinnen", fr: "après-midi artisanat: filer la laine"}, 
+        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+    },
+    {
+        start: "28.8.2025",
+        end: "28.8.2025", 
+        title: {en: "momo - 19.30-21.00", nl: "momo - 19.30-21.00", fr: "momo - 19.30-21.00"}, 
+        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+    },
+    {
+        start: "30.7.2025",
+        end: "30.7.2025", 
+        title: {en: "crafts afternoon: rope making", nl: "ambachten namiddag: touw maken", fr: "après-midi artisanat: créer un fil"}, 
+        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+    },
+    {
+        start: "6.8.2025",
+        end: "6.8.2025", 
+        title: {en: "crafts afternoon: wooden spoon", nl: "ambachten namiddag: houten lepel", fr: "après-midi artisanat: cuiler en bois"}, 
+        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+    },
+    {
         start: "8.8.2025",
         end: "8.8.2025", 
         title: {en: "Pizza Party", nl: "Pizza Party", fr: "Pizza Party"}, 
         description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: " meer info: ... ", fr: " ... "}
     },
     {
+        start: "13.8.2025",
+        end: "13.8.2025", 
+        title: {en: "crafts afternoon: willow basket", nl: "ambachten namiddag: mand van wilgen tenen", fr: "après-midi artisanat: panier"}, 
+        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+    },
+    {
         start: "18.8.2025",
         end: "23.8.2025",
         title: {en: "camping week", fr: "semaine de camping", nl: "kampeerweek"},
         description: {en: "", nl: "", fr: ""}
-    } 
+    },
+    {
+        start: "20.8.2025",
+        end: "20.8.2025", 
+        title: {en: "crafts afternoon: crochéing and nitting", nl: "ambachten namiddag: breien en haken", fr: "après-midi artisanat: crocher et trickoter"}, 
+        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+    },
 ]
 
 // DONT EDIT AFTER HERE
