@@ -11,7 +11,7 @@ const entries = [
         start: "28.7.2025",
         end: "28.7.2025", 
         title: {en: "momo 19.30-21.00", nl: "momo - 19.30-21.00", fr: "momo - 19.30-21.00"}, 
-        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+        description: {en: "Click <a href='https://www.boskanter.earth/en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='https://www.boskanter.earth/en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='https://www.boskanter.earth/en/praktisch/activiteiten'>here</a> for details."}
     },
     {
         start: "30.7.2025",
