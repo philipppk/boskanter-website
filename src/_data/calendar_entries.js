@@ -5,7 +5,7 @@ const entries = [
         start: "8.8.2025",
         end: "8.8.2025", 
         title: {en: "Pizza Party", nl: "Pizza Party", fr: "Pizza Party"}, 
-        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: " meer info: ... ", fr: " ... "}
+        description: {en: "Click <a href='/en/praktisch/activiteiten'>here</a> for details.", nl: " meer info: ... ", fr: " ... "}
     },
     {
         start: "18.8.2025",
