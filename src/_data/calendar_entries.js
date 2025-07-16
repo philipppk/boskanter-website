@@ -5,7 +5,7 @@ const entries = [
         start: "23.7.2025",
         end: "23.7.2025", 
         title: {en: "crafts 14.00-16.00 flint", nl: "ambachten 14.00-16.00 vuursteen", fr: "artisanat 14.00-16.00 silex"}, 
-        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+        description: {en: "We will try to make flintstone 'knifes'. We have some flint stone from the North of France. No success guaranteed :-).<p>'Look for more info about the crafts afternoon on the activity page.'</p>", nl: "We gaan proberen een vuurstenen 'mes' te maken. We hebben een paar vuursteen knollen uit Noord-Frankrijk. Geen succes gegarandeerd :-). Check voor meer info over het verloop van de ambachten namiddag de activiteiten pagina.", fr: "Lis, pour plus information sur le déroulement des après midi artisanal notre page 'activités'."}
     },
     {
         start: "28.7.2025",
