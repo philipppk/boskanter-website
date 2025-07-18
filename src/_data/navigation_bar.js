@@ -73,7 +73,7 @@ let nav = [
     },
     {
         type: "normal",
-        title: {en: "practical",  fr: "practical",  nl: "praktisch"},
+        title: {en: "volunteering",  fr: "volontariat",  nl: "vrijwilligers"},
         link: "volunteer"
     },
     {
@@ -100,6 +100,11 @@ let nav = [
         type: "subordinated",
         title: {en: "the way to Boskanter",  fr: "la route vers Boskanter",  nl: "de weg naar Boskanter"}, 
         link: "practical/contact"
+    },
+    {
+        type: "subordinated",
+        title: {en: "newsletter",  fr: "newsletter",  nl: "nieuwsbrief"}, 
+        link: "newsletter/subscribe"
     },
     {
         type: "normal",
