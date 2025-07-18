@@ -4,12 +4,12 @@ let nav = [
     {
         type: "normal",
         title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
-        link: "boskanter"
+        link: "boskanter/boskanter"
     },
     {
         type: "subordinated",
         title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
-        link: "boskanter"
+        link: "boskanter/boskanter"
     },
     {
         type: "subordinated",
@@ -39,12 +39,12 @@ let nav = [
     {
         type: "normal",
         title: {en: "offer", fr: "offre", nl: "aanbod"},
-        link: "offer"
+        link: "offer/offer"
     },
     {
         type: "subordinated",
         title: {en: "What can Boskanter mean for you?",  fr: "Quoi peut Boskanter signifier pour toi?",  nl: "Wat kan Boskanter voor jou betekenen?"},
-        link: "offer"
+        link: "offer/offer"
     },
     {
         type: "subordinated",
@@ -79,7 +79,12 @@ let nav = [
     {
         type: "normal",
         title: {en: "volunteering",  fr: "volontariat",  nl: "vrijwilligers"},
-        link: "volunteer"
+        link: "volunteer/volunteer"
+    },
+    {
+        type: "subordinated",
+        title: {en: "volunteering in Boskanter",  fr: "volontariat à Boskanter",  nl: "vrijwilligers in Boskanter"},
+        link: "volunteer/volunteer"
     },
     {
         type: "subordinated",
@@ -108,7 +113,7 @@ let nav = [
         title: {en: "Gallery", fr: "Galerie", nl: "Galerij"}
     },
 
-    "insert gallery categories here"
+    "insert gallery categories here",
 
     {
         type: "normal",
