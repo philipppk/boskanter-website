@@ -46,5 +46,5 @@
     "visit": {"en": "Visit",  "fr": "Rendez-vous sur",  "nl": "Bezoek"},
     "this_page": {"en": "this page",  "fr": "cette page",  "nl": "deze pagina"},
     "to_subscribe_to_our_newsletter": {"en": "to subscribe to the newsletter.",  "fr": "pour vous abonner à la newsletter.",  "nl": "om je te abonneren op de nieuwsbrief." },
-    "click_on_an_entry_to_display_more_information": {"en": "Click on an entry to display more information below the calendar.",  "fr": "Cliquez sur une entrée pour afficher plus d'informations sous le calendrier.",  "nl": "Klik op een item om meer informatie weer te geven onder de kalender." }
+    "click_on_an_entry_to_display_more_information": {"en": "Click on an day to see the details below the calendar.",  "fr": "Cliquez sur un jour pour afficher plus d'informations sous le calendrier.",  "nl": "Klik op een dag om de details onder de kalender te zien." }
 }
