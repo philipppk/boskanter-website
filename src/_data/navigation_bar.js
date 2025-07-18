@@ -4,72 +4,102 @@ let nav = [
     {
         type: "normal",
         title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
-        link: "principles"
+        link: "boskanter"
     },
     {
         type: "subordinated",
         title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
-        link: "principles"
+        link: "boskanter"
     },
     {
         type: "subordinated",
         title: {en: "permaculture", fr: "permaculture", nl: "permakultuur"},
-        link: "principles/permakultuur"
+        link: "boskanter/permakultuur"
     },
     {
         type: "subordinated",
         title: {en: "transition towns",  fr: "villes en transition",  nl: "stransition towns"},  
-        link: "principles/transition_towns"
+        link: "boskanter/transition_towns"
+    },
+    {
+        type: "subordinated",
+        title: {en: "degrowth",  fr: "décroissance",  nl: "degrowth"},  
+        link: "boskanter/degrowth"
+    },
+    {
+        type: "subordinated",
+        title: {en: "soil farm",  fr: "soil farm",  nl: "bodemboerderij"},  
+        link: "boskanter/soilfarm"
     },
     {
         type: "subordinated",
         title: {en: "links",  fr: "links",  nl: "links"},  
-        link: "principles/links"
+        link: "boskanter/links"
     },
     {
         type: "normal",
-        title: {en: "practical",  fr: "practical",  nl: "praktisch"},
-        link: "praktisch"
+        title: {en: "offer", fr: "offre", nl: "aanbod"},
+        link: "offer"
     },
     {
         type: "subordinated",
         title: {en: "What can Boskanter mean for you?",  fr: "Quoi peut Boskanter signifier pour toi?",  nl: "Wat kan Boskanter voor jou betekenen?"},
-        link: "praktisch"
+        link: "offer"
     },
-    {
-        type: "subordinated",
-        title: {en: "local volunteer",  fr: "volontair local",  nl: "plaatselijke vrijwilliger"},  
-        link: "praktisch/vrijwilliger"
-    },    
     {
         type: "subordinated",
         title: {en: "activities",  fr: "activités",  nl: "activiteiten"}, 
-        link: "praktisch/activiteiten"
+        link: "offer/activities"
     },
     {
         type: "subordinated",
-        title: {en: "co-housing",  fr: "habitat commun",  nl: "samenwonen"}, 
-        link: "praktisch/cohousen"
+        title: {en: "products",  fr: "produits",  nl: "producten"}, 
+        link: "offer/products"
     },
     {
         type: "subordinated",
         title: {en: "your activity in Boskanter",  fr: "votre activité à Boskanter",  nl: "jouw activiteit op Boskanter"}, 
-        link: "praktisch/infrastructuur"
+        link: "offer/location"
     },
     {
         type: "subordinated",
-        title: {en: "the way to Boskanter",  fr: "la route vers Boskanter",  nl: "de weg naar Boskanter"}, 
-        link: "contact"
+        title: {en: "local volunteer",  fr: "volontair local",  nl: "plaatselijke vrijwilliger"},  
+        link: "volunteer/local"
+    },  
+    {
+        type: "subordinated",
+        title: {en: "co-housing",  fr: "habitat commun",  nl: "samenwonen"}, 
+        link: "offer/cohousen"
     },
+    {
+        type: "normal",
+        title: {en: "practical",  fr: "practical",  nl: "praktisch"},
+        link: "volunteer"
+    },
+    {
+        type: "subordinated",
+        title: {en: "local volunteer",  fr: "volontair local",  nl: "plaatselijke vrijwilliger"},  
+        link: "volunteer/local"
+    },   
     {
         type: "subordinated",
         title: {en: "workaway volunteering",  fr: "workaway",  nl: "workaway"}, 
-        link: "volunteering#workaway"
+        link: "volunteer/workaway"
     },
     {
         type: "subordinated",
         title: {en: "ESC - European Solidarity Corps",  fr: "ESC - European Solidarity Corps",  nl: "ESC - European Solidarity Corps"}, 
-        link: "ESC"
+        link: "volunteer/ESC"
+    },
+    {
+        type: "normal",
+        title: {en: "practical",  fr: "practical",  nl: "praktisch"},
+        link: "practical"
+    },
+    {
+        type: "subordinated",
+        title: {en: "the way to Boskanter",  fr: "la route vers Boskanter",  nl: "de weg naar Boskanter"}, 
+        link: "practical/contact"
     },
     {
         type: "normal",
