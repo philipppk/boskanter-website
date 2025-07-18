@@ -25,27 +25,33 @@ Eigen bijdrage kan zowel hartig als zoek zijn. Bij voorkeur een typisch Boskante
 
 # Ambachten namiddagen of avonden
 ## Wat?
-Samen bezig zijn met ambacht. 
-
+Samen bezig zijn met ambacht. Want samen is leuk, anders komt het er niet van en we kunnen elkaar verder helpen.
+## Wanneer?
+We organiseren ambachtsmomenten als er voldoende lange termijn of lokale vrijwilligers zijn om het te organiseren. In het ideale geval kan dit wekelijks op een vast moment. Tijdens de zomermaanden 2025 trekken we er iedere woensdagnamiddag voor uit.
+## Praktisch
 Iedereen brengt zijn eigen **grondstoffen en werktuigen** mee. Soms zijn er materiaal en grondstoffen op Boskanter beschikbaar. Informeer op voorhand als je daar beroep op wil doen, anders hebben we mogelijks niet voldoende voor iedereen. 
 
 Er wordt **geen begeleiding** voorzien. Het is geen workshop. We kunnen elkaar wel verder helpen of van elkaar leren.
 
 Soms vermeldt de kalender een **thema**. Dan wordt er een introductie voorzien en leggen we wat materiaal klaar. Laat op voorhand iets weten als je hier gebruik van wil maken.
-## Wanneer?
-We organiseren ambachtsmomenten als er voldoende lange termijn of lokale vrijwilligers zijn om het te organiseren. In het ideale geval kan dit wekelijks op een vast moment.
 
-Tijdens de zomermaanden 2025 trekken we er iedere woensdagnamiddag voor uit.
+Check op de kalender of er een ambachten moment gepland is. Je kan vrij langskomen, maar een berichtje is altijd handig. Laat zeker iets weten als je (tegen een kleine vergoeding) wil deelnemen aan de maaltijd of als je ons materiaal of gereedschap wil gebruiken.
+
 # momo - Monday Moment
-Monday moment staat voor een inhoudelijk discussiemoment. Het kan op maandagavond doorgaan, zoals de naam doet vermoeden, maar eigenlijk ook op elk ander moment.
+Op maandagavond maken we, met de aanwezige gasten, tijd voor een inhoudelijke discussie. Tenzij het niet past en we een andere avond kiezen.
 
-Op de momo kan iemand een inhoudelijke discussie voorstellen, al dan niet voorbereid en in elk geval in lijn met de doelstellingen van Boskanter.
+Op de momo kan iemand een inhoudelijke discussie voorstellen, al dan niet voorbereid, in lijn met de activiteiten van Boskanter. Als we een concreet thema weten, posten we het in de kalender.
+
+De momo staat open voor deelnemers van buiten Boskanter. Geef wel liefst een seintje op voorhand.
+
+Timing: van 19u30 tot 21u00.
 # workshops
 Op dit ogenblik plannen we geen workshops.
 
-We organiseren soms workshops rond
-- voeding (falaffel, pickles, ...)
+We organiseerden in het verleden al workshops rond
 - zuurdesembrood
 - rocket stove
 - DIY natuurlijke verf
 - leem
+- voeding
+- ...
