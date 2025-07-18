@@ -73,6 +73,11 @@ let nav = [
     },
     {
         type: "normal",
+        title: {en: "calendar",  fr: "calendrier",  nl: "kalender"},  
+        link: "calendar"
+    },
+    {
+        type: "normal",
         title: {en: "volunteering",  fr: "volontariat",  nl: "vrijwilligers"},
         link: "volunteer"
     },
@@ -93,6 +98,20 @@ let nav = [
     },
     {
         type: "normal",
+        title: {en: "blog",  fr: "blog",  nl: "blog"}
+    },
+
+    "insert blog categories here", 
+    
+    {
+        type: "normal",
+        title: {en: "Gallery", fr: "Galerie", nl: "Galerij"}
+    },
+
+    "insert gallery categories here"
+
+    {
+        type: "normal",
         title: {en: "practical",  fr: "practical",  nl: "praktisch"},
         link: "practical"
     },
@@ -106,24 +125,7 @@ let nav = [
         title: {en: "newsletter",  fr: "newsletter",  nl: "nieuwsbrief"}, 
         link: "newsletter/subscribe"
     },
-    {
-        type: "normal",
-        title: {en: "blog",  fr: "blog",  nl: "blog"}
-    },
-
-    "insert blog categories here", 
-    
-    {
-        type: "normal",
-        title: {en: "calendar",  fr: "calendrier",  nl: "kalender"},  
-        link: "calendar"
-    },
-    {
-        type: "normal",
-        title: {en: "Gallery", fr: "Galerie", nl: "Galerij"}
-    },
-
-    "insert gallery categories here"
+        
 ]
 
 // DONT EDIT AFTER HERE
