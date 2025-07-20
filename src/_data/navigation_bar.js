@@ -4,12 +4,12 @@ let nav = [
     {
         type: "normal",
         title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
-        link: "boskanter/boskanter"
+        link: "boskanter"
     },
     {
         type: "subordinated",
         title: {en: "who we are", fr: "qui sommes-nous?", nl: "wie we zijn"},
-        link: "boskanter/boskanter"
+        link: "boskanter"
     },
     {
         type: "subordinated",
@@ -79,12 +79,12 @@ let nav = [
     {
         type: "normal",
         title: {en: "volunteering",  fr: "volontariat",  nl: "vrijwilligers"},
-        link: "volunteer/volunteer"
+        link: "volunteer"
     },
     {
         type: "subordinated",
         title: {en: "volunteering in Boskanter",  fr: "volontariat à Boskanter",  nl: "vrijwilligers in Boskanter"},
-        link: "volunteer/volunteer"
+        link: "volunteer"
     },
     {
         type: "subordinated",
@@ -93,13 +93,13 @@ let nav = [
     },   
     {
         type: "subordinated",
-        title: {en: "workaway volunteering",  fr: "workaway",  nl: "workaway"}, 
-        link: "volunteer/workaway"
+        title: {en: "food and lodging",  fr: "gite et couvert",  nl: "kost en inwoon"}, 
+        link: "volunteer/stay"
     },
     {
         type: "subordinated",
-        title: {en: "ESC - European Solidarity Corps",  fr: "ESC - European Solidarity Corps",  nl: "ESC - European Solidarity Corps"}, 
-        link: "volunteer/ESC"
+        title: {en: "subsidies",  fr: "subventions",  nl: "subsidies"}, 
+        link: "volunteer/subsidy"
     },
     {
         type: "normal",
