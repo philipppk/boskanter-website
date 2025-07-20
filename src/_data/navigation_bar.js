@@ -39,12 +39,12 @@ let nav = [
     {
         type: "normal",
         title: {en: "offer", fr: "offre", nl: "aanbod"},
-        link: "offer/offer"
+        link: "offer"
     },
     {
         type: "subordinated",
         title: {en: "What can Boskanter mean for you?",  fr: "Quoi peut Boskanter signifier pour toi?",  nl: "Wat kan Boskanter voor jou betekenen?"},
-        link: "offer/offer"
+        link: "offer"
     },
     {
         type: "subordinated",
