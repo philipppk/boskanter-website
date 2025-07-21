@@ -8,11 +8,11 @@ Als vrijwilliger kan je in sommige gevallen subsidie krijgen. Die dekken je reis
 ## Bel-J
 Belgisch programma.
 
-Voorwaarde:
+Voorwaarden:
 - jongere (16 tem 30)
 - uit Franstalig of Duitstalig gewest
 Duur: min. 10 dagen, max. 3 maand, max. gespreid over 6 maand
-Procedure: jongere dient project in en ontvangt onkostenvergoeding, waarvan deel aan Boskanter betaald wordt
+Procedure: jongere dient (na overleg met ons) project in en ontvangt onkostenvergoeding, waarvan deel aan Boskanter betaald wordt
 meer info: [bel-J.be](https://bel-J.be)
 
 ## ESC
