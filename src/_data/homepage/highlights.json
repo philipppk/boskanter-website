@@ -1,24 +1,15 @@
 [
     { 
-        "title": { "en": "pizza party", "fr": "pizza party", "nl": "pizza party"},
+        "title": { "en": "activities", "fr": "activités", "nl": "activiteiten"},
 		"description": { 
-        	"en": "Occasionally we organize pizza parties at Boskanter, where our masonry oven takes on the role of pizza oven and Boskanter turns into a pizzeria for the evening. An occasion for locals to meet and learn about Boskanter and our way of life while enjoying delicious pizza.",
-        	"fr": "",
-            "nl": ""
+        	"en": "We have again a lot of activities this summer. Take your time to read the calendar.",
+        	"fr": "Nous avons à nouveau boucoup d'activités cette été. Consultez le calendrier",
+            "nl": "We hebben deze zomer een hoop activiteiten gepland. Lees er de kalender maar op na :-)."
         },
-        "link": "activities#pizza_parties"
+        "link": "calendar"
     },
     { 
-        "title": { "en": "bread baking", "fr": "pain", "nl": "brood bakken"},
-		"description": { 
-            "en": "We reguarly bake sourdough bread, with local and organic grain. This covers all of the bread consumption of the people living here, and sometimes we also sell it.",
-            "fr": "",
-            "nl": ""
-        },
-        "link": "activities#pizza_parties"
-    },
-    { 
-        "title": { "en": "Don't want to miss an event?", "fr": "", "nl": ""},
+        "title": { "en": "Don't want to miss an event?", "fr": "Ne manuer pas d'activités?", "nl": "geen activiteiten missen?"},
 		"description": { 
             "en": "<em>Consider subscribing to our newsletter.</em></p><p>We send newsletters about once every two months and it is our primary way of inviting people to events at Boskanter. Follow the link below to the subscription page.",
             "fr": "",
@@ -30,8 +21,8 @@
         "title": { "en": "Where are all the photos?", "fr": "Ou sont tous les photo's?", "nl": "Waar zijn al de foto's?"},
 		"description": { 
             "en": "<em>A more sustainable Website</em></p><p>This blog post explains what thoughts went into making this website more sustainable.",
-            "fr": "",
-            "nl": ""
+            "fr": "<em>A site-web plus durable.</em></p><p>Ce blog expique les idées derière le nouveau design du site-web.",
+            "nl": "<em>Een duurzame website.</em></p><p>Deze blogpost legt uit wat er achter het duurzame ontwerp van deze website steekt."
         },
         "link": "en/blog/posts/a_sustainable_website/"
     } 
