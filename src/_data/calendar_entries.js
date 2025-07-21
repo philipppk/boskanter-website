@@ -4,57 +4,92 @@ const entries = [
     {
         start: "23.7.2025",
         end: "23.7.2025", 
-        title: {en: "14h00-16h00: crafts - flint", nl: "14u00-16u00: ambachten - vuursteen", fr: "14h00-16h00: artisanat - silex"}, 
-        description: {en: "We will try to make flintstone 'knifes'. We have some flint stone from the North of France. No success guaranteed :-).", nl: "We gaan proberen een vuurstenen 'mes' te maken. We hebben een paar vuursteen knollen uit Noord-Frankrijk. Geen succes gegarandeerd :-).", fr: "..."}
+        title: {en: "14h00-16h00: crafts", nl: "14u00-16u00: ambachten", fr: "14h00-16h00: artisanat"}, 
+        description: {en: "...", nl: "We gaan proberen een vuurstenen 'mes' te maken. We hebben een paar vuursteen knollen uit Noord-Frankrijk. Geen succes gegarandeerd :-). <a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over ambachtsmomenten. </a>", fr: "..."}
     },
     {
         start: "28.7.2025",
         end: "28.7.2025", 
         title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
-        description: {en: "Click <a href='https://www.boskanter.earth/en/offer/activities'>here</a> for details.", nl: "Clik <a href='https://www.boskanter.earth/nl/offer/activities#momo'>hier</a> voor details.", fr: "Click <a href='https://www.boskanter.earth/nl/offer/activities'>here</a> for details."}
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
     {
         start: "30.7.2025",
         end: "30.7.2025", 
-        title: {en: "crafts afternoon: rope making", nl: "ambachten namiddag: touw maken", fr: "après-midi artisanat: créer un fil"}, 
-        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+        title: {en: "14h00-16h00: crafts", nl: "14u00-16u00: ambachten", fr: "14h00-16h00: artisanat"}, 
+        description: {en: "...", nl: "We gaan spinnen met de handtol. <a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over ambachtsmomenten. </a>", fr: "..."}
+    },
+    {
+        start: "4.8.2025",
+        end: "4.8.2025", 
+        title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
     {
         start: "6.8.2025",
         end: "6.8.2025", 
-        title: {en: "crafts afternoon: wooden spoon", nl: "ambachten namiddag: houten lepel", fr: "après-midi artisanat: cuiler en bois"}, 
-        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+        title: {en: "14h00-16h00: crafts", nl: "14u00-16u00: ambachten", fr: "14h00-16h00: artisanat"}, 
+        description: {en: "...", nl: "Vandaag legt Ine de vrijwilligers uit hoe je een houten lepel maakt. <a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over ambachtsmomenten. </a>", fr: "..."}
     },
     {
         start: "8.8.2025",
         end: "8.8.2025", 
-        title: {en: "Pizza Party", nl: "Pizza Party", fr: "Pizza Party"}, 
-        description: {en: "16h00: tour", nl: "16u00: rondleiding", fr: "16h00 tour"}, 
-        description: {en: "Click <a href='./en/offer/activiteiten#pizzaparty'>here</a> for details.", nl: " <a href='./en/offer/activiteiten#pizzaparty'>klik voor meer info</a>", fr: " <a href='./en/offer/activiteiten#pizzapary'>cliquez ici pour plus d'info</a> "}
+        title: {en: "16h00*17h30: tour", nl: "16u00-17u30: rondleiding", fr: "16h00-17h30: tour"}, 
+        description: {en: "...", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#tour'> Meer info over rondleidingen. </a>", fr: "..."}
     },
     {
         start: "8.8.2025",
         end: "8.8.2025", 
-        title: {en: "16h00: tour", nl: "16u00: rondleiding", fr: "16h00 tour"}, 
-        description: {en: "Click <a href='./en/offer/activiteiten'>here</a> for details.", nl: " <a href='./en/offer/activiteiten'>klik voor meer info</a>", fr: " <a href='./en/offer/activiteiten'>ciquer ici pour plus d'info</a> "}
+        title: {en: "18h00-22h00: Pizza Party", nl: "18u00-22u00: Pizza Party", fr: "18h00-22h00: Pizza Party"}, 
+        description: {en: "...", nl: "<a href='https://www.boskanter.earth/nl/offer/activities'> Meer info over pizzafeestjes. </a>", fr: "..."}
+    },
+    {
+        start: "11.8.2025",
+        end: "11.8.2025", 
+        title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
     {
         start: "13.8.2025",
         end: "13.8.2025", 
-        title: {en: "crafts afternoon: willow basket", nl: "ambachten namiddag: mand van wilgen tenen", fr: "après-midi artisanat: panier"}, 
-        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+        title: {en: "14h00-16h00: crafts", nl: "14u00-16u00: ambachten", fr: "14h00-16h00: artisanat"}, 
+        description: {en: "...", nl: "We gaan aan de slag met wilgentenen. Op twee uur kan je geen wilgen mand maken. Als je niet je eigen mandenvlechtproject meebrengt of opstart waaraan je later verderwerkt, kan wel een paar technieken oefenen. <a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over ambachtsmomenten. </a>", fr: "..."}
     },
     {
         start: "18.8.2025",
         end: "23.8.2025",
-        title: {en: "camping week", fr: "semaine de camping", nl: "kampeerweek"},
-        description: {en: "", nl: "", fr: ""}
+        title: {en: "continuously: camping week", fr: "toute la journée: semaine de camping", nl: "doorlopend: kampeerweek"},
+        description: {en: "...", nl: "Deze week staan de deuren van onze camping open. <a href='https://www.boskanter.earth/nl/offer/activities#kampeerweek'> Meer info over de kampeerweek. </a>", fr: "..."}
+    },
+    {
+        start: "18.8.2025",
+        end: "18.8.2025", 
+        title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
     {
         start: "20.8.2025",
         end: "20.8.2025", 
-        title: {en: "crafts afternoon: crochéing and nitting", nl: "ambachten namiddag: breien en haken", fr: "après-midi artisanat: crocher et trickoter"}, 
-        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: "Clik <a href='./en/praktisch/activiteiten'>hier</a> voor details.", fr: "Click <a href='./en/praktisch/activiteiten'>here</a> for details."}
+        title: {en: "14h00-16h00: crafts", nl: "14u00-16u00: ambachten", fr: "14h00-16h00: artisanat"}, 
+        description: {en: "...", nl: "We gaan breien en haken of whatever de deelnemers inbrengen. <a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over ambachtsmomenten. </a>", fr: "..."}
+    },
+    {
+        start: "22.8.2025",
+        end: "22.8.2025", 
+        title: {en: "16h00*17h30: tour", nl: "16u00-17u30: rondleiding", fr: "16h00-17h30: tour"}, 
+        description: {en: "...", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#tour'> Meer info over rondleidingen. </a>", fr: "..."}
+    },
+    {
+        start: "22.8.2025",
+        end: "22.8.2025", 
+        title: {en: "18h00-22h00: Pizza Party", nl: "18u00-22u00: Pizza Party", fr: "18h00-22h00: Pizza Party"}, 
+        description: {en: "...", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#am'> Meer info over pizzafeestjes. </a>", fr: "..."}
+    },
+    {
+        start: "25.8.2025",
+        end: "25.8.2025", 
+        title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
 ]
 
