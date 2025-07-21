@@ -2,7 +2,9 @@
 title: Wie we zijn
 layout: layouts/article.html
 ---
-##de plek
+## VZW
+Boskanter is een VZW, gestart in 2012. 
+## de plek
 Een groot deel van Boskanter is geleidelijk uitgebouwd door vrijwilligers met low-tech ecologische bouwtechnieken zoals rocket-stoves, ter plekke opgedolven klei, hout uit ons bos en zelfgemaakte verf gebaseerd op platte kaas of meel.
 Het domein van 4 hectare omvat bos, boomhaard, weiland en moestuin. Er zijn schapen, honden, katten, kippen en een oud paard.
 ## de bewoners
