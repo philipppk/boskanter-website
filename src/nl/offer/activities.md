@@ -25,17 +25,17 @@ Eigen bijdrage kan zowel hartig als zoek zijn. Bij voorkeur een typisch Boskante
 
 ## <a name = "ambachten"></a> Ambachten namiddagen of avonden
 ### Wat?
-Samen bezig zijn met ambacht. Want samen is leuk, anders komt het er niet van en we kunnen elkaar verder helpen.
+Samen bezig zijn met ambacht. Samen is leuk, anders komt het er niet van en we kunnen elkaar verder helpen.
 ### Wanneer?
-We organiseren ambachtsmomenten als er voldoende lange termijn of lokale vrijwilligers zijn om het te organiseren. In het ideale geval kan dit wekelijks op een vast moment. Tijdens de zomermaanden 2025 trekken we er iedere woensdagnamiddag voor uit.
+Als er voldoende lange termijn of lokale vrijwilligers zijn om het te organiseren. In het ideale geval kan dit wekelijks op een vast moment. Tijdens de zomermaanden 2025 trekken we er iedere woensdagnamiddag voor uit, van 14u00 tot 16u00. Waarschijnlijk is het geen probleem om ook na 16u00 te blijven 'plakken' of doordoen, maar er zal geen begeleiding meer zijn. 
 ### Praktisch
 Iedereen brengt zijn eigen **grondstoffen en werktuigen** mee. Soms zijn er materiaal en grondstoffen op Boskanter beschikbaar. Informeer op voorhand als je daar beroep op wil doen, anders hebben we mogelijks niet voldoende voor iedereen. 
 
-Er wordt **geen begeleiding** voorzien. Het is geen workshop. We kunnen elkaar wel verder helpen of van elkaar leren.
+Er wordt **geen voerming** voorzien. Het is geen workshop. We kunnen elkaar wel verder helpen of van elkaar leren.
 
 Soms vermeldt de kalender een **thema**. Dan wordt er een introductie voorzien en leggen we wat materiaal klaar. Laat op voorhand iets weten als je hier gebruik van wil maken.
 
-Check op de kalender of er een ambachten moment gepland is. Je kan vrij langskomen, maar een berichtje is altijd handig. Laat zeker iets weten als je (tegen een kleine vergoeding) wil deelnemen aan de maaltijd of als je ons materiaal of gereedschap wil gebruiken.
+Check op de kalender of er een ambachten moment gepland is. Je kan vrij langskomen, maar **een berichtje is altijd handig**. Laat zeker iets weten als je (tegen een kleine vergoeding) wil deelnemen aan de maaltijd of als je ons materiaal of gereedschap wil gebruiken.
 
 ## <a name = "momo"></a>momo - Monday Moment
 Op maandagavond maken we, met de aanwezige gasten, tijd voor een inhoudelijke discussie. Tenzij het niet past en we een andere avond kiezen.
@@ -46,7 +46,7 @@ De momo staat open voor deelnemers van buiten Boskanter. Geef wel liefst een sei
 
 Timing: van 19u30 tot 21u00.
 ## <a name = "tour"></a> rondleiding
-Wil je graag ons project leren kennen, dan kan je meedoen aan een rondleiding. De rondleidingen worden meestal georganiseerd voor de pizzafeestjes. Je vindt de data op de website.
+Wil je graag ons project leren kennen, dan kan je meedoen aan een rondleiding. De rondleidingen worden meestal georganiseerd voor de pizzafeestjes. Je vindt de data op de website. Een berichtje op voorhand is wel handig, zodat we weten of we op iemand moeten wachten.
 ## <a name = "workshop"></a> workshops
 Op dit ogenblik plannen we geen workshops.
 
