@@ -30,13 +30,13 @@ const entries = [
         end: "8.8.2025", 
         title: {en: "Pizza Party", nl: "Pizza Party", fr: "Pizza Party"}, 
         description: {en: "16h00: tour", nl: "16u00: rondleiding", fr: "16h00 tour"}, 
-        description: {en: "Click <a href='./en/praktisch/activiteiten#pizzaparty'>here</a> for details.", nl: " <a href='./en/praktisch/activiteiten#pizzaparty'>klik voor meer info</a>", fr: " <a href='./en/praktisch/activiteiten#pizzapary'>ciquer ici pour plus d'info</a> "}
+        description: {en: "Click <a href='./en/offer/activiteiten#pizzaparty'>here</a> for details.", nl: " <a href='./en/offer/activiteiten#pizzaparty'>klik voor meer info</a>", fr: " <a href='./en/offer/activiteiten#pizzapary'>cliquez ici pour plus d'info</a> "}
     },
     {
         start: "8.8.2025",
         end: "8.8.2025", 
         title: {en: "16h00: tour", nl: "16u00: rondleiding", fr: "16h00 tour"}, 
-        description: {en: "Click <a href='./en/praktisch/activiteiten'>here</a> for details.", nl: " <a href='./en/praktisch/activiteiten'>klik voor meer info</a>", fr: " <a href='./en/praktisch/activiteiten'>ciquer ici pour plus d'info</a> "}
+        description: {en: "Click <a href='./en/offer/activiteiten'>here</a> for details.", nl: " <a href='./en/offer/activiteiten'>klik voor meer info</a>", fr: " <a href='./en/offer/activiteiten'>ciquer ici pour plus d'info</a> "}
     },
     {
         start: "13.8.2025",
