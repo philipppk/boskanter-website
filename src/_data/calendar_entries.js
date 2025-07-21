@@ -5,13 +5,13 @@ const entries = [
         start: "23.7.2025",
         end: "23.7.2025", 
         title: {en: "14h00-16h00: crafts - flint", nl: "14u00-16u00: ambachten - vuursteen", fr: "14h00-16h00: artisanat - silex"}, 
-        description: {en: "We will try to make flintstone 'knifes'. We have some flint stone from the North of France. No success guaranteed :-).", nl: "We gaan proberen een vuurstenen 'mes' te maken. We hebben een paar vuursteen knollen uit Noord-Frankrijk. Geen succes gegarandeerd :-). Check voor meer info over het verloop van de ambachten namiddag de activiteiten pagina.", fr: "..."}
+        description: {en: "We will try to make flintstone 'knifes'. We have some flint stone from the North of France. No success guaranteed :-).", nl: "We gaan proberen een vuurstenen 'mes' te maken. We hebben een paar vuursteen knollen uit Noord-Frankrijk. Geen succes gegarandeerd :-).", fr: "..."}
     },
     {
         start: "28.7.2025",
         end: "28.7.2025", 
         title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
-        description: {en: "Click <a href='https://www.boskanter.earth/en/offer/activiteiten'>here</a> for details.", nl: "Clik <a href='https://www.boskanter.earth/nl/offer/activiteiten#momo - monday moment'>hier</a> voor details.", fr: "Click <a href='https://www.boskanter.earth/nl/offer/activiteiten'>here</a> for details."}
+        description: {en: "Click <a href='https://www.boskanter.earth/en/offer/activities'>here</a> for details.", nl: "Clik <a href='https://www.boskanter.earth/nl/offer/activities#momo_-_monday_moment'>hier</a> voor details.", fr: "Click <a href='https://www.boskanter.earth/nl/offer/activities'>here</a> for details."}
     },
     {
         start: "30.7.2025",
