@@ -7,6 +7,7 @@ Als vrijwilliger kan je in sommige gevallen subsidie krijgen. Die dekken je reis
 
 ## Bel-J
 Belgisch programma.
+
 Voorwaarde:
 - jongere (16 tem 30)
 - uit Franstalig of Duitstalig gewest
@@ -16,6 +17,7 @@ meer info: [bel-J.be](https://bel-J.be)
 
 ## ESC
 Europees programma.
+
 Voorwaarden:
 - jongere (18 tem 30)
 - verblijvend in een ander Europees land (of één van de aangesloten buurlanden, zie officiële lijst)
