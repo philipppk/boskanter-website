@@ -17,10 +17,10 @@ Tenslotte komen vrijwilligers bij ons terecht enerzijds
 - [op eigen kracht](volunteer/stay), op eigen initiatief of nadat ze ons contacteerden via [workaway](https://www.workaway.info) of [HelpX](http://helpx.net)
 - [via een gesubsidieerd programma](volunteer/subsidy) zoals [ESC](https://youth.europa.eu/solidarity_nl) of [Bel-J](https://bel-j.be)
 
-[dit is een niet-limitatieve lijst van waar we hulp bij kunnen gebruiken](volunteer/work)
+[dit is een niet-limitatieve lijst van waar we hulp bij kunnen gebruiken](work)
 
-[hier vind je alle info over meewerken op Boskanter als plaatselijke vrijwilliger](volunteer/local)
+[hier vind je alle info over meewerken op Boskanter als plaatselijke vrijwilliger](local)
 
-[wil je weten hoe je voor een tijdje mee draait op de boerderij, kijk dan even hier](volunteer/stay)
+[wil je weten hoe je voor een tijdje mee draait op de boerderij, kijk dan even hier](stay)
 
-[meer info over de gesubsidieerde programma's vind je hier](volunteer/subsidy)
+[meer info over de gesubsidieerde programma's vind je hier](subsidy)
