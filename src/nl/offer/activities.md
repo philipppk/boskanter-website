@@ -4,11 +4,11 @@ layout: layouts/article.html
 ---
 
 ## Pizzaparty
-![pizzaparty](www.boskanter.earth/pictures/pizzafeestje.jpg)
+[pizzaparty](www.boskanter.earth/pictures/pizzafeestje.jpg)
 Op een pizzaparty kan je kleinschalig proeven van wat Boskanter te bieden heeft. Het is een moment van verbinding.
 Nadat je je hebt ingeschreven (het aantal plaatsen is beperkt) kan je tussen 18u00 en 22u00 à volonté komen eten. 
 ### Wat?
-Het hoofdgerecht zijn de pizza's, maar er is meestal ook crumble en wie wil kan ook zelf iets meebrengen om te delen. Naargelang de pizza's uit de oven komen worden ze geachtendeeld en kan iedereen zich bedienen. De pizzabodems zijn gemaakt met zuurdesem en de 'boerenbrood mengeling' van [Elementerre](https://elementerre.be) (40% spelt, 40% oude tarwe, 20% rogge). Het beleg is doorgaans biologisch, lokaal (zoveel mogelijk zelf geteeld) en vegetarisch. Een enkel pizza met ansjovis of vlees wordt duidelijk aangegeven en er zijn er ook altijd een paar veganistische.
+Het hoofdgerecht zijn de pizza's, maar er is meestal ook crumble en wie wil kan ook zelf iets meebrengen om te delen. Naargelang de pizza's uit de oven komen worden ze geachtendeeld en kan iedereen zich bedienen. De pizzabodems zijn gemaakt met zuurdesem en de 'boerenbrood mengeling' van [Elementerre](https://élémenterre.be) (40% spelt, 40% oude tarwe, 20% rogge). Het beleg is doorgaans biologisch, lokaal (zoveel mogelijk zelf geteeld) en vegetarisch. Een enkel pizza met ansjovis of vlees wordt duidelijk aangegeven en er zijn er ook altijd een paar veganistische.
 
 Bij de limonadebar kan je zelf een drankje brouwen op basis van huisgemaakte siropen, fruitsappen en fris (spuit)water. Verder vind je aan de bar plaatselijke en biologische biertjes en wijn. 
 
