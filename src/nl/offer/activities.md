@@ -3,8 +3,9 @@ title: Activiteiten
 layout: layouts/article.html
 ---
 
-## Pizzaparty
 ---
+
+## Pizzaparty
 
 ![pizzaparty](/src/pictures/pizzafeestje.jpg)
 Op een pizzaparty kan je kleinschalig proeven van wat Boskanter te bieden heeft. Het is een moment van verbinding.
@@ -36,8 +37,9 @@ Kom bij voorkeur te voet, per fiets of openbaar vervoer. Wie met de auto komt pa
 
 Eigen bijdrage kan zowel hartig als zoek zijn. Bij voorkeur een typisch Boskanter gerecht (zelfgemaakt, lokaal, vegetarisch of verantwoord vlees, ...), maar elke bijdrage wordt op prijs gesteld.
 
-## <a name = "ambachten"></a> Ambachten namiddagen of avonden
 ---
+
+## <a name = "ambachten"></a> Ambachten namiddagen of avonden
 
 ### Wat?
 
@@ -57,8 +59,9 @@ Soms vermeldt de kalender een **thema**. Dan wordt er een introductie voorzien e
 
 Check op de kalender of er een ambachten moment gepland is. Je kan vrij langskomen, maar **een berichtje is altijd handig**. Laat zeker iets weten als je (tegen een kleine vergoeding) wil deelnemen aan de maaltijd of als je ons materiaal of gereedschap wil gebruiken.
 
-## <a name = "momo"></a>momo - Monday Moment
 ---
+
+## <a name = "momo"></a>momo - Monday Moment
 
 Op maandagavond maken we, met de aanwezige gasten, tijd voor een inhoudelijke discussie. Tenzij het niet past en we een andere avond kiezen.
 
@@ -68,24 +71,24 @@ De momo staat open voor deelnemers van buiten Boskanter. Geef wel liefst een sei
 
 Timing: van 19u30 tot 21u00.
 
-## <a name = "tour"></a> rondleiding
-
 ---
+
+## <a name = "tour"></a> rondleiding
 
 Wil je graag ons project leren kennen, dan kan je meedoen aan een rondleiding. De rondleidingen worden meestal georganiseerd voor de pizzafeestjes. Je vindt de data op de website. Een berichtje op voorhand is wel handig, zodat we weten of we op iemand moeten wachten.
 
-## <a name = "kampeerweek"></a> kampeerweek
-
 ---
+
+## <a name = "kampeerweek"></a> kampeerweek
 
 Een kampeerweek wordt meestal in de zomervakantie geörganiseerd (zie kalender). Het is, net zoals het pizzafeestje, een laagdrempelige manier om kennis te maken, te proeven en te verbinden.
 Je kan op twee manieren deelnemen: 'vrijwilliger light' of betalend.
 - Als 'vrijwilliger light' werk je mee in ruil voor eten en een kampeerplekje, alleen is het een light versie van werken. Er is meer ruimte voor uitslapen en vakantieactiviteiten zoals (samen) wandelen, volleyballen of gaan zwemmen in de Gavers. Het werk wordt meer gedaan omdat het leuk is om samen iets aan te pakken.
 - Als je betaalt, dan leg je 12€ per persoon per dag neer voor eten en logies. Je helpt dan alleen mee met het 'huishouden' (koken, afwassen, opruimen) en moet er verder niet mee zitten als je niet wil of kan werken.
 
-## <a name = "workshop"></a> workshops
-
 ---
+
+## <a name = "workshop"></a> workshops
 
 Op dit ogenblik plannen we geen workshops.
 
