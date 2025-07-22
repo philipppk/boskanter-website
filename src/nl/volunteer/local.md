@@ -6,7 +6,7 @@ Boskanter heeft een rijke traditie van werken met internationale vrijwilligers. 
 
 Als plaatselijke vrijwilliger kan je op Boskanter terecht op regelmatige basis (bijvoorbeeld een halve dag per week) of op onregelmatige basis, als er een oproep is voor een werkje of als je er zelf aan toe bent.
 
-[Hier vind je een lijst met mogelijkheden.](/volunteer/work)
+[Hier vind je een lijst met mogelijkheden.](/nl/volunteer/work)
 
 ## Wat levert het op?
 - Voor buurtbewoners is Boskanter een **poort naar de bruisende wereld** van buitenlandse jongeren, hun enthousiasme, hun honger om te delen en te leren en de verhalen die ze meebrengen van andere culturen en verre landen. Wie weet houd je er vriendschappen aan over, of een plek om te logeren als je er zelf op uit trekt.
