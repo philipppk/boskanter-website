@@ -28,10 +28,10 @@ We organiseren er maximum 10 per jaar. Meestal zijn de feestjes op zaterdagavond
   - **15€** (boven twaalf jaar)
   - **7€** (van vier tem twaalf jaar)
   - **niets** (onder de vier jaar).
-  - 
+
 ### praktisch
 
-Reservatie is noodzakelijk, ten laatste de middag vóór de pizzaparty, want de plaatsen zijn beperkt.
+> Reservatie is noodzakelijk, ten laatste de middag vóór de pizzaparty, want de plaatsen zijn beperkt.
 
 Kom bij voorkeur te voet, per fiets of openbaar vervoer. Wie met de auto komt parkeert best in de Leinstraat en komt daarna te voet. Even oprijden om passagiers te droppen die moeilijk te been zijn of een bijdrage aan de maaltijd af te zet kan natuurlijk wel.
 
