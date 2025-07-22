@@ -1,9 +1,11 @@
 ---
-title: work
+title: wat is er te doen?
 layout: layouts/article.html
 ---
-Er zijn altijd verschillende jobs. Het werk is dus divers en je kan het een stuk zelf in handen nemen. Natuurlijk moet iedereen wel mee dat werk doen dat niemand wil en dat toch gedaan moet worden.
+Er zijn altijd verschillende jobs te doen. Het werk is dus divers. Je kan het een stuk zelf in handen nemen. Natuurlijk moet iedereen wel mee dat werk doen dat niemand wil en dat toch gedaan moet worden.
+
 Hoe langer je blijft, hoe meer je kan kiezen en hoe meer je ook je eigen projecten kan opzetten en richting geven aan je werk.
+
 Hieronder vind je een lijst van mogelijke taken en engagementen, een beetje geordend van meer praktisch, laagdrempelig naar taken voor wie wat meer ambitie heeft.
 
 ## in de tuin
