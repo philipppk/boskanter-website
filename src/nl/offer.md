@@ -2,10 +2,7 @@
 title: Wat kan Boskanter voor jou betekenen?
 layout: layouts/article.html
 ---
-
-
-We zijn een kleinschalige, niet-gesubsidieerde vrijwilligergedragen organisatie. Daardoor bieden we soms minder aan dan we wel zouden willen. Maar loop jij warm voor onze doelen en ben je enthousiast over onze manier van werken, kom dan mee in ons [vrijwilligersteam](voluntee/local) :-)!
-
-We organiseren [activiteiten](activities) om bezoekers te laten proeven van een ander leven en stellen onze deuren open voor [mensen of organisaties die dat hier samen met ons willen komen doen](location).
-
-Er is wat ruimte, in het huis en in ons hoofd en hart, om onze plek te delen met anderen die ook gebeten zijn door het verlangen naar een nieuw systeem, door deze manier van leven en het samenleven met de vrijwilligers. [Meer info over hoe we dat zien vind je hier](cohousen).
+[Je kan meehelpen als vrijwilliger](volunteer), [plaatselijk](volunteer/local) of [hier verblijvend tegen kost en inwoon](volunteer/stay).
+Op onze [activiteiten](activities) kan je komen kennismaken, proeven van wat we te bieden hebben ('een ander leven' :-)) en leren, ontmoeten, ...
+We delen in de (beperkte) mate van het mogelijke onze [producten](products).
+[We delen graag onze plek als je hier iets wil organiseren in de lijn van waar Boskanter mee bezig is.](location)
