@@ -4,7 +4,6 @@ layout: layouts/article.html
 ---
 
 ## Pizzaparty
-
 ---
 
 ![pizzaparty](/src/pictures/pizzafeestje.jpg)
@@ -38,7 +37,6 @@ Kom bij voorkeur te voet, per fiets of openbaar vervoer. Wie met de auto komt pa
 Eigen bijdrage kan zowel hartig als zoek zijn. Bij voorkeur een typisch Boskanter gerecht (zelfgemaakt, lokaal, vegetarisch of verantwoord vlees, ...), maar elke bijdrage wordt op prijs gesteld.
 
 ## <a name = "ambachten"></a> Ambachten namiddagen of avonden
-
 ---
 
 ### Wat?
@@ -60,7 +58,6 @@ Soms vermeldt de kalender een **thema**. Dan wordt er een introductie voorzien e
 Check op de kalender of er een ambachten moment gepland is. Je kan vrij langskomen, maar **een berichtje is altijd handig**. Laat zeker iets weten als je (tegen een kleine vergoeding) wil deelnemen aan de maaltijd of als je ons materiaal of gereedschap wil gebruiken.
 
 ## <a name = "momo"></a>momo - Monday Moment
-
 ---
 
 Op maandagavond maken we, met de aanwezige gasten, tijd voor een inhoudelijke discussie. Tenzij het niet past en we een andere avond kiezen.
