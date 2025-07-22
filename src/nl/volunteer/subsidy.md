@@ -30,5 +30,13 @@ Europees vrijwilligers programma met extra ondersteuning in je leerproces.
 - zakgeld; in 2025 is dit 6€/dag
 - on-arrival training, mid-term training en zomerkamp: ondersteuning in ervaring en leerproces en kennis maken met andere ESC vrijwiligers in Vlaanderen
 - kunnen terugvallen op zendorganisatie
+### procedure
+1. aanvraag bij Boskanter, gesprek, wederzijdse beslissing om ermee door te gaan
+2. vinden van een zendorganisatie, als je die niet al hebt
+3. registeren bij ESC platform (zie verder)
+4. officieel aanbod van Boskanter
+5. aanbod goedkeuren; op basis hiervan start de verzekering
+6. reis plannen en boeken
+7. bij aankomst of na afloop betaalt Boskanter de kosten terug
 ### meer info
 [youth.europa.eu/solidarity_nl](https://youth.europa.eu/solidarity_nl)
