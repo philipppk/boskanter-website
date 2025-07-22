@@ -1,4 +1,4 @@
-st---
+---
 title: Activiteiten
 layout: layouts/article.html
 ---
