@@ -20,7 +20,7 @@ Wil je voor langere tijd komen, kijk dan zeker of je in aanmerking komt voor de 
 
 **Korte termijn vrijwilligers** blijven twee weken tot een tweetal maand. Ze komen vooral in de zomer en verblijven dan in de schuur, waar ze soms een kamer delen, of kamperen. Ze hebben minder inspraak in het werk en de werking en hebben ook minder leerkansen. Hoeveel korte termijn vrijwilligers we kunnen ontvangen hangt af van het aantal lange termijn vrijwilligers en hoe goed die ingewerkt zijn. Soms zijn we in de zomer met een groepje van tien. 
 
-Soms loopt er in de zomer een [ESC teams-activiteit](/nl/volunteer/subsidy.md#esc) en kunnen buitenlandse jongeren voor een periode van twee weken tot twee maand onder dit programma meedraaien.
+Soms loopt er in de zomer een [ESC teams-activiteit](/nl/volunteer/subsidy#esc) en kunnen buitenlandse jongeren voor een periode van twee weken tot twee maand onder dit programma meedraaien.
 
 ---
 
