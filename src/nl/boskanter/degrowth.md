@@ -18,7 +18,7 @@ Onder het kapitalisme werden gemeenschappelijke, natuurlijke bestaansmiddelen é
 
 Nu hebben we de meeste elementen van een degrowth oplossing verzameld. 
 Kleinschalig samenwerken om de natuurlijke basisvoorzieningen zo te beheren dat ze ons overvloed bieden. 
-Naast zelfbeschikking geeft ons dat ook meer voldoening. Om onder het kapitalisme de productie te optimaliseren werd het proces in stukken opgedeeld. Iedereen draagt een klein steentje bij. Vele arbeiders missen het plezier van iets te produceren of het contact met de klant. Iets maken omdat iemand er naar vraagt en je werk waardeert is aangenamer dan onder stress voldoende te produceren voor een kleine winstmarge op een product dat enkel verkocht raakt dankzij een marketingcampagne. We  brengen het grootste deel van ons leven op de werkvloer door.
+Naast zelfbeschikking geeft ons dat ook meer voldoening. Om onder het kapitalisme de productie te optimaliseren werd het proces in stukken opgedeeld. Iedereen draagt een klein steentje bij. Vele arbeiders missen het plezier van iets te produceren of het contact met de klant. Iets maken omdat iemand er naar vraagt en je werk waardeert is aangenamer dan onder stress voldoende te produceren voor een kleine winstmarge op een product dat enkel verkocht raakt dankzij een marketingcampagne. We  brengen het grootste deel van ons leven op de werkvloer door; waarom niet de plezier- en zinvolheidsmarge boven de winstmarge stellen en de economische leefbaarheid zien in functie van die meerwaarde.
 
 Hoe moeten we volgens de Degrowth beweging dit utopia bereiken? 
 Via een combinatie van acties:
@@ -27,7 +27,7 @@ Via een combinatie van acties:
 - Steeds weer en steeds weer het nieuwe verhaal vertellen, tot mensen het een optie of gewoon gaan vinden
 - Politiek (blijven) proberen
 - Druk uitoefenen via vakbonden en acties
-- Klaarstaan met een Degrowth coöperatief verhaal (in plaats van een nationalistisch wij tegen zij discours) bij crisissen
+- Klaarstaan met een Degrowth coöperatief verhaal (in plaats van een wij-tegen-zij discours) bij crisissen
 - ...
 
 Boskanter en Degrowth
