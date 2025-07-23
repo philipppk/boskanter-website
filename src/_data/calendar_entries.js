@@ -11,7 +11,7 @@ const entries = [
         start: "28.7.2025",
         end: "28.7.2025", 
         title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
-        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#momo'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
     {
         start: "30.7.2025",
@@ -23,7 +23,7 @@ const entries = [
         start: "4.8.2025",
         end: "4.8.2025", 
         title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
-        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#momo'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
     {
         start: "6.8.2025",
@@ -47,7 +47,7 @@ const entries = [
         start: "11.8.2025",
         end: "11.8.2025", 
         title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
-        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#momo'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
     {
         start: "13.8.2025",
@@ -65,7 +65,7 @@ const entries = [
         start: "18.8.2025",
         end: "18.8.2025", 
         title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
-        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#momo'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
     {
         start: "20.8.2025",
@@ -89,7 +89,7 @@ const entries = [
         start: "25.8.2025",
         end: "25.8.2025", 
         title: {en: "19h30-21h00: momo ", nl: "19u30-21u00: momo", fr: "19h30-21h00: momo"}, 
-        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#ambachten'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
+        description: {en: "<a href='https://www.boskanter.earth/en/offer/activities#momo'>More information about momo's. /a>", nl: "<a href='https://www.boskanter.earth/nl/offer/activities#ambachten'> Meer info over momo's. </a>", fr: "..."}
     },
 ]
 
