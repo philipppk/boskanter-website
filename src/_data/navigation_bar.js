@@ -69,7 +69,7 @@ let nav = [
     {
         type: "subordinated",
         title: {en: "co-housing",  fr: "habitat commun",  nl: "samenwonen"}, 
-        link: "offer/cohousen"
+        link: "offer/cohousing"
     },
     {
         type: "normal",
