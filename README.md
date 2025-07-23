@@ -77,6 +77,7 @@ layout: layouts/article.html
 ---
 ```
 3. After the block with metadata, you can write your post in markdown. Markdown is a specific code to write formatted text in a regular text file. See more in the chapter [writing markdown](#writing_markdwown).
+4. Linking to other pages: write '/nl/folder/filename'; if you just write 'filename' it considers the path being '/nl/folder with name of file you write in/filename'
 
 
 ## Adding a picture: For general use, to be displayed in the gallery or to be used as an icon
