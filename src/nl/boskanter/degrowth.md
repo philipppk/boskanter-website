@@ -30,7 +30,8 @@ Via een combinatie van acties:
 - Klaarstaan met een Degrowth coöperatief verhaal (in plaats van een wij-tegen-zij discours) bij crisissen
 - ...
 
-Boskanter en Degrowth
+## Boskanter en Degrowth
+
 Wij hebben alvast geen zin om heel hard te sjouwen met druppels op een hete plaat. We willen wel ons best doen om extra schade te voorkomen, maar onze tijd niet verspillen aan tegen de stroom in zwemmen zonder op z'n minst te proberen de richting van die stroom mee te veranderen. 
 Dus als vrijwilligers hier leren om kruiden te verzamelen om thee te maken of houten lepels te snijden is dat niet omdat ze dan minder koffie zouden drinken of minder metaal ontginnen. Hopelijk helpt het hen om zich miner afhankelijk te voelen van het systeem, zodat ze er tegen in durven gaan. Hopelijk helpt het hen om zich een oplossing te kunnen voorstellen en daaruit hoop te putten.
 
