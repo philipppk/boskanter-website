@@ -17,7 +17,8 @@ Boskanter wordt gerund door de eigenaars, Ine en Dirk en hun kinderen. Soms help
 
 ## Een kleine geschiedenis van Boskanter
 
-In de tijd dat we Boskanter opgericht hebben, werden we geïnspireerd door de [transition towns](transition_towns) beweging. Een plaatselijke beweging in gang steken was niet aan ons bestaad. Maar het idee van mensen laten proeven van een ander leven, om hen zo aan het denken te zetten, leek ons wel wat.
+Boskanter bestond al in onze gedachten toen we dit domein kochten. Losvast geinspireerd op de [transition towns movement](transition_towns)wilden we de verandering zijn die we in de wereld wilden zien. We wilden dit delen met vrijwilligers. Terwijl we hen lieten proeven van deeltjes van wat een leven na de transitie zou kunnen zijn, konden ze ons helpen om dit soort leven te leven in een wereld en systeem dat er nog niet voor gemaakt is.  
+Vanaf het eerste jaar hadden we vrijwilligers over de vloer. Ze leefden bij ons en de kleine Hazel en Sienna in de kleine plekjes met geïmproviseerde keuken terwijl we verhuisden van woonhuis naar verschillende plekken in de schuur om elders te kunnen verbouwen. 
 
 ---
 
