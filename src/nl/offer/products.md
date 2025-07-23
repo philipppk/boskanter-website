@@ -1,5 +1,5 @@
 ---
-title: production
+title: productie
 layout: layouts/article.html
 ---
 Onze boerderij produceert in de eerste plaats voor de bewoners, en dan nog vooral om de vrijwilligers de kans te geven te leren. Vaak is er dus geen overschot, of steken we niet meteen energie in het vinden van een afzetmarkt of bedienen van klanten. 
