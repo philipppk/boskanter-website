@@ -82,11 +82,6 @@ let nav = [
         link: "volunteer/local"
     },  
     {
-        type: "subordinated",
-        title: {en: "co-housing",  fr: "habitat commun",  nl: "samenwonen"}, 
-        link: "offer/cohousing"
-    },
-    {
         type: "normal",
         title: {en: "calendar",  fr: "calendrier",  nl: "kalender"},  
         link: "calendar"
