@@ -7,7 +7,7 @@ layout: layouts/article.html
 
 ## Pizzaparty
 
-![pizzaparty](/src/pictures/pizzafeestje.jpg)
+![pizzaparty](/pictures/pizzafeestje.jpg)
 Op een pizzaparty kan je kleinschalig proeven van wat Boskanter te bieden heeft. Het is een moment van verbinding.
 Nadat je je hebt ingeschreven (het aantal plaatsen is beperkt) kan je tussen 18u00 en 22u00 à volonté komen eten. 
 
