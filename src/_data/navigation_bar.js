@@ -13,7 +13,7 @@ let nav = [
     },
     {
         type: "subordinated",
-        title: {en: "permaculture", fr: "permaculture", nl: "permakultuur"},
+        title: {en: "permaculture", fr: "permaculture", nl: "permacultuur"},
         link: "boskanter/permakultuur"
     },
     {
